@@ -8,6 +8,7 @@ import DeficitShadow
 import DiagonalSection
 import E1UnitPurityDraft
 import FlatnessShadow
+import FrameBoundaryShadow
 import GroupRingGlue
 import H1Mechanism
 import InequalityShadow
@@ -104,6 +105,9 @@ import TwistedShadow
 #print axioms FlatnessShadow.trace_endpoints
 #print axioms FlatnessShadow.dim_law_odd
 #print axioms FlatnessShadow.dim_law_place2
+#print axioms FrameBoundaryShadow.nativity_arithmetic
+#print axioms FrameBoundaryShadow.uline_witnesses
+#print axioms FrameBoundaryShadow.limit_frame_arithmetic
 #print axioms GroupRingGlue.coupling_23
 #print axioms GroupRingGlue.coupling_235
 #print axioms GroupRingGlue.star_c2

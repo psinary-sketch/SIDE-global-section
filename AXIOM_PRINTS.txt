@@ -66,6 +66,9 @@
 'FlatnessShadow.trace_endpoints' does not depend on any axioms
 'FlatnessShadow.dim_law_odd' does not depend on any axioms
 'FlatnessShadow.dim_law_place2' does not depend on any axioms
+'FrameBoundaryShadow.nativity_arithmetic' does not depend on any axioms
+'FrameBoundaryShadow.uline_witnesses' does not depend on any axioms
+'FrameBoundaryShadow.limit_frame_arithmetic' does not depend on any axioms
 'GroupRingGlue.coupling_23' does not depend on any axioms
 'GroupRingGlue.coupling_235' does not depend on any axioms
 'GroupRingGlue.star_c2' does not depend on any axioms
