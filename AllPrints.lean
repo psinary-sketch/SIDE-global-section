@@ -16,6 +16,7 @@ import MetaplecticRootShadow
 import NeitherPolesNorZeros
 import NormalizationForced
 import OddPInstances
+import OddPairingShadow
 import OrbitDictionary
 import PairingShadow
 import PlancherelShadow
@@ -137,6 +138,11 @@ import TwistedShadow
 #print axioms OddPInstances.trace_silence_5
 #print axioms OddPInstances.trace_silence_7
 #print axioms OddPInstances.sonin_dims_odd
+#print axioms OddPairingShadow.odd_pairing_imaginary
+#print axioms OddPairingShadow.even_pairing_real
+#print axioms OddPairingShadow.seed_pairing_instances
+#print axioms OddPairingShadow.odd_weights_table
+#print axioms OddPairingShadow.odd_collapse
 #print axioms OrbitDictionary.twisted_silence
 #print axioms OrbitDictionary.fiber_two
 #print axioms OrbitDictionary.fiber_three
