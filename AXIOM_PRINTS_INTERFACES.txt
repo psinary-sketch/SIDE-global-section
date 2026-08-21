@@ -1,0 +1,55 @@
+=== FiniteInstanceIdentity
+'FiniteInstanceIdentity.finiteInstanceIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FiniteInstanceIdentity.finiteInstanceIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== GlobalSection
+'GlobalSection.F_pow_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalSection.inner_F_self_of_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalSection.F_pow_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalSection.inner_F_self_of_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== LocalLimit
+'LocalLimit.radical_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.no_unimodular_eigenvalue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.eigenvector_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.nested_projection_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.real_no_compact_open_addSubgroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.general_p_no_fixed_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.inner_map_self_of_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.radical_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.no_unimodular_eigenvalue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.four_sector_decomposition_stub' does not depend on any axioms
+'LocalLimit.eigenvector_of_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.nested_projection_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.real_no_compact_open_addSubgroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.general_p_no_fixed_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.ac_dilation_stub' does not depend on any axioms
+=== PadicFourier
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+D:/SIDE-global-section/Interfaces/PadicFourier.lean.check:91:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'PadicFourier.fourier_indicator_zp_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicFourier.fourier_indicator_zp_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicFourier.zpSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicFourier.fourier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicFourier.fourier_indicator_zp_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicFourier.fourier_indicator_zp_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== PadicStandardAddChar
+'PadicCompanion.padicFract_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.stdAddChar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.stdAddChar_eq_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.fracExponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.mul_pow_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.padicFract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.padicFract_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.padicFract_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.padicFract_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.padicFract_eq_zero_of_norm_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.padicFract_denpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.int_of_denpow_of_norm_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.stdAddChar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PadicCompanion.stdAddChar_eq_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,55 @@
+# CORRESPONDENCE — the spine
+
+One row per keystone statement of `THE_GLOBAL_SECTION.md` v1.0 (and the acts it
+consolidates). Columns: the statement · the terminal(s) · the axiom print, verbatim,
+re-run at build (`AXIOM_PRINTS.txt` for Core; `AXIOM_PRINTS_INTERFACES.txt` for
+Interfaces — every print re-run 2026-08-20, never carried from memory) · the grade
+under the three-grade rubric (DERIVES / INTERFACES-on-named-premise /
+ENCODES-CONCLUSION-or-SHELL) · status. **No blank cells; where a keystone statement has
+no terminal, the row says so.** Core terminal total: **114** (the 103 construction-era
+terminals + the 11 purity-and-distance terminals), every one printing *"does not depend
+on any axioms"* — the count reconciled against the corpus audit at build (103 + 11 = 114
+exactly). The statement-read census (Rule 4.12, declared-count watch) ran over the whole
+repository; its flags are in the grade column and the census note at the foot.
+
+| # | keystone statement | terminal(s) | axiom print (verbatim; re-run at build) | grade | status |
+|:--|:--|:--|:--|:--|:--|
+| 1 | The interleaving index law — the DFT couples the chart factors only through the middle bilinear term, m·m′ ≡ aa′ + pⁿ(ab′ + a′b) mod p²ⁿ, every tuple at (2,1)/(3,1)/(2,2)/(5,1) | `TensorSquareShadow.interleaving_index_law` | `'TensorSquareShadow.interleaving_index_law' does not depend on any axioms` | DERIVES (at the instances) | COMPILED |
+| 2 | The sector-pattern gap: the ∏λ_v = +1 sector sum admits 2^{k−1} patterns vs the tensor diagonal's one, strict for k ≥ 2 | `TensorSquareShadow.sector_pattern_gap` | `'TensorSquareShadow.sector_pattern_gap' does not depend on any axioms` | DERIVES (instances k = 2, 3, 4; −1-sector nonemptiness cited from the banks, declared in-file) | COMPILED |
+| 3 | Trace silence: Tr(U_{p^k}S) = 0 exactly, k ≥ 1 — the finite places are trace-silent off the identity | `TraceSilence` (6 terminals) | each `does not depend on any axioms` (AXIOM_PRINTS.txt) | DERIVES (at the banked cells) | COMPILED |
+| 4 | The quotient lemma's finite shadows — the class structure, preimage counts, τ_q·p^{k/2} = (pⁿ−p^k)/(pⁿ−1) | `QuotientLemmaShadow` (4), `QuotientWeilShape` (4) | each `does not depend on any axioms` | DERIVES (at instances; the longhand proof lives in the acts, banked) | COMPILED; the limit statement is prose+longhand |
+| 5 | The tower: ι(Son(2,1)) ⊂ Son(2,2) kernel-checked in ℤ[ζ₁₆]; Gram level-stability on the nose; the fifth-law integers both primes | `TowerInstance` (5) | each `does not depend on any axioms` | DERIVES (smallest instance; the (3,·) instances bench-exact at b26, declared in-file) | COMPILED |
+| 6 | Four-sector arithmetic: the flatness solver (odd p), the twist signature (d/4, d/4, d/2), pos = neg, the p = 2 contrast and class death/revival | `SectorArithmetic` (15) | each `does not depend on any axioms` | DERIVES the solver/signature identities; **the eigen-dims enter as BANKED DATA (declared in-file; census flag)** — those rows are INTERFACES-on-named-premise to the b20/b22/b23/b26 banks | COMPILED |
+| 7 | The staircase address laws (prime-power-address, weight-death, the prime-free window) | `StaircaseAddresses` (6) | each `does not depend on any axioms` | DERIVES (integer laws on the stated range, declared) | COMPILED |
+| 8 | The coupling-arrival laws (norm-150 enumeration, the arrival law, the trace identity) | `CouplingArrival` (4) | each `does not depend on any axioms` | DERIVES at the ℤ[ℤ/3] level; the Euler-coefficient identification is bench, declared in-file | COMPILED |
+| 9 | The normalization forced at its joints (volume convention p², unit norm) | `NormalizationForced` (5) | each `does not depend on any axioms` | DERIVES (at instances) | COMPILED |
+| 10 | Neither-poles-nor-zeros (the constrained class avoids both pole directions) | `NeitherPolesNorZeros` (5) | each `does not depend on any axioms` | DERIVES (at instances) | COMPILED |
+| 11 | The DFT chart (the coset-integral ↔ DFT transport at the finite exact levels) | `DFTChart` (4) | each `does not depend on any axioms` | DERIVES (at instances) | COMPILED |
+| 12 | The diagonal section and the twisted Hermitian cell | `DiagonalSection` (16) | each `does not depend on any axioms` | DERIVES; inertia carried as banked bench data, declared in-file (census flag) | COMPILED |
+| 13 | The group-ring glue (the ℤ[Cl] half; no pairing, no DFT — designed split, declared) | `GroupRingGlue` (11) | each `does not depend on any axioms` | DERIVES (its own half) | COMPILED |
+| 14 | The h = 1 mechanism | `H1Mechanism` (2) | each `does not depend on any axioms` | DERIVES (at instances) | COMPILED |
+| 15 | The ball-pair inclusion–exclusion (dim Son = (pⁿ−1)²) | `BallPairShadow` (2) | each `does not depend on any axioms` | DERIVES (at instances) | COMPILED |
+| 16 | The inequality shadow | `InequalityShadow` (2) | each `does not depend on any axioms` | DERIVES (at instances) | COMPILED |
+| 17 | The orbit dictionary | `OrbitDictionary` (7) | each `does not depend on any axioms` | DERIVES (at instances) | COMPILED |
+| 18 | The all-p closure's compiled core (`general_p_no_fixed_cell` et al.) | `OddPInstances` (3) | each `does not depend on any axioms` | DERIVES | COMPILED |
+| 19 | E₁ purity: (2,1) NO-UNIT ((1+Π)f = 0, d₁ = 0); (3,1) unique unit MIXED; (2,2) MIXED-FORCED both certificate halves; witnesses at (5,1)/(2,3)/(3,2) | `E1UnitPurityDraft` — `death_2_1`, `unit31_mixed`, the four pencil terminals, `witness51/23/32` (9) | each `does not depend on any axioms` | DERIVES (at instances); **d₁ values and basis identity enter banked, declared in-file (census flag)** | COMPILED |
+| 20 | The KL distance failure: E₁ is not a distance-≥2 code in the factor-block model — the witness discrepancies ≠ 0 at (2,2), (5,1) | `E1UnitPurityDraft.kl_fail_2_2`, `.kl_fail_5_1` (2) | each `does not depend on any axioms` | DERIVES (at instances) | COMPILED; the full per-operator verdicts, the depth-alignment law, and the Segre–Macaulay emptiness certificates are WORKING-LAYER-RESIDENT (relay banks b45/b46/b48) — beyond sensible decide reach, declared |
+| 21 | The global object 𝒮 = ⊗′S̄_v with F = ⊗F_v, F² = parity, the compressed scaling — the abstract Hilbert construction | `GlobalSection` (Interfaces; 2 decls) | see AXIOM_PRINTS_INTERFACES.txt (profile `{propext, Classical.choice, Quot.sound}`) | INTERFACES-on-named-premise (the colimit/completion path spelled at the site; Mathlib holds neither piece — declared in-file) | INTERFACE; never load-bearing for the programme's own claims |
+| 22 | The local field realization L²(ℚ_p): the standard character, the transform, the tower route to Plancherel | `PadicStandardAddChar` (11 decls), `PadicFourier` (4 decls), `LocalLimit` (9 decls) | see AXIOM_PRINTS_INTERFACES.txt (profile `{propext, Classical.choice, Quot.sound}`) | INTERFACES-on-named-premise (interfaces to the field's objects) | INTERFACE |
+| 23 | ℝ has no compact open subgroup (the archimedean place has no finite exact levels) | in `LocalLimit` (Interfaces) | see AXIOM_PRINTS_INTERFACES.txt | DERIVES (a proved structural lemma at the classical profile) | INTERFACE-housed, proved |
+| 24 | The (L-identity): the equality, on the constrained class, of the object's trace with Weil's ledger — file E's Prop | `FiniteInstanceIdentity` (1 decl) | see AXIOM_PRINTS_INTERFACES.txt | **BOUNDARY, with its address: STATED, NOT PROVED, NOT CLAIMED — converts only through the closure protocol; its truth at complete roster is `h2`** | THE OPEN CONTENT — the row is honest by design |
+| 25 | No adelic-function realization of 𝒮 (R1-1.F, the three-line proof) | — no terminal — | — | — | DERIVATION-GRADE IN THE ACTS (relay, banked); working-layer prose; no Lean object |
+| 26 | The CNU theorem (the compressed scaling has no unimodular eigenvalue); (C-dense)/(D-dense); the SUS spectrum sharpening; Θ_T | — no Core terminal — | — | — | MATHLIB-LEG AND PROSE IN THE ACTS: the engine and density chain live in the acts' record (relay, banked); the four removed sorry statements are working-layer-resident (relay `reports/2026-08-19-sorry-ledger-cleared.md`) per the kernel-purity ruling |
+| 27 | The radial-unit existence (α); the constraint-invisibility step (β); the Θ_T identification lemma; the assembly reading | — no terminals — | — | — | OPEN, NAMED — carried openly in the acts and OPEN_TRAILS; the assembly reading is QUEUED at the h2 line's return |
+
+| 28 | The four-sector decomposition at the abstract level (`F⁴ = 1` ⟹ spectral splitting) and the a.c.-dilation statement | `LocalLimit.four_sector_decomposition_stub`, `LocalLimit.ac_dilation_stub` | each `does not depend on any axioms` — **because each is `True := trivial`** | **ENCODES-CONCLUSION-or-SHELL — named-debt stubs by the kernel-purity ruling's own device (no sorry; a named stub instead), declared in their docstrings: the first an abstract-lemma-pass debt, the second OWED TO DILATION THEORY (Mathlib holds none — the statement cannot yet be formed)** | SHELL, honest by design; carries NO mathematical content; the census flagged it and this row says so |
+
+**Census note (Rule 4.12, run at assembly).** The declared-count watch fired at exactly two
+places, both in Interfaces: the `LocalLimit` stubs of row 28 — `True := trivial` shells whose
+prints are axiom-free precisely because they assert nothing; graded SHELL, declared in their
+own docstrings, and never load-bearing. No Core terminal carries a count by
+declaration-of-a-type (the CartanBBridge shape); the Core census flags (rows 6, 12, 19 —
+banked bench data entering as premises) are declared in the files' own headers and graded as
+named-premise interfaces, not shells. The boundary-lead grep: the one ◇-boundary-species row
+is row 24 (file E), whose conversion route is the closure protocol itself — named, no
+external lead.
