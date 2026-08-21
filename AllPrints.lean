@@ -3,6 +3,7 @@ import BallPairShadow
 import CharacterSumShadow
 import CoherenceShadow
 import CouplingArrival
+import CriticalPassShadow
 import CrossPlaceShadow
 import DFTChart
 import DeficitShadow
@@ -72,6 +73,10 @@ import TwistedShadow
 #print axioms CouplingArrival.arrival_multiplicative_150
 #print axioms CouplingArrival.spectrum_150
 #print axioms CouplingArrival.added_place_identity
+#print axioms CriticalPassShadow.monomial_trace_fixed_phase
+#print axioms CriticalPassShadow.row47_corollary_2_1
+#print axioms CriticalPassShadow.row47_corollary_3_1
+#print axioms CriticalPassShadow.gauge_covariance_2_1
 #print axioms CrossPlaceShadow.flat_place_collapse
 #print axioms CrossPlaceShadow.collapse_instances
 #print axioms CrossPlaceShadow.banked_globals
