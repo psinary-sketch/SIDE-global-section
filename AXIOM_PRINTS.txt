@@ -184,6 +184,9 @@
 'StaircaseAddresses.full_weight_first_alive' does not depend on any axioms
 'TensorSquareShadow.interleaving_index_law' does not depend on any axioms
 'TensorSquareShadow.sector_pattern_gap' does not depend on any axioms
+'ThetaContinuationShadow.center_exit_instances' does not depend on any axioms
+'ThetaContinuationShadow.non_stabilization_witness' does not depend on any axioms
+'ThetaContinuationShadow.orientation_break' does not depend on any axioms
 'ThetaShadow.defect_gate_instances' does not depend on any axioms
 'ThetaShadow.model_trace_silence' does not depend on any axioms
 'ThetaShadow.seed_boundary_address' does not depend on any axioms
