@@ -20,6 +20,7 @@ import OddPairingShadow
 import OrbitDictionary
 import PairingShadow
 import PlancherelShadow
+import ProductLawShadow
 import ProductMinusSumShadow
 import QuotientLemmaShadow
 import QuotientWeilShape
@@ -161,6 +162,8 @@ import TwistedShadow
 #print axioms PlancherelShadow.discrepancy_scaling
 #print axioms PlancherelShadow.trace_scaling
 #print axioms PlancherelShadow.p1_constant_instances
+#print axioms ProductLawShadow.conjugate_balance_real
+#print axioms ProductLawShadow.finite_balance_instance
 #print axioms ProductMinusSumShadow.banked_instances
 #print axioms ProductMinusSumShadow.odd_only_two
 #print axioms ProductMinusSumShadow.odd_only_three

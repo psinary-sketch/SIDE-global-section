@@ -127,6 +127,8 @@
 'PlancherelShadow.discrepancy_scaling' does not depend on any axioms
 'PlancherelShadow.trace_scaling' does not depend on any axioms
 'PlancherelShadow.p1_constant_instances' does not depend on any axioms
+'ProductLawShadow.conjugate_balance_real' does not depend on any axioms
+'ProductLawShadow.finite_balance_instance' does not depend on any axioms
 'ProductMinusSumShadow.banked_instances' does not depend on any axioms
 'ProductMinusSumShadow.odd_only_two' does not depend on any axioms
 'ProductMinusSumShadow.odd_only_three' does not depend on any axioms
