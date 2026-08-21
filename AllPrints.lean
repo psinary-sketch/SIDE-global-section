@@ -3,6 +3,7 @@ import BallPairShadow
 import CouplingArrival
 import CrossPlaceShadow
 import DFTChart
+import DeficitShadow
 import DiagonalSection
 import E1UnitPurityDraft
 import GroupRingGlue
@@ -36,6 +37,9 @@ import TwistedShadow
 #print axioms DFTChart.orthogonality_3
 #print axioms DFTChart.orthogonality_7
 #print axioms DFTChart.parity_involution
+#print axioms DeficitShadow.closed_form_instances
+#print axioms DeficitShadow.even_place_d1_law
+#print axioms DeficitShadow.odd_flatness_d1
 #print axioms DiagonalSection.f_ball_zero
 #print axioms DiagonalSection.hat_f_ball_zero
 #print axioms DiagonalSection.transform_eigen
