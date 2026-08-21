@@ -22,6 +22,9 @@
 'CharacterSumShadow.prod3_eq_conj_prod1' does not depend on any axioms
 'CharacterSumShadow.character_sum_general' does not depend on any axioms
 'CharacterSumShadow.banked_roster_instances' does not depend on any axioms
+'CoherenceShadow.reciprocity_instances' does not depend on any axioms
+'CoherenceShadow.orientation_discriminator_2_1' does not depend on any axioms
+'CoherenceShadow.conjugate_complement_instances' does not depend on any axioms
 'CouplingArrival.label_norm_150' does not depend on any axioms
 'CouplingArrival.arrival_multiplicative_150' does not depend on any axioms
 'CouplingArrival.spectrum_150' does not depend on any axioms

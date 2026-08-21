@@ -1,6 +1,7 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import BallPairShadow
 import CharacterSumShadow
+import CoherenceShadow
 import CouplingArrival
 import CrossPlaceShadow
 import DFTChart
@@ -39,6 +40,7 @@ import TowerLimitShadow
 import TraceSilence
 import TwistedRootShadow
 import TwistedShadow
+
 #print axioms BallPairShadow.sonin_dim_inclusion_exclusion
 #print axioms BallPairShadow.constraint_span_dims
 #print axioms CharacterSumShadow.halc
@@ -63,6 +65,9 @@ import TwistedShadow
 #print axioms CharacterSumShadow.prod3_eq_conj_prod1
 #print axioms CharacterSumShadow.character_sum_general
 #print axioms CharacterSumShadow.banked_roster_instances
+#print axioms CoherenceShadow.reciprocity_instances
+#print axioms CoherenceShadow.orientation_discriminator_2_1
+#print axioms CoherenceShadow.conjugate_complement_instances
 #print axioms CouplingArrival.label_norm_150
 #print axioms CouplingArrival.arrival_multiplicative_150
 #print axioms CouplingArrival.spectrum_150
