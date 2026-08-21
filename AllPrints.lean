@@ -4,7 +4,6 @@ import CharacterSumShadow
 import CouplingArrival
 import CrossPlaceShadow
 import DFTChart
-import DeficitAnatomyShadow
 import DeficitShadow
 import DiagonalSection
 import E1UnitPurityDraft
@@ -20,6 +19,7 @@ import OddPInstances
 import OrbitDictionary
 import PairingShadow
 import PlancherelShadow
+import ProductMinusSumShadow
 import QuotientLemmaShadow
 import QuotientWeilShape
 import SectorArithmetic
@@ -28,6 +28,7 @@ import StaircaseAddresses
 import TensorSquareShadow
 import TowerInstance
 import TraceSilence
+import TwistedRootShadow
 import TwistedShadow
 #print axioms BallPairShadow.sonin_dim_inclusion_exclusion
 #print axioms BallPairShadow.constraint_span_dims
@@ -64,12 +65,6 @@ import TwistedShadow
 #print axioms DFTChart.orthogonality_3
 #print axioms DFTChart.orthogonality_7
 #print axioms DFTChart.parity_involution
-#print axioms DeficitAnatomyShadow.banked_instances
-#print axioms DeficitAnatomyShadow.odd_only_two
-#print axioms DeficitAnatomyShadow.odd_only_three
-#print axioms DeficitAnatomyShadow.place2_two
-#print axioms DeficitAnatomyShadow.place2_three
-#print axioms DeficitAnatomyShadow.anatomy_assembled
 #print axioms DeficitShadow.closed_form_instances
 #print axioms DeficitShadow.even_place_d1_law
 #print axioms DeficitShadow.odd_flatness_d1
@@ -159,6 +154,12 @@ import TwistedShadow
 #print axioms PlancherelShadow.discrepancy_scaling
 #print axioms PlancherelShadow.trace_scaling
 #print axioms PlancherelShadow.p1_constant_instances
+#print axioms ProductMinusSumShadow.banked_instances
+#print axioms ProductMinusSumShadow.odd_only_two
+#print axioms ProductMinusSumShadow.odd_only_three
+#print axioms ProductMinusSumShadow.place2_two
+#print axioms ProductMinusSumShadow.place2_three
+#print axioms ProductMinusSumShadow.anatomy_assembled
 #print axioms QuotientLemmaShadow.dim_Vinv
 #print axioms QuotientLemmaShadow.class_partition
 #print axioms QuotientLemmaShadow.trace_counts
@@ -204,6 +205,8 @@ import TwistedShadow
 #print axioms TraceSilence.trace_silence_3_1
 #print axioms TraceSilence.trace_silence_3_2
 #print axioms TraceSilence.trace_identity_dim
+#print axioms TwistedRootShadow.eighth_root_pairing
+#print axioms TwistedRootShadow.scalar_root_on_eigenvector
 #print axioms TwistedShadow.mixed_pattern_counts
 #print axioms TwistedShadow.tower_witness_pure
 #print axioms TwistedShadow.tower_witness_in_Ei

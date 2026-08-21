@@ -33,12 +33,6 @@
 'DFTChart.orthogonality_3' does not depend on any axioms
 'DFTChart.orthogonality_7' does not depend on any axioms
 'DFTChart.parity_involution' does not depend on any axioms
-'DeficitAnatomyShadow.banked_instances' does not depend on any axioms
-'DeficitAnatomyShadow.odd_only_two' does not depend on any axioms
-'DeficitAnatomyShadow.odd_only_three' does not depend on any axioms
-'DeficitAnatomyShadow.place2_two' does not depend on any axioms
-'DeficitAnatomyShadow.place2_three' does not depend on any axioms
-'DeficitAnatomyShadow.anatomy_assembled' does not depend on any axioms
 'DeficitShadow.closed_form_instances' does not depend on any axioms
 'DeficitShadow.even_place_d1_law' does not depend on any axioms
 'DeficitShadow.odd_flatness_d1' does not depend on any axioms
@@ -128,6 +122,12 @@
 'PlancherelShadow.discrepancy_scaling' does not depend on any axioms
 'PlancherelShadow.trace_scaling' does not depend on any axioms
 'PlancherelShadow.p1_constant_instances' does not depend on any axioms
+'ProductMinusSumShadow.banked_instances' does not depend on any axioms
+'ProductMinusSumShadow.odd_only_two' does not depend on any axioms
+'ProductMinusSumShadow.odd_only_three' does not depend on any axioms
+'ProductMinusSumShadow.place2_two' does not depend on any axioms
+'ProductMinusSumShadow.place2_three' does not depend on any axioms
+'ProductMinusSumShadow.anatomy_assembled' does not depend on any axioms
 'QuotientLemmaShadow.dim_Vinv' does not depend on any axioms
 'QuotientLemmaShadow.class_partition' does not depend on any axioms
 'QuotientLemmaShadow.trace_counts' does not depend on any axioms
@@ -173,6 +173,8 @@
 'TraceSilence.trace_silence_3_1' does not depend on any axioms
 'TraceSilence.trace_silence_3_2' does not depend on any axioms
 'TraceSilence.trace_identity_dim' does not depend on any axioms
+'TwistedRootShadow.eighth_root_pairing' does not depend on any axioms
+'TwistedRootShadow.scalar_root_on_eigenvector' does not depend on any axioms
 'TwistedShadow.mixed_pattern_counts' does not depend on any axioms
 'TwistedShadow.tower_witness_pure' does not depend on any axioms
 'TwistedShadow.tower_witness_in_Ei' does not depend on any axioms
