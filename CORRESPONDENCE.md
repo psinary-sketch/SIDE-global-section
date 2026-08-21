@@ -6,10 +6,11 @@ re-run at build (`AXIOM_PRINTS.txt` for Core; `AXIOM_PRINTS_INTERFACES.txt` for
 Interfaces — every print re-run 2026-08-20, never carried from memory) · the grade
 under the three-grade rubric (DERIVES / INTERFACES-on-named-premise /
 ENCODES-CONCLUSION-or-SHELL) · status. **No blank cells; where a keystone statement has
-no terminal, the row says so.** Core terminal total: **114** (the 103 construction-era
-terminals + the 11 purity-and-distance terminals), every one printing *"does not depend
-on any axioms"* — the count reconciled against the corpus audit at build (103 + 11 = 114
-exactly). The statement-read census (Rule 4.12, declared-count watch) ran over the whole
+no terminal, the row says so.** Core terminal total: **121** (103 construction-era + 11
+purity-and-distance + 7 silence-theorem, the assembly act's addition), every one printing
+*"does not depend on any axioms"* — the residence count was reconciled against the corpus
+audit at v0.1.0 (103 + 11 = 114 exactly), and the assembly act's +7 re-printed with the
+whole set (AXIOM_PRINTS.txt, 121/121). The statement-read census (Rule 4.12, declared-count watch) ran over the whole
 repository; its flags are in the grade column and the census note at the foot.
 
 | # | keystone statement | terminal(s) | axiom print (verbatim; re-run at build) | grade | status |
@@ -43,6 +44,8 @@ repository; its flags are in the grade column and the census note at the foot.
 | 27 | The radial-unit existence (α); the constraint-invisibility step (β); the Θ_T identification lemma; the assembly reading | — no terminals — | — | — | OPEN, NAMED — carried openly in the acts and OPEN_TRAILS; the assembly reading is QUEUED at the h2 line's return |
 
 | 28 | The four-sector decomposition at the abstract level (`F⁴ = 1` ⟹ spectral splitting) and the a.c.-dilation statement | `LocalLimit.four_sector_decomposition_stub`, `LocalLimit.ac_dilation_stub` | each `does not depend on any axioms` — **because each is `True := trivial`** | **ENCODES-CONCLUSION-or-SHELL — named-debt stubs by the kernel-purity ruling's own device (no sorry; a named stub instead), declared in their docstrings: the first an abstract-lemma-pass debt, the second OWED TO DILATION THEORY (Mathlib holds none — the statement cannot yet be formed)** | SHELL, honest by design; carries NO mathematical content; the census flagged it and this row says so |
+
+| 29 | THE SILENCE THEOREM (the assembly act): a weight-one position operator touching the ball coordinate is KL-silent on E₁ (c = 0) — GENERAL q, general coefficient structure, the longhand's implicit hypotheses NAMED as explicit arguments (mul-by-zero, sum-of-zeros, conj-zero, the Sonin ball vanishing); the non-silent count law (q−1)² + q² at general q by recursion; the List-semantics identification and the four banked totals (25/41/113/145) decided | `KLSilence` (7 terminals: `silence_of_ball_touching`, `foldSum_zero`, `nonsilent_count`, `countNonzero_eq`, `offball_enumeration`, `countNonzero_list_agreement`, `banked_instances`) | each `does not depend on any axioms` (AXIOM_PRINTS.txt; Core total now 121/121) | DERIVES (general q on the silence direction and the count) | COMPILED. **THE GENERAL-q ONLY-IF (every off-ball operator non-silent) is a NAMED OPEN STATEMENT — never a sorry**: it is the MEASURED half, exact at the four banked cells (b45/b48 banks, per-operator certificates; the compiled witnesses `kl_fail_2_2`/`kl_fail_5_1` are two of them); the banked instances are the theorem's corollaries on the silence side |
 
 **Census note (Rule 4.12, run at assembly).** The declared-count watch fired at exactly two
 places, both in Interfaces: the `LocalLimit` stubs of row 28 — `True := trivial` shells whose

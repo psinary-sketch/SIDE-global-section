@@ -7,6 +7,7 @@ import E1UnitPurityDraft
 import GroupRingGlue
 import H1Mechanism
 import InequalityShadow
+import KLSilence
 import NeitherPolesNorZeros
 import NormalizationForced
 import OddPInstances
@@ -70,6 +71,13 @@ import TraceSilence
 #print axioms H1Mechanism.h1_form_sum_of_squares
 #print axioms InequalityShadow.quotient_below_weil
 #print axioms InequalityShadow.strictness_gap
+#print axioms KLSilence.foldSum_zero
+#print axioms KLSilence.silence_of_ball_touching
+#print axioms KLSilence.nonsilent_count
+#print axioms KLSilence.countNonzero_eq
+#print axioms KLSilence.offball_enumeration
+#print axioms KLSilence.countNonzero_list_agreement
+#print axioms KLSilence.banked_instances
 #print axioms NeitherPolesNorZeros.ball_orthogonal_21
 #print axioms NeitherPolesNorZeros.ball_orthogonal_31
 #print axioms NeitherPolesNorZeros.unit_action_neg

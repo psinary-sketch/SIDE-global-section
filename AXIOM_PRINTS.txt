@@ -50,6 +50,13 @@
 'H1Mechanism.h1_form_sum_of_squares' does not depend on any axioms
 'InequalityShadow.quotient_below_weil' does not depend on any axioms
 'InequalityShadow.strictness_gap' does not depend on any axioms
+'KLSilence.foldSum_zero' does not depend on any axioms
+'KLSilence.silence_of_ball_touching' does not depend on any axioms
+'KLSilence.nonsilent_count' does not depend on any axioms
+'KLSilence.countNonzero_eq' does not depend on any axioms
+'KLSilence.offball_enumeration' does not depend on any axioms
+'KLSilence.countNonzero_list_agreement' does not depend on any axioms
+'KLSilence.banked_instances' does not depend on any axioms
 'NeitherPolesNorZeros.ball_orthogonal_21' does not depend on any axioms
 'NeitherPolesNorZeros.ball_orthogonal_31' does not depend on any axioms
 'NeitherPolesNorZeros.unit_action_neg' does not depend on any axioms
