@@ -26,6 +26,7 @@ import SectorArithmetic
 import SilenceOnlyIfShadow
 import StaircaseAddresses
 import TensorSquareShadow
+import ThetaShadow
 import TowerInstance
 import TraceSilence
 import TwistedRootShadow
@@ -194,6 +195,9 @@ import TwistedShadow
 #print axioms StaircaseAddresses.full_weight_first_alive
 #print axioms TensorSquareShadow.interleaving_index_law
 #print axioms TensorSquareShadow.sector_pattern_gap
+#print axioms ThetaShadow.defect_gate_instances
+#print axioms ThetaShadow.model_trace_silence
+#print axioms ThetaShadow.seed_boundary_address
 #print axioms TowerInstance.support_ball_vanish
 #print axioms TowerInstance.hat_ball_vanish
 #print axioms TowerInstance.iota_isometry_integer

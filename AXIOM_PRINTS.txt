@@ -162,6 +162,9 @@
 'StaircaseAddresses.full_weight_first_alive' does not depend on any axioms
 'TensorSquareShadow.interleaving_index_law' does not depend on any axioms
 'TensorSquareShadow.sector_pattern_gap' does not depend on any axioms
+'ThetaShadow.defect_gate_instances' does not depend on any axioms
+'ThetaShadow.model_trace_silence' does not depend on any axioms
+'ThetaShadow.seed_boundary_address' does not depend on any axioms
 'TowerInstance.support_ball_vanish' does not depend on any axioms
 'TowerInstance.hat_ball_vanish' does not depend on any axioms
 'TowerInstance.iota_isometry_integer' does not depend on any axioms
