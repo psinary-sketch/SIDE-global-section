@@ -80,6 +80,9 @@
 'OrbitDictionary.no_fixed_offzero' does not depend on any axioms
 'OrbitDictionary.shell_shift_2' does not depend on any axioms
 'OrbitDictionary.shell_shift_3' does not depend on any axioms
+'PairingShadow.flat_kills_twists' does not depend on any axioms
+'PairingShadow.form_level_lift' does not depend on any axioms
+'PairingShadow.dead_cell_power_traces' does not depend on any axioms
 'PlancherelShadow.parseval_delta_2_1' does not depend on any axioms
 'PlancherelShadow.parseval_delta_3_1' does not depend on any axioms
 'PlancherelShadow.parseval_delta_2_2' does not depend on any axioms

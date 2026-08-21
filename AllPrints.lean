@@ -13,6 +13,7 @@ import NeitherPolesNorZeros
 import NormalizationForced
 import OddPInstances
 import OrbitDictionary
+import PairingShadow
 import PlancherelShadow
 import QuotientLemmaShadow
 import QuotientWeilShape
@@ -103,6 +104,9 @@ import TraceSilence
 #print axioms OrbitDictionary.no_fixed_offzero
 #print axioms OrbitDictionary.shell_shift_2
 #print axioms OrbitDictionary.shell_shift_3
+#print axioms PairingShadow.flat_kills_twists
+#print axioms PairingShadow.form_level_lift
+#print axioms PairingShadow.dead_cell_power_traces
 #print axioms PlancherelShadow.parseval_delta_2_1
 #print axioms PlancherelShadow.parseval_delta_3_1
 #print axioms PlancherelShadow.parseval_delta_2_2
