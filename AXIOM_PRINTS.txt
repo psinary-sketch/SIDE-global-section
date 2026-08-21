@@ -1,3 +1,9 @@
+'AdelicPlaneShadow.torus_gluing_instances' does not depend on any axioms
+'AdelicPlaneShadow.hcoh_fin_instances' does not depend on any axioms
+'AdelicPlaneShadow.stationary_dimension_instances' does not depend on any axioms
+'AdelicPlaneShadow.visibility_split_instances' does not depend on any axioms
+'AdelicPlaneShadow.deficit_global_minus_local' does not depend on any axioms
+'AdelicPlaneShadow.q_triviality_instances' does not depend on any axioms
 'BallPairShadow.sonin_dim_inclusion_exclusion' does not depend on any axioms
 'BallPairShadow.constraint_span_dims' does not depend on any axioms
 'CharacterSumShadow.halc' does not depend on any axioms

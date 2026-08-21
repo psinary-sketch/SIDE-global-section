@@ -1,4 +1,5 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
+import AdelicPlaneShadow
 import BallPairShadow
 import CharacterSumShadow
 import CoherenceShadow
@@ -42,6 +43,12 @@ import TraceSilence
 import TwistedRootShadow
 import TwistedShadow
 
+#print axioms AdelicPlaneShadow.torus_gluing_instances
+#print axioms AdelicPlaneShadow.hcoh_fin_instances
+#print axioms AdelicPlaneShadow.stationary_dimension_instances
+#print axioms AdelicPlaneShadow.visibility_split_instances
+#print axioms AdelicPlaneShadow.deficit_global_minus_local
+#print axioms AdelicPlaneShadow.q_triviality_instances
 #print axioms BallPairShadow.sonin_dim_inclusion_exclusion
 #print axioms BallPairShadow.constraint_span_dims
 #print axioms CharacterSumShadow.halc
