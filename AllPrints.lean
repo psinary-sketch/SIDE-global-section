@@ -1,11 +1,13 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import BallPairShadow
+import CharacterSumShadow
 import CouplingArrival
 import CrossPlaceShadow
 import DFTChart
 import DeficitShadow
 import DiagonalSection
 import E1UnitPurityDraft
+import FlatnessShadow
 import GroupRingGlue
 import H1Mechanism
 import InequalityShadow
@@ -26,6 +28,28 @@ import TraceSilence
 import TwistedShadow
 #print axioms BallPairShadow.sonin_dim_inclusion_exclusion
 #print axioms BallPairShadow.constraint_span_dims
+#print axioms CharacterSumShadow.halc
+#print axioms CharacterSumShadow.hza
+#print axioms CharacterSumShadow.hnzero
+#print axioms CharacterSumShadow.sh
+#print axioms CharacterSumShadow.ich
+#print axioms CharacterSumShadow.ich'
+#print axioms CharacterSumShadow.cancel2
+#print axioms CharacterSumShadow.dp
+#print axioms CharacterSumShadow.sp
+#print axioms CharacterSumShadow.subsub
+#print axioms CharacterSumShadow.final4
+#print axioms CharacterSumShadow.lemA
+#print axioms CharacterSumShadow.lemD
+#print axioms CharacterSumShadow.lemB
+#print axioms CharacterSumShadow.lemC
+#print axioms CharacterSumShadow.pconj_mul
+#print axioms CharacterSumShadow.inv0
+#print axioms CharacterSumShadow.inv2
+#print axioms CharacterSumShadow.inv1
+#print axioms CharacterSumShadow.prod3_eq_conj_prod1
+#print axioms CharacterSumShadow.character_sum_general
+#print axioms CharacterSumShadow.banked_roster_instances
 #print axioms CouplingArrival.label_norm_150
 #print axioms CouplingArrival.arrival_multiplicative_150
 #print axioms CouplingArrival.spectrum_150
@@ -67,6 +91,9 @@ import TwistedShadow
 #print axioms E1UnitPurityDraft.witness32
 #print axioms E1UnitPurityDraft.kl_fail_2_2
 #print axioms E1UnitPurityDraft.kl_fail_5_1
+#print axioms FlatnessShadow.trace_endpoints
+#print axioms FlatnessShadow.dim_law_odd
+#print axioms FlatnessShadow.dim_law_place2
 #print axioms GroupRingGlue.coupling_23
 #print axioms GroupRingGlue.coupling_235
 #print axioms GroupRingGlue.star_c2
