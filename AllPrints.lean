@@ -8,6 +8,7 @@ import DeficitShadow
 import DiagonalSection
 import E1UnitPurityDraft
 import FlatnessShadow
+import FourthVisitShadow
 import FrameBoundaryShadow
 import GroupRingGlue
 import H1Mechanism
@@ -105,6 +106,9 @@ import TwistedShadow
 #print axioms FlatnessShadow.trace_endpoints
 #print axioms FlatnessShadow.dim_law_odd
 #print axioms FlatnessShadow.dim_law_place2
+#print axioms FourthVisitShadow.root_fourth_power
+#print axioms FourthVisitShadow.square_root_family
+#print axioms FourthVisitShadow.family_instances
 #print axioms FrameBoundaryShadow.nativity_arithmetic
 #print axioms FrameBoundaryShadow.uline_witnesses
 #print axioms FrameBoundaryShadow.limit_frame_arithmetic

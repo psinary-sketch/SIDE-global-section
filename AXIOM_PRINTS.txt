@@ -66,6 +66,9 @@
 'FlatnessShadow.trace_endpoints' does not depend on any axioms
 'FlatnessShadow.dim_law_odd' does not depend on any axioms
 'FlatnessShadow.dim_law_place2' does not depend on any axioms
+'FourthVisitShadow.root_fourth_power' does not depend on any axioms
+'FourthVisitShadow.square_root_family' does not depend on any axioms
+'FourthVisitShadow.family_instances' does not depend on any axioms
 'FrameBoundaryShadow.nativity_arithmetic' does not depend on any axioms
 'FrameBoundaryShadow.uline_witnesses' does not depend on any axioms
 'FrameBoundaryShadow.limit_frame_arithmetic' does not depend on any axioms
