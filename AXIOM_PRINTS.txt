@@ -33,6 +33,12 @@
 'DFTChart.orthogonality_3' does not depend on any axioms
 'DFTChart.orthogonality_7' does not depend on any axioms
 'DFTChart.parity_involution' does not depend on any axioms
+'DeficitAnatomyShadow.banked_instances' does not depend on any axioms
+'DeficitAnatomyShadow.odd_only_two' does not depend on any axioms
+'DeficitAnatomyShadow.odd_only_three' does not depend on any axioms
+'DeficitAnatomyShadow.place2_two' does not depend on any axioms
+'DeficitAnatomyShadow.place2_three' does not depend on any axioms
+'DeficitAnatomyShadow.anatomy_assembled' does not depend on any axioms
 'DeficitShadow.closed_form_instances' does not depend on any axioms
 'DeficitShadow.even_place_d1_law' does not depend on any axioms
 'DeficitShadow.odd_flatness_d1' does not depend on any axioms
@@ -88,6 +94,9 @@
 'KLSilence.offball_enumeration' does not depend on any axioms
 'KLSilence.countNonzero_list_agreement' does not depend on any axioms
 'KLSilence.banked_instances' does not depend on any axioms
+'MetaplecticRootShadow.u_gauss_eigen' does not depend on any axioms
+'MetaplecticRootShadow.parity_and_sign' does not depend on any axioms
+'MetaplecticRootShadow.square_root_obstruction' does not depend on any axioms
 'NeitherPolesNorZeros.ball_orthogonal_21' does not depend on any axioms
 'NeitherPolesNorZeros.ball_orthogonal_31' does not depend on any axioms
 'NeitherPolesNorZeros.unit_action_neg' does not depend on any axioms

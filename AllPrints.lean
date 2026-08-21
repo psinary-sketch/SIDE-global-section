@@ -4,6 +4,7 @@ import CharacterSumShadow
 import CouplingArrival
 import CrossPlaceShadow
 import DFTChart
+import DeficitAnatomyShadow
 import DeficitShadow
 import DiagonalSection
 import E1UnitPurityDraft
@@ -12,6 +13,7 @@ import GroupRingGlue
 import H1Mechanism
 import InequalityShadow
 import KLSilence
+import MetaplecticRootShadow
 import NeitherPolesNorZeros
 import NormalizationForced
 import OddPInstances
@@ -62,6 +64,12 @@ import TwistedShadow
 #print axioms DFTChart.orthogonality_3
 #print axioms DFTChart.orthogonality_7
 #print axioms DFTChart.parity_involution
+#print axioms DeficitAnatomyShadow.banked_instances
+#print axioms DeficitAnatomyShadow.odd_only_two
+#print axioms DeficitAnatomyShadow.odd_only_three
+#print axioms DeficitAnatomyShadow.place2_two
+#print axioms DeficitAnatomyShadow.place2_three
+#print axioms DeficitAnatomyShadow.anatomy_assembled
 #print axioms DeficitShadow.closed_form_instances
 #print axioms DeficitShadow.even_place_d1_law
 #print axioms DeficitShadow.odd_flatness_d1
@@ -117,6 +125,9 @@ import TwistedShadow
 #print axioms KLSilence.offball_enumeration
 #print axioms KLSilence.countNonzero_list_agreement
 #print axioms KLSilence.banked_instances
+#print axioms MetaplecticRootShadow.u_gauss_eigen
+#print axioms MetaplecticRootShadow.parity_and_sign
+#print axioms MetaplecticRootShadow.square_root_obstruction
 #print axioms NeitherPolesNorZeros.ball_orthogonal_21
 #print axioms NeitherPolesNorZeros.ball_orthogonal_31
 #print axioms NeitherPolesNorZeros.unit_action_neg
