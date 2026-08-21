@@ -119,6 +119,11 @@
 'PairingShadow.flat_kills_twists' does not depend on any axioms
 'PairingShadow.form_level_lift' does not depend on any axioms
 'PairingShadow.dead_cell_power_traces' does not depend on any axioms
+'PhasePlaneShadow.fixed_locus_instances' does not depend on any axioms
+'PhasePlaneShadow.stationary_trace_instances' does not depend on any axioms
+'PhasePlaneShadow.freeness_flatness_instances' does not depend on any axioms
+'PhasePlaneShadow.center_seed_instances' does not depend on any axioms
+'PhasePlaneShadow.scaling_instances' does not depend on any axioms
 'PlancherelShadow.parseval_delta_2_1' does not depend on any axioms
 'PlancherelShadow.parseval_delta_3_1' does not depend on any axioms
 'PlancherelShadow.parseval_delta_2_2' does not depend on any axioms

@@ -19,6 +19,7 @@ import OddPInstances
 import OddPairingShadow
 import OrbitDictionary
 import PairingShadow
+import PhasePlaneShadow
 import PlancherelShadow
 import ProductLawShadow
 import ProductMinusSumShadow
@@ -155,6 +156,11 @@ import TwistedShadow
 #print axioms PairingShadow.flat_kills_twists
 #print axioms PairingShadow.form_level_lift
 #print axioms PairingShadow.dead_cell_power_traces
+#print axioms PhasePlaneShadow.fixed_locus_instances
+#print axioms PhasePlaneShadow.stationary_trace_instances
+#print axioms PhasePlaneShadow.freeness_flatness_instances
+#print axioms PhasePlaneShadow.center_seed_instances
+#print axioms PhasePlaneShadow.scaling_instances
 #print axioms PlancherelShadow.parseval_delta_2_1
 #print axioms PlancherelShadow.parseval_delta_3_1
 #print axioms PlancherelShadow.parseval_delta_2_2
