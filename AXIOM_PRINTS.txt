@@ -133,3 +133,6 @@
 'TraceSilence.trace_silence_3_1' does not depend on any axioms
 'TraceSilence.trace_silence_3_2' does not depend on any axioms
 'TraceSilence.trace_identity_dim' does not depend on any axioms
+'TwistedShadow.mixed_pattern_counts' does not depend on any axioms
+'TwistedShadow.tower_witness_pure' does not depend on any axioms
+'TwistedShadow.tower_witness_in_Ei' does not depend on any axioms

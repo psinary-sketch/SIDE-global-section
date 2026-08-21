@@ -22,6 +22,7 @@ import StaircaseAddresses
 import TensorSquareShadow
 import TowerInstance
 import TraceSilence
+import TwistedShadow
 #print axioms BallPairShadow.sonin_dim_inclusion_exclusion
 #print axioms BallPairShadow.constraint_span_dims
 #print axioms CouplingArrival.label_norm_150
@@ -157,3 +158,6 @@ import TraceSilence
 #print axioms TraceSilence.trace_silence_3_1
 #print axioms TraceSilence.trace_silence_3_2
 #print axioms TraceSilence.trace_identity_dim
+#print axioms TwistedShadow.mixed_pattern_counts
+#print axioms TwistedShadow.tower_witness_pure
+#print axioms TwistedShadow.tower_witness_in_Ei
