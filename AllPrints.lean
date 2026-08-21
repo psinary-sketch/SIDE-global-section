@@ -12,6 +12,7 @@ import NeitherPolesNorZeros
 import NormalizationForced
 import OddPInstances
 import OrbitDictionary
+import PlancherelShadow
 import QuotientLemmaShadow
 import QuotientWeilShape
 import SectorArithmetic
@@ -98,6 +99,14 @@ import TraceSilence
 #print axioms OrbitDictionary.no_fixed_offzero
 #print axioms OrbitDictionary.shell_shift_2
 #print axioms OrbitDictionary.shell_shift_3
+#print axioms PlancherelShadow.parseval_delta_2_1
+#print axioms PlancherelShadow.parseval_delta_3_1
+#print axioms PlancherelShadow.parseval_delta_2_2
+#print axioms PlancherelShadow.parseval_delta_5_1
+#print axioms PlancherelShadow.e1_sector_specialization
+#print axioms PlancherelShadow.discrepancy_scaling
+#print axioms PlancherelShadow.trace_scaling
+#print axioms PlancherelShadow.p1_constant_instances
 #print axioms QuotientLemmaShadow.dim_Vinv
 #print axioms QuotientLemmaShadow.class_partition
 #print axioms QuotientLemmaShadow.trace_counts

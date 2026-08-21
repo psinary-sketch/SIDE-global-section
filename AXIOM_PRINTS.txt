@@ -77,6 +77,14 @@
 'OrbitDictionary.no_fixed_offzero' does not depend on any axioms
 'OrbitDictionary.shell_shift_2' does not depend on any axioms
 'OrbitDictionary.shell_shift_3' does not depend on any axioms
+'PlancherelShadow.parseval_delta_2_1' does not depend on any axioms
+'PlancherelShadow.parseval_delta_3_1' does not depend on any axioms
+'PlancherelShadow.parseval_delta_2_2' does not depend on any axioms
+'PlancherelShadow.parseval_delta_5_1' does not depend on any axioms
+'PlancherelShadow.e1_sector_specialization' does not depend on any axioms
+'PlancherelShadow.discrepancy_scaling' does not depend on any axioms
+'PlancherelShadow.trace_scaling' does not depend on any axioms
+'PlancherelShadow.p1_constant_instances' does not depend on any axioms
 'QuotientLemmaShadow.dim_Vinv' does not depend on any axioms
 'QuotientLemmaShadow.class_partition' does not depend on any axioms
 'QuotientLemmaShadow.trace_counts' does not depend on any axioms
