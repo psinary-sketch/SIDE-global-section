@@ -4,6 +4,9 @@
 'CouplingArrival.arrival_multiplicative_150' does not depend on any axioms
 'CouplingArrival.spectrum_150' does not depend on any axioms
 'CouplingArrival.added_place_identity' does not depend on any axioms
+'CrossPlaceShadow.flat_place_collapse' does not depend on any axioms
+'CrossPlaceShadow.collapse_instances' does not depend on any axioms
+'CrossPlaceShadow.banked_globals' does not depend on any axioms
 'DFTChart.orthogonality_5' does not depend on any axioms
 'DFTChart.orthogonality_3' does not depend on any axioms
 'DFTChart.orthogonality_7' does not depend on any axioms

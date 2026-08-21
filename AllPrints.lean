@@ -1,6 +1,7 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import BallPairShadow
 import CouplingArrival
+import CrossPlaceShadow
 import DFTChart
 import DiagonalSection
 import E1UnitPurityDraft
@@ -26,6 +27,9 @@ import TraceSilence
 #print axioms CouplingArrival.arrival_multiplicative_150
 #print axioms CouplingArrival.spectrum_150
 #print axioms CouplingArrival.added_place_identity
+#print axioms CrossPlaceShadow.flat_place_collapse
+#print axioms CrossPlaceShadow.collapse_instances
+#print axioms CrossPlaceShadow.banked_globals
 #print axioms DFTChart.orthogonality_5
 #print axioms DFTChart.orthogonality_3
 #print axioms DFTChart.orthogonality_7
