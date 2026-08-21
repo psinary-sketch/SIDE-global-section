@@ -12,6 +12,7 @@ import GroupRingGlue
 import H1Mechanism
 import InequalityShadow
 import KLSilence
+import LefschetzShadow
 import MetaplecticRootShadow
 import NeitherPolesNorZeros
 import NormalizationForced
@@ -125,6 +126,10 @@ import TwistedShadow
 #print axioms KLSilence.offball_enumeration
 #print axioms KLSilence.countNonzero_list_agreement
 #print axioms KLSilence.banked_instances
+#print axioms LefschetzShadow.pi_locus_and_pair
+#print axioms LefschetzShadow.pi_phase_instances
+#print axioms LefschetzShadow.dims_from_center
+#print axioms LefschetzShadow.m3_locus_phase
 #print axioms MetaplecticRootShadow.u_gauss_eigen
 #print axioms MetaplecticRootShadow.parity_and_sign
 #print axioms MetaplecticRootShadow.square_root_obstruction

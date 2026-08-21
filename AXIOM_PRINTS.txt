@@ -88,6 +88,10 @@
 'KLSilence.offball_enumeration' does not depend on any axioms
 'KLSilence.countNonzero_list_agreement' does not depend on any axioms
 'KLSilence.banked_instances' does not depend on any axioms
+'LefschetzShadow.pi_locus_and_pair' does not depend on any axioms
+'LefschetzShadow.pi_phase_instances' does not depend on any axioms
+'LefschetzShadow.dims_from_center' does not depend on any axioms
+'LefschetzShadow.m3_locus_phase' does not depend on any axioms
 'MetaplecticRootShadow.u_gauss_eigen' does not depend on any axioms
 'MetaplecticRootShadow.parity_and_sign' does not depend on any axioms
 'MetaplecticRootShadow.square_root_obstruction' does not depend on any axioms
