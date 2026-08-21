@@ -21,6 +21,7 @@ import PlancherelShadow
 import QuotientLemmaShadow
 import QuotientWeilShape
 import SectorArithmetic
+import SilenceOnlyIfShadow
 import StaircaseAddresses
 import TensorSquareShadow
 import TowerInstance
@@ -170,6 +171,9 @@ import TwistedShadow
 #print axioms SectorArithmetic.arrival_multiplies_16
 #print axioms SectorArithmetic.pos_eq_neg_all
 #print axioms SectorArithmetic.class_death_and_revival
+#print axioms SilenceOnlyIfShadow.orbit_four_periodicity
+#print axioms SilenceOnlyIfShadow.degenerate_center_vanishes
+#print axioms SilenceOnlyIfShadow.witness_certificates_2_2
 #print axioms StaircaseAddresses.address_law
 #print axioms StaircaseAddresses.arrival_dead
 #print axioms StaircaseAddresses.weight_death_law

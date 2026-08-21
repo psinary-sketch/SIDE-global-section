@@ -142,6 +142,9 @@
 'SectorArithmetic.arrival_multiplies_16' does not depend on any axioms
 'SectorArithmetic.pos_eq_neg_all' does not depend on any axioms
 'SectorArithmetic.class_death_and_revival' does not depend on any axioms
+'SilenceOnlyIfShadow.orbit_four_periodicity' does not depend on any axioms
+'SilenceOnlyIfShadow.degenerate_center_vanishes' does not depend on any axioms
+'SilenceOnlyIfShadow.witness_certificates_2_2' does not depend on any axioms
 'StaircaseAddresses.address_law' does not depend on any axioms
 'StaircaseAddresses.arrival_dead' does not depend on any axioms
 'StaircaseAddresses.weight_death_law' does not depend on any axioms
