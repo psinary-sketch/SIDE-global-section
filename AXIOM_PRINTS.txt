@@ -177,6 +177,10 @@
 'TowerInstance.iota_isometry_integer' does not depend on any axioms
 'TowerInstance.gram_level_stability' does not depend on any axioms
 'TowerInstance.fifth_law_integers' does not depend on any axioms
+'TowerLimitShadow.embedding_instance' does not depend on any axioms
+'TowerLimitShadow.intertwining_instance' does not depend on any axioms
+'TowerLimitShadow.constancy_instances' does not depend on any axioms
+'TowerLimitShadow.register_arithmetic' does not depend on any axioms
 'TraceSilence.trace_silence_2_1' does not depend on any axioms
 'TraceSilence.trace_silence_2_2' does not depend on any axioms
 'TraceSilence.trace_silence_2_3' does not depend on any axioms

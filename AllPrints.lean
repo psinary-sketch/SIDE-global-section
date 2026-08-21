@@ -30,6 +30,7 @@ import StaircaseAddresses
 import TensorSquareShadow
 import ThetaShadow
 import TowerInstance
+import TowerLimitShadow
 import TraceSilence
 import TwistedRootShadow
 import TwistedShadow
@@ -212,6 +213,10 @@ import TwistedShadow
 #print axioms TowerInstance.iota_isometry_integer
 #print axioms TowerInstance.gram_level_stability
 #print axioms TowerInstance.fifth_law_integers
+#print axioms TowerLimitShadow.embedding_instance
+#print axioms TowerLimitShadow.intertwining_instance
+#print axioms TowerLimitShadow.constancy_instances
+#print axioms TowerLimitShadow.register_arithmetic
 #print axioms TraceSilence.trace_silence_2_1
 #print axioms TraceSilence.trace_silence_2_2
 #print axioms TraceSilence.trace_silence_2_3
