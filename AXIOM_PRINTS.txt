@@ -49,6 +49,9 @@
 'DeficitShadow.closed_form_instances' does not depend on any axioms
 'DeficitShadow.even_place_d1_law' does not depend on any axioms
 'DeficitShadow.odd_flatness_d1' does not depend on any axioms
+'DeterminationShadow.determination' does not depend on any axioms
+'DeterminationShadow.banked_coverage_instance' does not depend on any axioms
+'DeterminationShadow.determination_at_banked' does not depend on any axioms
 'DiagonalSection.f_ball_zero' does not depend on any axioms
 'DiagonalSection.hat_f_ball_zero' does not depend on any axioms
 'DiagonalSection.transform_eigen' does not depend on any axioms

@@ -19,10 +19,10 @@ are undecided by these terminals, and nothing about them is claimed.
 
 ## Structure
 
-- **`Core/`** — the vanilla load-bearing layer: **212 terminals** (103 construction-era + 11 purity-and-distance + 7 silence-theorem + 8 Plancherel-shadow + 3 cross-place + 3 pairing + 3 twisted + 3 deficit + 22 character-sum + 3 flatness + 3 silence-only-if + 6 product-minus-sum + 3 metaplectic-root + 2 twisted-root + 3 theta + 5 odd-pairing + 2 product-law + 4 tower-limit + 5 phase-plane + 4 lefschetz + 3 frame-boundary + 3 fourth-visit + 3 theta-continuation + 3 coherence + 4 critical-pass + 6 adelic-plane + 5 radialization + 3 window + 4 rigidity + 3 value + 3 theta-bridge) across 48 modules plus their AxiomCheck
+- **`Core/`** — the vanilla load-bearing layer: **212 terminals** (103 construction-era + 11 purity-and-distance + 7 silence-theorem + 8 Plancherel-shadow + 3 cross-place + 3 pairing + 3 twisted + 3 deficit + 22 character-sum + 3 flatness + 3 silence-only-if + 6 product-minus-sum + 3 metaplectic-root + 2 twisted-root + 3 theta + 5 odd-pairing + 2 product-law + 4 tower-limit + 5 phase-plane + 4 lefschetz + 3 frame-boundary + 3 fourth-visit + 3 theta-continuation + 3 coherence + 4 critical-pass + 6 adelic-plane + 5 radialization + 3 window + 4 rigidity + 3 value + 3 theta-bridge + 3 determination) across 49 modules plus their AxiomCheck
   audit files. Vanilla Lean 4 (`v4.29.1`, pinned in `lean-toolchain`), **no Mathlib import,
   decide/rfl only; every terminal prints "does not depend on any axioms"** — re-verified at
-  assembly, `AXIOM_PRINTS.txt` (243/243). No terminal failed the bar; none is excluded.
+  assembly, `AXIOM_PRINTS.txt` (246/246). No terminal failed the bar; none is excluded.
 - **`Interfaces/`** — the five Mathlib-facing files, each an **interface to the field's
   objects, never load-bearing for the programme's own claims** (the architecture ruling on
   their face). Expected profile `{propext, Classical.choice, Quot.sound}`; built against

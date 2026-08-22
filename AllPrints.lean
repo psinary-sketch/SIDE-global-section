@@ -8,6 +8,7 @@ import CriticalPassShadow
 import CrossPlaceShadow
 import DFTChart
 import DeficitShadow
+import DeterminationShadow
 import DiagonalSection
 import E1UnitPurityDraft
 import FlatnessShadow
@@ -99,6 +100,9 @@ import WindowShadow
 #print axioms DeficitShadow.closed_form_instances
 #print axioms DeficitShadow.even_place_d1_law
 #print axioms DeficitShadow.odd_flatness_d1
+#print axioms DeterminationShadow.determination
+#print axioms DeterminationShadow.banked_coverage_instance
+#print axioms DeterminationShadow.determination_at_banked
 #print axioms DiagonalSection.f_ball_zero
 #print axioms DiagonalSection.hat_f_ball_zero
 #print axioms DiagonalSection.transform_eigen
