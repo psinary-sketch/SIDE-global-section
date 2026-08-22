@@ -43,6 +43,7 @@ import TowerLimitShadow
 import TraceSilence
 import TwistedRootShadow
 import TwistedShadow
+import WindowShadow
 
 #print axioms AdelicPlaneShadow.torus_gluing_instances
 #print axioms AdelicPlaneShadow.hcoh_fin_instances
@@ -274,3 +275,6 @@ import TwistedShadow
 #print axioms TwistedShadow.mixed_pattern_counts
 #print axioms TwistedShadow.tower_witness_pure
 #print axioms TwistedShadow.tower_witness_in_Ei
+#print axioms WindowShadow.excess_sector_instances
+#print axioms WindowShadow.line_address_instances
+#print axioms WindowShadow.gauge_reading_pair
