@@ -171,6 +171,11 @@
 'QuotientWeilShape.shape_climbs_2' does not depend on any axioms
 'QuotientWeilShape.shape_climbs_3' does not depend on any axioms
 'QuotientWeilShape.ball_absorption' does not depend on any axioms
+'RadializationShadow.shell_partition_instances' does not depend on any axioms
+'RadializationShadow.transfer_shift_gcd_law' does not depend on any axioms
+'RadializationShadow.ball_boundary_address' does not depend on any axioms
+'RadializationShadow.theta_by_shells' does not depend on any axioms
+'RadializationShadow.plane_factorization' does not depend on any axioms
 'SectorArithmetic.flat_n1' does not depend on any axioms
 'SectorArithmetic.flat_n2' does not depend on any axioms
 'SectorArithmetic.flat_n3' does not depend on any axioms

@@ -31,6 +31,7 @@ import ProductLawShadow
 import ProductMinusSumShadow
 import QuotientLemmaShadow
 import QuotientWeilShape
+import RadializationShadow
 import SectorArithmetic
 import SilenceOnlyIfShadow
 import StaircaseAddresses
@@ -216,6 +217,11 @@ import TwistedShadow
 #print axioms QuotientWeilShape.shape_climbs_2
 #print axioms QuotientWeilShape.shape_climbs_3
 #print axioms QuotientWeilShape.ball_absorption
+#print axioms RadializationShadow.shell_partition_instances
+#print axioms RadializationShadow.transfer_shift_gcd_law
+#print axioms RadializationShadow.ball_boundary_address
+#print axioms RadializationShadow.theta_by_shells
+#print axioms RadializationShadow.plane_factorization
 #print axioms SectorArithmetic.flat_n1
 #print axioms SectorArithmetic.flat_n2
 #print axioms SectorArithmetic.flat_n3
