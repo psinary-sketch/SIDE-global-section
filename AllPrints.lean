@@ -37,6 +37,7 @@ import SectorArithmetic
 import SilenceOnlyIfShadow
 import StaircaseAddresses
 import TensorSquareShadow
+import ThetaBridgeShadow
 import ThetaContinuationShadow
 import ThetaShadow
 import TowerInstance
@@ -255,6 +256,9 @@ import WindowShadow
 #print axioms StaircaseAddresses.full_weight_first_alive
 #print axioms TensorSquareShadow.interleaving_index_law
 #print axioms TensorSquareShadow.sector_pattern_gap
+#print axioms ThetaBridgeShadow.point_count_identity
+#print axioms ThetaBridgeShadow.cusp_count_instances
+#print axioms ThetaBridgeShadow.transformation_shadow_odd
 #print axioms ThetaContinuationShadow.center_exit_instances
 #print axioms ThetaContinuationShadow.non_stabilization_witness
 #print axioms ThetaContinuationShadow.orientation_break
