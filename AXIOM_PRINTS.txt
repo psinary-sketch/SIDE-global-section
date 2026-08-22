@@ -6,6 +6,10 @@
 'AdelicPlaneShadow.q_triviality_instances' does not depend on any axioms
 'BallPairShadow.sonin_dim_inclusion_exclusion' does not depend on any axioms
 'BallPairShadow.constraint_span_dims' does not depend on any axioms
+'BridgeShadow.mirror_shadow_9' does not depend on any axioms
+'BridgeShadow.mirror_shadow_25' does not depend on any axioms
+'BridgeShadow.mirror_gauss_values' does not depend on any axioms
+'BridgeShadow.round_trip_shadow_9' does not depend on any axioms
 'CharacterSumShadow.halc' does not depend on any axioms
 'CharacterSumShadow.hza' does not depend on any axioms
 'CharacterSumShadow.hnzero' does not depend on any axioms
