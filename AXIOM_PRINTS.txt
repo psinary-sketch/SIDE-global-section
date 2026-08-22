@@ -31,6 +31,10 @@
 'CoherenceShadow.reciprocity_instances' does not depend on any axioms
 'CoherenceShadow.orientation_discriminator_2_1' does not depend on any axioms
 'CoherenceShadow.conjugate_complement_instances' does not depend on any axioms
+'ConstructorShadow.point_count_identity_25' does not depend on any axioms
+'ConstructorShadow.shift_shadow_25' does not depend on any axioms
+'ConstructorShadow.silhouette_exam' does not depend on any axioms
+'ConstructorShadow.defect_vector_identity' does not depend on any axioms
 'CouplingArrival.label_norm_150' does not depend on any axioms
 'CouplingArrival.arrival_multiplicative_150' does not depend on any axioms
 'CouplingArrival.spectrum_150' does not depend on any axioms

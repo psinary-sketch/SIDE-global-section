@@ -3,6 +3,7 @@ import AdelicPlaneShadow
 import BallPairShadow
 import CharacterSumShadow
 import CoherenceShadow
+import ConstructorShadow
 import CouplingArrival
 import CriticalPassShadow
 import CrossPlaceShadow
@@ -82,6 +83,10 @@ import WindowShadow
 #print axioms CoherenceShadow.reciprocity_instances
 #print axioms CoherenceShadow.orientation_discriminator_2_1
 #print axioms CoherenceShadow.conjugate_complement_instances
+#print axioms ConstructorShadow.point_count_identity_25
+#print axioms ConstructorShadow.shift_shadow_25
+#print axioms ConstructorShadow.silhouette_exam
+#print axioms ConstructorShadow.defect_vector_identity
 #print axioms CouplingArrival.label_norm_150
 #print axioms CouplingArrival.arrival_multiplicative_150
 #print axioms CouplingArrival.spectrum_150
