@@ -87,6 +87,10 @@
 'E1UnitPurityDraft.witness32' does not depend on any axioms
 'E1UnitPurityDraft.kl_fail_2_2' does not depend on any axioms
 'E1UnitPurityDraft.kl_fail_5_1' does not depend on any axioms
+'ExtensionShadow.probe_phase_instances' does not depend on any axioms
+'ExtensionShadow.schwarz_witness_pairing' does not depend on any axioms
+'ExtensionShadow.mirror_product_one' does not depend on any axioms
+'ExtensionShadow.finite_breaking_16' does not depend on any axioms
 'FlatnessShadow.trace_endpoints' does not depend on any axioms
 'FlatnessShadow.dim_law_odd' does not depend on any axioms
 'FlatnessShadow.dim_law_place2' does not depend on any axioms

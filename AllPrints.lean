@@ -13,6 +13,7 @@ import DeficitShadow
 import DeterminationShadow
 import DiagonalSection
 import E1UnitPurityDraft
+import ExtensionShadow
 import FlatnessShadow
 import FourthVisitShadow
 import FrameBoundaryShadow
@@ -140,6 +141,10 @@ import WindowShadow
 #print axioms E1UnitPurityDraft.witness32
 #print axioms E1UnitPurityDraft.kl_fail_2_2
 #print axioms E1UnitPurityDraft.kl_fail_5_1
+#print axioms ExtensionShadow.probe_phase_instances
+#print axioms ExtensionShadow.schwarz_witness_pairing
+#print axioms ExtensionShadow.mirror_product_one
+#print axioms ExtensionShadow.finite_breaking_16
 #print axioms FlatnessShadow.trace_endpoints
 #print axioms FlatnessShadow.dim_law_odd
 #print axioms FlatnessShadow.dim_law_place2
