@@ -32,6 +32,7 @@ import ProductMinusSumShadow
 import QuotientLemmaShadow
 import QuotientWeilShape
 import RadializationShadow
+import RigidityShadow
 import SectorArithmetic
 import SilenceOnlyIfShadow
 import StaircaseAddresses
@@ -223,6 +224,10 @@ import WindowShadow
 #print axioms RadializationShadow.ball_boundary_address
 #print axioms RadializationShadow.theta_by_shells
 #print axioms RadializationShadow.plane_factorization
+#print axioms RigidityShadow.walk_constant
+#print axioms RigidityShadow.fourth_root_instantiation
+#print axioms RigidityShadow.fourth_root_discreteness
+#print axioms RigidityShadow.tower_walk_instances
 #print axioms SectorArithmetic.flat_n1
 #print axioms SectorArithmetic.flat_n2
 #print axioms SectorArithmetic.flat_n3

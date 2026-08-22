@@ -176,6 +176,10 @@
 'RadializationShadow.ball_boundary_address' does not depend on any axioms
 'RadializationShadow.theta_by_shells' does not depend on any axioms
 'RadializationShadow.plane_factorization' does not depend on any axioms
+'RigidityShadow.walk_constant' does not depend on any axioms
+'RigidityShadow.fourth_root_instantiation' does not depend on any axioms
+'RigidityShadow.fourth_root_discreteness' does not depend on any axioms
+'RigidityShadow.tower_walk_instances' does not depend on any axioms
 'SectorArithmetic.flat_n1' does not depend on any axioms
 'SectorArithmetic.flat_n2' does not depend on any axioms
 'SectorArithmetic.flat_n3' does not depend on any axioms
