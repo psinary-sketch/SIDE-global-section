@@ -22,6 +22,7 @@ import H1Mechanism
 import InequalityShadow
 import KLSilence
 import LefschetzShadow
+import LinkShadow
 import MetaplecticRootShadow
 import NeitherPolesNorZeros
 import NormalizationForced
@@ -181,6 +182,9 @@ import WindowShadow
 #print axioms LefschetzShadow.pi_phase_instances
 #print axioms LefschetzShadow.dims_from_center
 #print axioms LefschetzShadow.m3_locus_phase
+#print axioms LinkShadow.twisted_row_silence
+#print axioms LinkShadow.witness_no_fixed_point
+#print axioms LinkShadow.witness_exchange_involution
 #print axioms MetaplecticRootShadow.u_gauss_eigen
 #print axioms MetaplecticRootShadow.parity_and_sign
 #print axioms MetaplecticRootShadow.square_root_obstruction
