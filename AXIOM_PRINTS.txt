@@ -232,6 +232,9 @@
 'TwistedShadow.mixed_pattern_counts' does not depend on any axioms
 'TwistedShadow.tower_witness_pure' does not depend on any axioms
 'TwistedShadow.tower_witness_in_Ei' does not depend on any axioms
+'ValueShadow.equal_magnitude_lemma' does not depend on any axioms
+'ValueShadow.finite_twin_instances' does not depend on any axioms
+'ValueShadow.ledger_sum_conjugate' does not depend on any axioms
 'WindowShadow.excess_sector_instances' does not depend on any axioms
 'WindowShadow.line_address_instances' does not depend on any axioms
 'WindowShadow.gauge_reading_pair' does not depend on any axioms

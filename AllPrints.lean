@@ -44,6 +44,7 @@ import TowerLimitShadow
 import TraceSilence
 import TwistedRootShadow
 import TwistedShadow
+import ValueShadow
 import WindowShadow
 
 #print axioms AdelicPlaneShadow.torus_gluing_instances
@@ -280,6 +281,9 @@ import WindowShadow
 #print axioms TwistedShadow.mixed_pattern_counts
 #print axioms TwistedShadow.tower_witness_pure
 #print axioms TwistedShadow.tower_witness_in_Ei
+#print axioms ValueShadow.equal_magnitude_lemma
+#print axioms ValueShadow.finite_twin_instances
+#print axioms ValueShadow.ledger_sum_conjugate
 #print axioms WindowShadow.excess_sector_instances
 #print axioms WindowShadow.line_address_instances
 #print axioms WindowShadow.gauge_reading_pair
