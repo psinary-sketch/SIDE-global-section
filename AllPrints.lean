@@ -29,6 +29,7 @@ import NormalizationForced
 import OddPInstances
 import OddPairingShadow
 import OrbitDictionary
+import OrientationShadow
 import PairingShadow
 import PhasePlaneShadow
 import PlancherelShadow
@@ -213,6 +214,9 @@ import WindowShadow
 #print axioms OrbitDictionary.no_fixed_offzero
 #print axioms OrbitDictionary.shell_shift_2
 #print axioms OrbitDictionary.shell_shift_3
+#print axioms OrientationShadow.conj_fixes_real_flips_imaginary
+#print axioms OrientationShadow.twin_conjugate_sum_real
+#print axioms OrientationShadow.real_functionals_agree_on_the_orbit
 #print axioms PairingShadow.flat_kills_twists
 #print axioms PairingShadow.form_level_lift
 #print axioms PairingShadow.dead_cell_power_traces

@@ -157,6 +157,9 @@
 'OrbitDictionary.no_fixed_offzero' does not depend on any axioms
 'OrbitDictionary.shell_shift_2' does not depend on any axioms
 'OrbitDictionary.shell_shift_3' does not depend on any axioms
+'OrientationShadow.conj_fixes_real_flips_imaginary' does not depend on any axioms
+'OrientationShadow.twin_conjugate_sum_real' does not depend on any axioms
+'OrientationShadow.real_functionals_agree_on_the_orbit' does not depend on any axioms
 'PairingShadow.flat_kills_twists' does not depend on any axioms
 'PairingShadow.form_level_lift' does not depend on any axioms
 'PairingShadow.dead_cell_power_traces' does not depend on any axioms
