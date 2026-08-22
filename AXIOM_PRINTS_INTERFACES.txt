@@ -14,6 +14,10 @@
 'LocalLimit.proj4_eigen' depends on axioms: [propext, Classical.choice, Quot.sound]
 'LocalLimit.proj4_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
 'LocalLimit.compression_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.hullMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.hull_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.hull_iSup_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.hull_compression_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
 === PadicFourier
 'PadicFourier.fourier_indicator_zp_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
 'PadicFourier.fourier_indicator_zp_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]

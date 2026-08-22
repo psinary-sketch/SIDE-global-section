@@ -46,6 +46,7 @@ import ThetaContinuationShadow
 import ThetaShadow
 import TowerInstance
 import TowerLimitShadow
+import TowerMonotoneShadow
 import TraceSilence
 import TwistedRootShadow
 import TwistedShadow
@@ -293,6 +294,10 @@ import WindowShadow
 #print axioms TowerLimitShadow.intertwining_instance
 #print axioms TowerLimitShadow.constancy_instances
 #print axioms TowerLimitShadow.register_arithmetic
+#print axioms TowerMonotoneShadow.ball_pullback
+#print axioms TowerMonotoneShadow.inner_sum_rule
+#print axioms TowerMonotoneShadow.transform_index_shift
+#print axioms TowerMonotoneShadow.quotient_in_ball
 #print axioms TraceSilence.trace_silence_2_1
 #print axioms TraceSilence.trace_silence_2_2
 #print axioms TraceSilence.trace_silence_2_3

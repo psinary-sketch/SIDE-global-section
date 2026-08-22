@@ -149,6 +149,41 @@ theorem compression_tendsto {ι : Type*} [Preorder ι]
   have hsum := h1.add h2
   simpa using hsum
 
+/-- THE HULL (b101, the monotonicity act): the running span of an arbitrary
+    family — constructed unconditionally, so that a limit object exists for ANY
+    level family whatever, monotone or not. -/
+def hull {ι : Type*} [Preorder ι] (U : ι → Submodule ℂ H) (i : ι) : Submodule ℂ H :=
+  ⨆ j, ⨆ (_ : j ≤ i), U j
+
+theorem hullMono {ι : Type*} [Preorder ι] (U : ι → Submodule ℂ H) :
+    Monotone (hull U) := by
+  intro a b hab
+  refine iSup_mono' fun j => ⟨j, ?_⟩
+  exact iSup_mono' fun hj => ⟨le_trans hj hab, le_rfl⟩
+
+theorem hull_ge {ι : Type*} [Preorder ι] (U : ι → Submodule ℂ H) (i : ι) :
+    U i ≤ hull U i :=
+  le_iSup_of_le i (le_iSup_of_le le_rfl le_rfl)
+
+theorem hull_iSup_eq {ι : Type*} [Preorder ι] (U : ι → Submodule ℂ H) :
+    (⨆ i, hull U i) = ⨆ i, U i := by
+  apply le_antisymm
+  · exact iSup_le fun i => iSup_le fun j => iSup_le fun _ => le_iSup U j
+  · exact iSup_mono fun i => hull_ge U i
+
+/-- THE HULL'S SOT LIMIT, UNCONDITIONAL IN THE FAMILY: no monotonicity
+    hypothesis on `U` -- the hull supplies it by construction. The limit object is
+    the compression on the closure of the hull's supremum, and `hull_iSup_eq`
+    (proved above) identifies that supremum with the ORIGINAL family's. -/
+theorem hull_compression_tendsto {ι : Type*} [Preorder ι]
+    (U : ι → Submodule ℂ H) [∀ i, (hull U i).HasOrthogonalProjection]
+    [(⨆ i, hull U i).topologicalClosure.HasOrthogonalProjection]
+    (A : H →L[ℂ] H) (x : H) :
+    Filter.Tendsto (fun i => (hull U i).starProjection (A ((hull U i).starProjection x))) Filter.atTop
+      (nhds ((⨆ i, hull U i).topologicalClosure.starProjection
+            (A ((⨆ i, hull U i).topologicalClosure.starProjection x)))) :=
+  compression_tendsto (hull U) (hullMono U) A x
+
 /-- ACT 6 (the ε-lemma's clean half): eigenvectors of `F` stay eigenvectors under any
     commuting operator — if `A∘F = F∘A` and `F x = λ•x` then `F (A x) = λ•(A x)`.
     THE USE: on Weil-even test data `ϑ(g)` commutes with `F` (the intertwining
@@ -252,3 +287,7 @@ end LocalLimit
 #print axioms LocalLimit.proj4_eigen
 #print axioms LocalLimit.proj4_sum
 #print axioms LocalLimit.compression_tendsto
+#print axioms LocalLimit.hullMono
+#print axioms LocalLimit.hull_ge
+#print axioms LocalLimit.hull_iSup_eq
+#print axioms LocalLimit.hull_compression_tendsto

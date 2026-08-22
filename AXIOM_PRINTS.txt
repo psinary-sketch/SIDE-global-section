@@ -239,6 +239,10 @@
 'TowerLimitShadow.intertwining_instance' does not depend on any axioms
 'TowerLimitShadow.constancy_instances' does not depend on any axioms
 'TowerLimitShadow.register_arithmetic' does not depend on any axioms
+'TowerMonotoneShadow.ball_pullback' does not depend on any axioms
+'TowerMonotoneShadow.inner_sum_rule' does not depend on any axioms
+'TowerMonotoneShadow.transform_index_shift' does not depend on any axioms
+'TowerMonotoneShadow.quotient_in_ball' does not depend on any axioms
 'TraceSilence.trace_silence_2_1' does not depend on any axioms
 'TraceSilence.trace_silence_2_2' does not depend on any axioms
 'TraceSilence.trace_silence_2_3' does not depend on any axioms
