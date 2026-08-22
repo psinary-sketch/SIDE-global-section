@@ -247,6 +247,119 @@ theorem general_p_no_fixed_cell (p n k α : ℕ) (hp : p.Prime)
   have hα : p ^ n ∣ α := (Nat.Coprime.dvd_of_dvd_mul_right hcop) hdvd
   exact (Nat.le_of_dvd (Nat.lt_of_lt_of_le Nat.zero_lt_one hα1) hα).not_gt hαn
 
+
+/-! ### THE TOWER'S ALL-LEVELS ARITHMETIC (b102, the eighth seam close's strikeable)
+
+  The four index facts that row 65 decided at the banked truncation pairs, here
+  PROVED FOR ALL `p` and `n` (`0 < p`; the banked cells are prime powers, so the
+  hypothesis is free there). The chain is the one the b101 registration wrote
+  longhand; what changes is the grade.
+
+  ### WHY THIS LIVES AT THE CLASSICAL PROFILE AND NOT AT THE CORE ZERO-AXIOM BAR
+  (the strikeable's honest landing, verified by print this act): the statements
+  are PROVED, but they cannot reach the zero-axiom bar, and the reason is a
+  property of Lean's own library rather than of the mathematics. Every route to
+  them runs through core `Nat` lemmas that are themselves propext-carrying —
+  `Nat.mul_assoc`, `Nat.pow_add`, `Nat.dvd_of_mod_eq_zero`, `Nat.mul_mod_mul_left`,
+  `Nat.add_mul_mod_self_left`, `Nat.mul_div_cancel_left`, `Nat.mul_mod_right`,
+  `Nat.mul_left_comm` (each printed this act). `rw` itself is clean; the taint is
+  inherited transitively, not introduced by the proofs. Reaching the bar would
+  mean reproving a chunk of core `Nat` arithmetic, which is not this act's
+  business. So: the banked-pairs terminals stay in Core at the zero-axiom bar
+  (row 65, unchanged), and the universal statements live here, declared, at
+  {propext, Classical.choice, Quot.sound}. `simp`, `omega` and `ac_rfl` are not
+  used anywhere below.
+-/
+
+/-- exponent split: p^(2n+2) = p^(n+1) * p^(n+1) -/
+theorem pow_split_even (p n : Nat) : p ^ (2 * n + 2) = p ^ (n + 1) * p ^ (n + 1) := by
+  rw [← Nat.pow_add]
+  have : n + 1 + (n + 1) = 2 * n + 2 := by
+    rw [Nat.two_mul, Nat.add_assoc, Nat.add_comm 1 (n + 1), Nat.add_assoc]
+    show n + (n + 2) = n + n + 2
+    exact (Nat.add_assoc n n 2).symm
+  rw [this]
+
+/-- exponent split: p^(2n+1) = p^(n+1) * p^n -/
+theorem pow_split_odd (p n : Nat) : p ^ (2 * n + 1) = p ^ (n + 1) * p ^ n := by
+  rw [← Nat.pow_add]
+  have : n + 1 + n = 2 * n + 1 := by
+    rw [Nat.two_mul, Nat.add_right_comm]
+  rw [this]
+
+/-- (2) THE INNER-SUM RULE, ALL LEVELS -/
+theorem inner_sum_general (p n r : Nat) (h : r % p ^ (n + 1) = 0) :
+    (r * p ^ (2 * n + 1)) % p ^ (2 * n + 2) = 0 := by
+  obtain ⟨k, hk⟩ := Nat.dvd_of_mod_eq_zero h
+  subst hk
+  rw [pow_split_even, pow_split_odd]
+  have e : p ^ (n + 1) * k * (p ^ (n + 1) * p ^ n)
+      = p ^ (n + 1) * p ^ (n + 1) * (k * p ^ n) := by
+    rw [Nat.mul_assoc, Nat.mul_assoc]
+    congr 1
+    rw [← Nat.mul_assoc, ← Nat.mul_assoc, Nat.mul_comm k (p ^ (n + 1))]
+  rw [e]
+  exact Nat.mul_mod_right _ _
+
+/-- (4) THE QUOTIENT LANDS IN THE BALL, ALL LEVELS -/
+theorem quotient_general (p n r : Nat) (hp : 0 < p) (h : r % p ^ (n + 1) = 0) :
+    (r / p) % p ^ n = 0 := by
+  obtain ⟨k, hk⟩ := Nat.dvd_of_mod_eq_zero h
+  subst hk
+  have e : p ^ (n + 1) * k = p * (p ^ n * k) := by
+    rw [Nat.pow_succ, Nat.mul_comm (p ^ n) p, Nat.mul_assoc]
+  rw [e, Nat.mul_div_cancel_left _ hp]
+  exact Nat.mul_mod_right _ _
+
+theorem pow_split_lead (p n : Nat) : p ^ (2 * n + 1) = p * p ^ (2 * n) := by
+  rw [Nat.pow_succ, Nat.mul_comm]
+
+theorem two_n_split (p n : Nat) : p ^ (2 * n) = p ^ n * p ^ n := by
+  rw [← Nat.pow_add, Nat.two_mul]
+
+/-- (1) THE SUPPORT SIDE, ALL LEVELS, in mod form (no subtraction anywhere). -/
+theorem ball_pullback_general (p n m j : Nat) (hp : 0 < p) :
+    (((p * m + p ^ (2 * n + 1) * j) % p ^ (n + 1) = 0) ↔ (m % p ^ n = 0)) := by
+  have hfac : p * m + p ^ (2 * n + 1) * j = p * (m + p ^ n * (p ^ n * j)) := by
+    rw [pow_split_lead, two_n_split, Nat.mul_assoc, Nat.mul_assoc, Nat.mul_add]
+  have hmod : (p * m + p ^ (2 * n + 1) * j) % p ^ (n + 1)
+      = p * ((m + p ^ n * (p ^ n * j)) % p ^ n) := by
+    rw [hfac, Nat.pow_succ, Nat.mul_comm (p ^ n) p, Nat.mul_mod_mul_left]
+  rw [hmod, Nat.add_mul_mod_self_left]
+  constructor
+  · intro h
+    rcases Nat.mul_eq_zero.mp h with h0 | h0
+    · subst h0; exact absurd hp (Nat.lt_irrefl 0)
+    · exact h0
+  · intro h
+    rw [h, Nat.mul_zero]
+
+theorem rearrange (a p k m : Nat) : a * p * k * p * m = p * p * (a * (k * m)) := by
+  calc a * p * k * p * m
+      = a * (p * (k * (p * m))) := by
+        rw [Nat.mul_assoc, Nat.mul_assoc, Nat.mul_assoc]
+    _ = a * (p * (p * (k * m))) := by rw [Nat.mul_left_comm k p m]
+    _ = p * (a * (p * (k * m))) := by rw [Nat.mul_left_comm]
+    _ = p * (p * (a * (k * m))) := by rw [Nat.mul_left_comm a p (k * m)]
+    _ = p * p * (a * (k * m)) := by rw [← Nat.mul_assoc]
+
+/-- (3) THE TRANSFORM INDEX SHIFT, ALL LEVELS (factor p², no subtraction). -/
+theorem transform_shift_general (p n r m : Nat) (hp : 0 < p)
+    (h : r % p ^ (n + 1) = 0) :
+    (r * p * m) % p ^ (2 * n + 2) = p ^ 2 * (((r / p) * m) % p ^ (2 * n)) := by
+  obtain ⟨k, hk⟩ := Nat.dvd_of_mod_eq_zero h
+  subst hk
+  have hdiv : p ^ (n + 1) * k / p = p ^ n * k := by
+    rw [Nat.pow_succ, Nat.mul_comm (p ^ n) p, Nat.mul_assoc,
+      Nat.mul_div_cancel_left _ hp]
+  have hp2 : p ^ 2 = p * p := by rw [Nat.pow_succ, Nat.pow_one]
+  have hr : p ^ (2 * n + 2) = p * (p * p ^ (2 * n)) := by
+    rw [← Nat.mul_assoc, ← hp2, ← Nat.pow_add, Nat.add_comm]
+  have hl : p ^ (n + 1) * k * p * m = p * (p * (p ^ n * (k * m))) := by
+    rw [Nat.pow_succ, rearrange (p ^ n) p k m, Nat.mul_assoc]
+  rw [hdiv, hl, hr, Nat.mul_mod_mul_left, Nat.mul_mod_mul_left, hp2,
+    Nat.mul_assoc, Nat.mul_assoc (p ^ n) k m]
+
 /-- THE CONCRETE DEBT, in one place: the p-adic Fourier data over `L²(ℚ_p)` — the
     transform as a linear isometry equivalence with `F² = parity`, the Sonin closure as
     a closed subspace, the escape property. OWED TO FILES B–C (the standard character;
@@ -291,3 +404,7 @@ end LocalLimit
 #print axioms LocalLimit.hull_ge
 #print axioms LocalLimit.hull_iSup_eq
 #print axioms LocalLimit.hull_compression_tendsto
+#print axioms LocalLimit.inner_sum_general
+#print axioms LocalLimit.quotient_general
+#print axioms LocalLimit.ball_pullback_general
+#print axioms LocalLimit.transform_shift_general

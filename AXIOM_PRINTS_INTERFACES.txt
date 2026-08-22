@@ -18,6 +18,10 @@
 'LocalLimit.hull_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
 'LocalLimit.hull_iSup_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
 'LocalLimit.hull_compression_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalLimit.inner_sum_general' depends on axioms: [propext]
+'LocalLimit.quotient_general' depends on axioms: [propext]
+'LocalLimit.ball_pullback_general' depends on axioms: [propext]
+'LocalLimit.transform_shift_general' depends on axioms: [propext]
 === PadicFourier
 'PadicFourier.fourier_indicator_zp_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
 'PadicFourier.fourier_indicator_zp_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
