@@ -23,6 +23,7 @@ import InequalityShadow
 import KLSilence
 import LefschetzShadow
 import LinkShadow
+import MechanismShadow
 import MetaplecticRootShadow
 import NeitherPolesNorZeros
 import NormalizationForced
@@ -186,6 +187,9 @@ import WindowShadow
 #print axioms LinkShadow.twisted_row_silence
 #print axioms LinkShadow.witness_no_fixed_point
 #print axioms LinkShadow.witness_exchange_involution
+#print axioms MechanismShadow.collapse_to_one_density
+#print axioms MechanismShadow.one_density_two_windows
+#print axioms MechanismShadow.sector_numerators_cancel
 #print axioms MetaplecticRootShadow.u_gauss_eigen
 #print axioms MetaplecticRootShadow.parity_and_sign
 #print axioms MetaplecticRootShadow.square_root_obstruction

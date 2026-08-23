@@ -129,6 +129,9 @@
 'LinkShadow.twisted_row_silence' does not depend on any axioms
 'LinkShadow.witness_no_fixed_point' does not depend on any axioms
 'LinkShadow.witness_exchange_involution' does not depend on any axioms
+'MechanismShadow.collapse_to_one_density' does not depend on any axioms
+'MechanismShadow.one_density_two_windows' does not depend on any axioms
+'MechanismShadow.sector_numerators_cancel' does not depend on any axioms
 'MetaplecticRootShadow.u_gauss_eigen' does not depend on any axioms
 'MetaplecticRootShadow.parity_and_sign' does not depend on any axioms
 'MetaplecticRootShadow.square_root_obstruction' does not depend on any axioms
