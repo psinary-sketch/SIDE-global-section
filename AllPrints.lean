@@ -1,5 +1,6 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import AdelicPlaneShadow
+import DoubleEntryShadow
 import ShareDependenceShadow
 import ApportionmentShadow
 import BallPairShadow
@@ -58,6 +59,8 @@ import TwistedShadow
 import ValueShadow
 import WindowShadow
 
+#print axioms DoubleEntryShadow.column_enters_twice_net_q_minus_p
+#print axioms DoubleEntryShadow.zero_share_has_no_double_entry
 #print axioms ShareDependenceShadow.share_dependence_is_exactly_R
 #print axioms ShareDependenceShadow.gauge_iff_R_zero
 #print axioms ShareDependenceShadow.at_most_one_share_zeroes_it
