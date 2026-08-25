@@ -1,3 +1,7 @@
+'DependenceShadow.shift_law_is_additive' does not depend on any axioms
+'DependenceShadow.signs_are_mixed_at_b38_member' does not depend on any axioms
+'DependenceShadow.signs_are_uniform_off_the_window' does not depend on any axioms
+'DependenceShadow.psi_zero_line_reproduces_the_bank' does not depend on any axioms
 'SectorOccupancyShadow.layer_occupies_only_two_of_four_sectors' does not depend on any axioms
 'SectorOccupancyShadow.sector_parity_is_index_parity' does not depend on any axioms
 'RefinementArityShadow.two_fold_aggregate_does_not_determine_four_fold' does not depend on any axioms
