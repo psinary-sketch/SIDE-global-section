@@ -1,3 +1,5 @@
+'SectorOccupancyShadow.layer_occupies_only_two_of_four_sectors' does not depend on any axioms
+'SectorOccupancyShadow.sector_parity_is_index_parity' does not depend on any axioms
 'RefinementArityShadow.two_fold_aggregate_does_not_determine_four_fold' does not depend on any axioms
 'DoubleEntryShadow.column_enters_twice_net_q_minus_p' does not depend on any axioms
 'DoubleEntryShadow.zero_share_has_no_double_entry' does not depend on any axioms
