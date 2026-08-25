@@ -1,3 +1,7 @@
+'ShareDependenceShadow.share_dependence_is_exactly_R' does not depend on any axioms
+'ShareDependenceShadow.gauge_iff_R_zero' does not depend on any axioms
+'ShareDependenceShadow.at_most_one_share_zeroes_it' does not depend on any axioms
+'ShareDependenceShadow.no_single_share_serves_two_cells' does not depend on any axioms
 'ApportionmentShadow.void_gate_is_exactly_normalization' does not depend on any axioms
 'ApportionmentShadow.gate_verdict_both_polarities' does not depend on any axioms
 'ApportionmentShadow.sector_freedom_is_one_scalar' does not depend on any axioms
