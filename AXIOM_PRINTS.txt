@@ -1,3 +1,7 @@
+'ApportionmentShadow.void_gate_is_exactly_normalization' does not depend on any axioms
+'ApportionmentShadow.gate_verdict_both_polarities' does not depend on any axioms
+'ApportionmentShadow.sector_freedom_is_one_scalar' does not depend on any axioms
+'ApportionmentShadow.within_sector_reshuffle_invisible' does not depend on any axioms
 'AdelicPlaneShadow.torus_gluing_instances' does not depend on any axioms
 'AdelicPlaneShadow.hcoh_fin_instances' does not depend on any axioms
 'AdelicPlaneShadow.stationary_dimension_instances' does not depend on any axioms
