@@ -1,3 +1,7 @@
+'FamilySignShadow.pairings_all_negative_and_slopes_all_positive' does not depend on any axioms
+'FamilySignShadow.binding_cell_is_the_smallest' does not depend on any axioms
+'FamilySignShadow.holds_at_b38_member_and_at_one_fails_at_zero' does not depend on any axioms
+'FamilySignShadow.threshold_brackets_the_endpoint' does not depend on any axioms
 'DependenceShadow.shift_law_is_additive' does not depend on any axioms
 'DependenceShadow.signs_are_mixed_at_b38_member' does not depend on any axioms
 'DependenceShadow.signs_are_uniform_off_the_window' does not depend on any axioms

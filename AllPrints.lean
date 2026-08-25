@@ -1,5 +1,6 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import AdelicPlaneShadow
+import FamilySignShadow
 import DependenceShadow
 import SectorOccupancyShadow
 import RefinementArityShadow
@@ -62,6 +63,10 @@ import TwistedShadow
 import ValueShadow
 import WindowShadow
 
+#print axioms FamilySignShadow.pairings_all_negative_and_slopes_all_positive
+#print axioms FamilySignShadow.binding_cell_is_the_smallest
+#print axioms FamilySignShadow.holds_at_b38_member_and_at_one_fails_at_zero
+#print axioms FamilySignShadow.threshold_brackets_the_endpoint
 #print axioms DependenceShadow.shift_law_is_additive
 #print axioms DependenceShadow.signs_are_mixed_at_b38_member
 #print axioms DependenceShadow.signs_are_uniform_off_the_window
