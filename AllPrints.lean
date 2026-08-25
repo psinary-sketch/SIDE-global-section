@@ -1,5 +1,6 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import AdelicPlaneShadow
+import RefinementArityShadow
 import DoubleEntryShadow
 import ShareDependenceShadow
 import ApportionmentShadow
@@ -59,6 +60,7 @@ import TwistedShadow
 import ValueShadow
 import WindowShadow
 
+#print axioms RefinementArityShadow.two_fold_aggregate_does_not_determine_four_fold
 #print axioms DoubleEntryShadow.column_enters_twice_net_q_minus_p
 #print axioms DoubleEntryShadow.zero_share_has_no_double_entry
 #print axioms ShareDependenceShadow.share_dependence_is_exactly_R

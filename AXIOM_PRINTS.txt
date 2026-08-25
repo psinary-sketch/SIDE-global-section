@@ -1,3 +1,4 @@
+'RefinementArityShadow.two_fold_aggregate_does_not_determine_four_fold' does not depend on any axioms
 'DoubleEntryShadow.column_enters_twice_net_q_minus_p' does not depend on any axioms
 'DoubleEntryShadow.zero_share_has_no_double_entry' does not depend on any axioms
 'ShareDependenceShadow.share_dependence_is_exactly_R' does not depend on any axioms
