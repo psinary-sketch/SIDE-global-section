@@ -1,5 +1,6 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import AdelicPlaneShadow
+import WarrantSumShadow
 import SeparationShadow
 import FamilySignShadow
 import DependenceShadow
@@ -64,6 +65,9 @@ import TwistedShadow
 import ValueShadow
 import WindowShadow
 
+#print axioms WarrantSumShadow.warrant_sum_and_its_convergence
+#print axioms WarrantSumShadow.mode_truncation_is_inert_here
+#print axioms WarrantSumShadow.the_two_weights_are_different_objects
 #print axioms SeparationShadow.void_gate_cannot_see_either_share
 #print axioms SeparationShadow.divergent_share_fixed_leaves_the_remainder_free
 #print axioms SeparationShadow.the_two_shares_are_independent_coordinates

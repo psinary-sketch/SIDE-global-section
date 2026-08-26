@@ -1,3 +1,6 @@
+'WarrantSumShadow.warrant_sum_and_its_convergence' does not depend on any axioms
+'WarrantSumShadow.mode_truncation_is_inert_here' does not depend on any axioms
+'WarrantSumShadow.the_two_weights_are_different_objects' does not depend on any axioms
 'SeparationShadow.void_gate_cannot_see_either_share' does not depend on any axioms
 'SeparationShadow.divergent_share_fixed_leaves_the_remainder_free' does not depend on any axioms
 'SeparationShadow.the_two_shares_are_independent_coordinates' does not depend on any axioms
