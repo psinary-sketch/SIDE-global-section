@@ -1,3 +1,5 @@
+'ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms' does not depend on any axioms
+'ReDerivationShadow.the_unexpanded_form_does_not_match' does not depend on any axioms
 'ScopeConditionShadow.containment_holds_only_at_the_smallest_cell' does not depend on any axioms
 'ScopeConditionShadow.the_length_bound_fails_at_every_cell' does not depend on any axioms
 'ScopeConditionShadow.the_smallest_cell_sits_exactly_on_the_containment_edge' does not depend on any axioms
