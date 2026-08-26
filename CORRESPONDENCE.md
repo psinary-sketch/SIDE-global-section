@@ -137,3 +137,4 @@ banked bench data entering as premises) are declared in the files' own headers a
 named-premise interfaces, not shells. The boundary-lead grep: the one ◇-boundary-species row
 is row 24 (file E), whose conversion route is the closure protocol itself — named, no
 external lead.
+| 80 | ### **the two-factor tensor carries the global-section shape** — layer ONE of the restricted-tensor construction;  and  BUILT from the factors', not assumed |  — , ,  | , re-run at build 2026-08-26, ### **no ** | ### **DERIVES** — the two identities are theorems on the built object, proved from the factors' | ### **LAYER ONE ONLY. NOT the restricted tensor product** — finite, two-factor; the colimit over places and the completion are LATER LAYERS AND ARE NOT CLAIMED (b193) |

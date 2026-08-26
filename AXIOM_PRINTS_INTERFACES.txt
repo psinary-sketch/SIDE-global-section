@@ -29,3 +29,8 @@
 'PadicCompanion.padicFract_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
 'PadicCompanion.stdAddChar' depends on axioms: [propext, Classical.choice, Quot.sound]
 'PadicCompanion.stdAddChar_eq_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== RestrictedTensorLayer1  (b193, 2026-08-26; built with Lean v4.29.0 against Mathlib)
+'RestrictedTensorLayer1.Ftensor_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RestrictedTensorLayer1.parityTensor_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RestrictedTensorLayer1.tensorFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
