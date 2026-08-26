@@ -31,6 +31,7 @@ import FourthVisitShadow
 import FrameBoundaryShadow
 import GroupRingGlue
 import H1Mechanism
+import InvolutionScalarShadow
 import InequalityShadow
 import KLSilence
 import LefschetzShadow
@@ -88,6 +89,12 @@ import WindowShadow
 #print axioms DependenceShadow.signs_are_mixed_at_b38_member
 #print axioms DependenceShadow.signs_are_uniform_off_the_window
 #print axioms DependenceShadow.psi_zero_line_reproduces_the_bank
+#print axioms InvolutionScalarShadow.both_signs_satisfy
+#print axioms InvolutionScalarShadow.others_fail
+#print axioms InvolutionScalarShadow.signs_distinct
+#print axioms InvolutionScalarShadow.nat_sq_one
+#print axioms InvolutionScalarShadow.int_sq_one
+#print axioms InvolutionScalarShadow.int_sq_one_of
 #print axioms SectorNonvanishingShadow.arrival_rhs_zero
 #print axioms SectorNonvanishingShadow.arrival_dim_zero
 #print axioms SectorNonvanishingShadow.arrival_shape
