@@ -1,4 +1,26 @@
 /-
+  ### THE PLAN THIS FILE WAS LAYER ONE OF IS **RETIRED** — 2026-08-26 (b194).
+
+  ### REASON, AT ITS OWN FALSIFIER: the E₁-units cannot supply what a restricted
+  ### tensor product needs. relay/reports/2026-08-19-e1-unit-purity.md, at content:
+  ###   · "E₁(3,1) AND E₁(2,2) CONTAIN NO NONZERO SCHMIDT-PURE VECTOR AT ALL";
+  ###     of (3,1): "no choice exists to make";
+  ###   · cell (2,1): d₁ = 0 — NO-UNIT, "the projector image is 0 exactly";
+  ###   · the units are a CHOICE CLASS — "no canonical choice is claimed".
+  ### A restricted tensor product needs a vector AT EVERY PLACE, that vector PURE,
+  ### of NORM ONE, and CHOSEN. Three of the four fail on the record's own reading.
+  ###
+  ### AND THE FAILURE IS STRONGER THAN THE FALSIFIER SAID: b193 wrote "not
+  ### isometries", which PRESUMES THE MAPS CAN BE FORMED. ### THE MAPS CANNOT BE
+  ### FORMED AT ALL — there is no pure distinguished vector to tensor with.
+  ### THAT IS NOT A WEAKER ISOMETRY; IT IS AN ABSENT MAP.
+  ###
+  ### THIS FILE IS KEPT, NOT DELETED, AND NOT WITHDRAWN. What it states is true and
+  ### compiled: given two factors carrying the shape, the tensor carries it.
+  ### WHAT IS RETIRED IS THE ROUTE THAT WOULD HAVE USED IT, NOT THE THEOREM.
+-/
+
+/-
   W-CONSTRUCTION-1 · RestrictedTensorLayer1.lean — b193, 2026-08-26.
   THE RESTRICTED TENSOR CONSTRUCTION, LAYER ONE: THE TWO-FACTOR TENSOR CARRIES THE
   GLOBAL-SECTION SHAPE.
