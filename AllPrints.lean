@@ -1,5 +1,6 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import AdelicPlaneShadow
+import ScopeConditionShadow
 import WarrantSumShadow
 import SeparationShadow
 import FamilySignShadow
@@ -65,6 +66,9 @@ import TwistedShadow
 import ValueShadow
 import WindowShadow
 
+#print axioms ScopeConditionShadow.containment_holds_only_at_the_smallest_cell
+#print axioms ScopeConditionShadow.the_length_bound_fails_at_every_cell
+#print axioms ScopeConditionShadow.the_smallest_cell_sits_exactly_on_the_containment_edge
 #print axioms WarrantSumShadow.warrant_sum_and_its_convergence
 #print axioms WarrantSumShadow.mode_truncation_is_inert_here
 #print axioms WarrantSumShadow.the_two_weights_are_different_objects

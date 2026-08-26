@@ -1,3 +1,6 @@
+'ScopeConditionShadow.containment_holds_only_at_the_smallest_cell' does not depend on any axioms
+'ScopeConditionShadow.the_length_bound_fails_at_every_cell' does not depend on any axioms
+'ScopeConditionShadow.the_smallest_cell_sits_exactly_on_the_containment_edge' does not depend on any axioms
 'WarrantSumShadow.warrant_sum_and_its_convergence' does not depend on any axioms
 'WarrantSumShadow.mode_truncation_is_inert_here' does not depend on any axioms
 'WarrantSumShadow.the_two_weights_are_different_objects' does not depend on any axioms
