@@ -6,6 +6,7 @@ import WarrantSumShadow
 import SeparationShadow
 import FamilySignShadow
 import DependenceShadow
+import SectorNonvanishingShadow
 import SectorOccupancyShadow
 import RefinementArityShadow
 import DoubleEntryShadow
@@ -87,6 +88,16 @@ import WindowShadow
 #print axioms DependenceShadow.signs_are_mixed_at_b38_member
 #print axioms DependenceShadow.signs_are_uniform_off_the_window
 #print axioms DependenceShadow.psi_zero_line_reproduces_the_bank
+#print axioms SectorNonvanishingShadow.arrival_rhs_zero
+#print axioms SectorNonvanishingShadow.arrival_dim_zero
+#print axioms SectorNonvanishingShadow.arrival_shape
+#print axioms SectorNonvanishingShadow.banked_place2_cells
+#print axioms SectorNonvanishingShadow.banked_odd_cells
+#print axioms SectorNonvanishingShadow.pos_of_four_mul_pos
+#print axioms SectorNonvanishingShadow.odd_rhs_pos
+#print axioms SectorNonvanishingShadow.place2_rhs_pos
+#print axioms SectorNonvanishingShadow.odd_sector_pos
+#print axioms SectorNonvanishingShadow.place2_sector_pos
 #print axioms SectorOccupancyShadow.layer_occupies_only_two_of_four_sectors
 #print axioms SectorOccupancyShadow.sector_parity_is_index_parity
 #print axioms RefinementArityShadow.two_fold_aggregate_does_not_determine_four_fold

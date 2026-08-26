@@ -18,6 +18,16 @@
 'DependenceShadow.signs_are_mixed_at_b38_member' does not depend on any axioms
 'DependenceShadow.signs_are_uniform_off_the_window' does not depend on any axioms
 'DependenceShadow.psi_zero_line_reproduces_the_bank' does not depend on any axioms
+'SectorNonvanishingShadow.arrival_rhs_zero' does not depend on any axioms
+'SectorNonvanishingShadow.arrival_dim_zero' does not depend on any axioms
+'SectorNonvanishingShadow.arrival_shape' does not depend on any axioms
+'SectorNonvanishingShadow.banked_place2_cells' does not depend on any axioms
+'SectorNonvanishingShadow.banked_odd_cells' does not depend on any axioms
+'SectorNonvanishingShadow.pos_of_four_mul_pos' does not depend on any axioms
+'SectorNonvanishingShadow.odd_rhs_pos' does not depend on any axioms
+'SectorNonvanishingShadow.place2_rhs_pos' does not depend on any axioms
+'SectorNonvanishingShadow.odd_sector_pos' does not depend on any axioms
+'SectorNonvanishingShadow.place2_sector_pos' does not depend on any axioms
 'SectorOccupancyShadow.layer_occupies_only_two_of_four_sectors' does not depend on any axioms
 'SectorOccupancyShadow.sector_parity_is_index_parity' does not depend on any axioms
 'RefinementArityShadow.two_fold_aggregate_does_not_determine_four_fold' does not depend on any axioms
