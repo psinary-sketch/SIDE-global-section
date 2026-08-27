@@ -364,3 +364,12 @@
 'LadderOrientationShadow.measured_alt2' does not depend on any axioms
 'LadderOrientationShadow.measured_is_ladder' does not depend on any axioms
 'LadderOrientationShadow.measured_not_stepsI' does not depend on any axioms
+'AggregationCircularityShadow.identity_iff_forced' does not depend on any axioms
+'AggregationCircularityShadow.unique' does not depend on any axioms
+'AggregationCircularityShadow.cweil_determines' does not depend on any axioms
+'AggregationCircularityShadow.cweil_inhabited' does not depend on any axioms
+'AggregationCircularityShadow.cweil_is_the_assumption' does not depend on any axioms
+'AggregationCircularityShadow.underdetermined_without_cweil' does not depend on any axioms
+'AggregationCircularityShadow.boolGrp' does not depend on any axioms
+'AggregationCircularityShadow.boolGrp_has_two_elements' does not depend on any axioms
+'AggregationCircularityShadow.underdetermined_bool' does not depend on any axioms
