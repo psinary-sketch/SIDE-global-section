@@ -1,6 +1,7 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import AlternationShadow
 import SignTransferShadow
+import LadderOrientationShadow
 import AdelicPlaneShadow
 import ReDerivationShadow
 import ScopeConditionShadow
@@ -410,3 +411,24 @@ import WindowShadow
 #print axioms SignTransferShadow.flip_is_sign
 #print axioms SignTransferShadow.flip_pos
 #print axioms SignTransferShadow.transfer_nonvacuous
+#print axioms LadderOrientationShadow.mul_one
+#print axioms LadderOrientationShadow.mul_comm
+#print axioms LadderOrientationShadow.mul_left_comm
+#print axioms LadderOrientationShadow.u4_distinct_one_m1
+#print axioms LadderOrientationShadow.u4_distinct_i_mi
+#print axioms LadderOrientationShadow.control_i_not_mi
+#print axioms LadderOrientationShadow.ladder_form
+#print axioms LadderOrientationShadow.ladder_form_mi
+#print axioms LadderOrientationShadow.alt2_of_stepsI
+#print axioms LadderOrientationShadow.alt2_of_stepsMI
+#print axioms LadderOrientationShadow.bad_alt2
+#print axioms LadderOrientationShadow.bad_not_stepsI
+#print axioms LadderOrientationShadow.alt2_does_not_imply_stepsI
+#print axioms LadderOrientationShadow.stepsI_of_alt2
+#print axioms LadderOrientationShadow.stepsMI_of_alt2
+#print axioms LadderOrientationShadow.ladder_up_to_orientation
+#print axioms LadderOrientationShadow.ipow_stepsI
+#print axioms LadderOrientationShadow.ipow_alt2
+#print axioms LadderOrientationShadow.bad_first_step_is_mi
+#print axioms LadderOrientationShadow.ipow_first_step_is_i
+#print axioms LadderOrientationShadow.orientations_differ
