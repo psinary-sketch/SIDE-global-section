@@ -358,3 +358,9 @@
 'LadderOrientationShadow.bad_first_step_is_mi' does not depend on any axioms
 'LadderOrientationShadow.ipow_first_step_is_i' does not depend on any axioms
 'LadderOrientationShadow.orientations_differ' does not depend on any axioms
+'LadderOrientationShadow.measured_rank1' does not depend on any axioms
+'LadderOrientationShadow.measured_rank2' does not depend on any axioms
+'LadderOrientationShadow.measured_stepsMI' does not depend on any axioms
+'LadderOrientationShadow.measured_alt2' does not depend on any axioms
+'LadderOrientationShadow.measured_is_ladder' does not depend on any axioms
+'LadderOrientationShadow.measured_not_stepsI' does not depend on any axioms

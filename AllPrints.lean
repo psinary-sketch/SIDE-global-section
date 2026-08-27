@@ -432,3 +432,9 @@ import WindowShadow
 #print axioms LadderOrientationShadow.bad_first_step_is_mi
 #print axioms LadderOrientationShadow.ipow_first_step_is_i
 #print axioms LadderOrientationShadow.orientations_differ
+#print axioms LadderOrientationShadow.measured_rank1
+#print axioms LadderOrientationShadow.measured_rank2
+#print axioms LadderOrientationShadow.measured_stepsMI
+#print axioms LadderOrientationShadow.measured_alt2
+#print axioms LadderOrientationShadow.measured_is_ladder
+#print axioms LadderOrientationShadow.measured_not_stepsI

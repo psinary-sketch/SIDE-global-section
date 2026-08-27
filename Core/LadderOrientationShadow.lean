@@ -195,6 +195,50 @@ theorem ipow_first_step_is_i : ipow 1 = mul i (ipow 0) := by decide
 /-- ### THE TWO ORIENTATIONS ARE GENUINELY DIFFERENT SEQUENCES. -/
 theorem orientations_differ : ipow 1 ≠ impow 1 := by decide
 
+/-! ### THE MEASURED ASSIGNMENT, ADDED AT b214 AS AN **INSTANCE** AND NOTHING ELSE.
+
+  b214 measured the two bits directly, from `F φ / φ` rather than from `α`, under the
+  transform convention `(F f)(y) = ∫ f(x) e^{+2πixy} dx`:
+
+      rank 1 (the first ODD eigenvalue) :  `c = +i`
+      rank 2 (the first EVEN eigenvalue):  `c = +1`
+
+  The unique sequence through those two values with each family alternating is
+  `c_k = −(−i)^k`, i.e. ### **`ε = −1` with orientation `i^{−k}`** — the SECOND branch of
+  `ladder_up_to_orientation`.
+
+  ### **WHAT THIS DOES NOT DO, AND THE FERRY REQUIRED THAT IT SAY SO:** it does not weaken
+  ### `alt2_does_not_imply_stepsI`, which is a THEOREM and which a measurement cannot repeal.
+  ### **What the measurement supplies is exactly the extra hypothesis that theorem says is
+  ### needed** — the first step — and the dichotomy then does the rest. ### The
+  ### underdetermination statement stands untouched above; this section adds an inhabitant. -/
+
+/-- the assignment b214 measured: `c_k = −(−i)^k`. -/
+def measured : Nat → U4 := fun k => mul m1 (impow k)
+
+theorem measured_rank1 : measured 1 = i := by decide
+theorem measured_rank2 : measured 2 = one := by decide
+
+/-- ### it steps by `−i`: the orientation `i^{−k}`, not `i^{+k}`. -/
+theorem measured_stepsMI : StepsMI measured := by
+  intro k
+  show mul m1 (mul mi (impow k)) = mul mi (mul m1 (impow k))
+  exact mul_left_comm m1 mi (impow k)
+
+/-- ### and it therefore alternates within each family, as b211 and b212 derived. -/
+theorem measured_alt2 : Alt2 measured := alt2_of_stepsMI measured measured_stepsMI
+
+/-- ### THE INSTANCE: the measured sequence IS `ε · i^{−k}` with `ε = measured 0 = −1`. -/
+theorem measured_is_ladder : ∀ k, measured k = mul (measured 0) (impow k) :=
+  ladder_form_mi measured measured_stepsMI
+
+/-- ### AND IT IS **NOT** THE OTHER ORIENTATION — so the two bits are genuinely fixed by the
+    two measurements, and the dichotomy's other branch is excluded rather than merely unused. -/
+theorem measured_not_stepsI : ¬ StepsI measured := by
+  intro h
+  have h0 : measured 1 = mul i (measured 0) := h 0
+  exact absurd h0 (by decide)
+
 end LadderOrientationShadow
 
 #print axioms LadderOrientationShadow.mul_one
@@ -218,3 +262,9 @@ end LadderOrientationShadow
 #print axioms LadderOrientationShadow.bad_first_step_is_mi
 #print axioms LadderOrientationShadow.ipow_first_step_is_i
 #print axioms LadderOrientationShadow.orientations_differ
+#print axioms LadderOrientationShadow.measured_rank1
+#print axioms LadderOrientationShadow.measured_rank2
+#print axioms LadderOrientationShadow.measured_stepsMI
+#print axioms LadderOrientationShadow.measured_alt2
+#print axioms LadderOrientationShadow.measured_is_ladder
+#print axioms LadderOrientationShadow.measured_not_stepsI
