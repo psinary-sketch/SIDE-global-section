@@ -18,6 +18,13 @@
 'DependenceShadow.signs_are_mixed_at_b38_member' does not depend on any axioms
 'DependenceShadow.signs_are_uniform_off_the_window' does not depend on any axioms
 'DependenceShadow.psi_zero_line_reproduces_the_bank' does not depend on any axioms
+'AlternationShadow.flip_alternates_at_0' does not depend on any axioms
+'AlternationShadow.const1_fails_at_0' does not depend on any axioms
+'AlternationShadow.signs_distinct' does not depend on any axioms
+'AlternationShadow.alternates_neg' does not depend on any axioms
+'AlternationShadow.alternates_both' does not depend on any axioms
+'AlternationShadow.alternates_both'' does not depend on any axioms
+'AlternationShadow.both_values_survive_global_sign' does not depend on any axioms
 'InvolutionScalarShadow.both_signs_satisfy' does not depend on any axioms
 'InvolutionScalarShadow.others_fail' does not depend on any axioms
 'InvolutionScalarShadow.signs_distinct' does not depend on any axioms
