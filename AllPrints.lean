@@ -1,5 +1,6 @@
 -- AllPrints.lean: generated at build; imports every Core module and prints every terminal.
 import AlternationShadow
+import SignTransferShadow
 import AdelicPlaneShadow
 import ReDerivationShadow
 import ScopeConditionShadow
@@ -397,3 +398,15 @@ import WindowShadow
 #print axioms WindowShadow.excess_sector_instances
 #print axioms WindowShadow.line_address_instances
 #print axioms WindowShadow.gauge_reading_pair
+#print axioms SignTransferShadow.control_pos
+#print axioms SignTransferShadow.control_neg
+#print axioms SignTransferShadow.signs_distinct
+#print axioms SignTransferShadow.eq_of_mul_pos
+#print axioms SignTransferShadow.transfer
+#print axioms SignTransferShadow.transfer_symm
+#print axioms SignTransferShadow.neg_is_sign
+#print axioms SignTransferShadow.sq_pos
+#print axioms SignTransferShadow.flip_alternates
+#print axioms SignTransferShadow.flip_is_sign
+#print axioms SignTransferShadow.flip_pos
+#print axioms SignTransferShadow.transfer_nonvacuous

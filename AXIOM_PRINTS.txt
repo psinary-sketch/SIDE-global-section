@@ -325,3 +325,15 @@
 'WindowShadow.excess_sector_instances' does not depend on any axioms
 'WindowShadow.line_address_instances' does not depend on any axioms
 'WindowShadow.gauge_reading_pair' does not depend on any axioms
+'SignTransferShadow.control_pos' does not depend on any axioms
+'SignTransferShadow.control_neg' does not depend on any axioms
+'SignTransferShadow.signs_distinct' does not depend on any axioms
+'SignTransferShadow.eq_of_mul_pos' does not depend on any axioms
+'SignTransferShadow.transfer' does not depend on any axioms
+'SignTransferShadow.transfer_symm' does not depend on any axioms
+'SignTransferShadow.neg_is_sign' does not depend on any axioms
+'SignTransferShadow.sq_pos' does not depend on any axioms
+'SignTransferShadow.flip_alternates' does not depend on any axioms
+'SignTransferShadow.flip_is_sign' does not depend on any axioms
+'SignTransferShadow.flip_pos' does not depend on any axioms
+'SignTransferShadow.transfer_nonvacuous' does not depend on any axioms
