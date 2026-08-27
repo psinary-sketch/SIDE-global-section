@@ -133,8 +133,8 @@ theorem alt2_of_stepsMI (c : Nat → U4) (h : StepsMI c) : Alt2 c := by
 /-! ### (3) ### THE CONVERSE FAILS — AND THIS IS THE FILE'S POINT.
 
   `bad` alternates in each family and is NOT the `i`-ladder. So "both families
-  alternate" is STRICTLY WEAKER than the ladder, and the gap is the relative
-  phase. -/
+  alternate" is STRICTLY WEAKER than the ladder, and what separates them is the
+  relative phase. -/
 
 def bad : Nat → U4
   | 0 => one
