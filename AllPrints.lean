@@ -73,6 +73,7 @@ import ValueShadow
 import WindowShadow
 import AggregationCircularityShadow
 import StatedChoiceShadow
+import TraceFactorizationShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -456,3 +457,11 @@ import StatedChoiceShadow
 #print axioms StatedChoiceShadow.deviation_can_be_nonzero
 #print axioms StatedChoiceShadow.c0_deviation_is_zero
 #print axioms StatedChoiceShadow.level_is_a_function
+#print axioms TraceFactorizationShadow.inactive_factor_is_one
+#print axioms TraceFactorizationShadow.active_factor_is_not_forced
+#print axioms TraceFactorizationShadow.product_is_over_the_active_set
+#print axioms TraceFactorizationShadow.naive_product_differs
+#print axioms TraceFactorizationShadow.product_positive_here
+#print axioms TraceFactorizationShadow.zero_factor_kills_positivity
+#print axioms TraceFactorizationShadow.state_is_sign_blind
+#print axioms TraceFactorizationShadow.state_sees_non_unit_scalars

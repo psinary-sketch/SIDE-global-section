@@ -380,3 +380,11 @@
 'StatedChoiceShadow.deviation_can_be_nonzero' does not depend on any axioms
 'StatedChoiceShadow.c0_deviation_is_zero' does not depend on any axioms
 'StatedChoiceShadow.level_is_a_function' does not depend on any axioms
+'TraceFactorizationShadow.inactive_factor_is_one' does not depend on any axioms
+'TraceFactorizationShadow.active_factor_is_not_forced' does not depend on any axioms
+'TraceFactorizationShadow.product_is_over_the_active_set' does not depend on any axioms
+'TraceFactorizationShadow.naive_product_differs' does not depend on any axioms
+'TraceFactorizationShadow.product_positive_here' does not depend on any axioms
+'TraceFactorizationShadow.zero_factor_kills_positivity' does not depend on any axioms
+'TraceFactorizationShadow.state_is_sign_blind' does not depend on any axioms
+'TraceFactorizationShadow.state_sees_non_unit_scalars' does not depend on any axioms
