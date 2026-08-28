@@ -373,3 +373,10 @@
 'AggregationCircularityShadow.boolGrp' does not depend on any axioms
 'AggregationCircularityShadow.boolGrp_has_two_elements' does not depend on any axioms
 'AggregationCircularityShadow.underdetermined_bool' does not depend on any axioms
+'StatedChoiceShadow.arrival_depth_is_dead' does not depend on any axioms
+'StatedChoiceShadow.level_one_fails_at_two' does not depend on any axioms
+'StatedChoiceShadow.chosen_level_positive' does not depend on any axioms
+'StatedChoiceShadow.chosen_level_is_lowest' does not depend on any axioms
+'StatedChoiceShadow.deviation_can_be_nonzero' does not depend on any axioms
+'StatedChoiceShadow.c0_deviation_is_zero' does not depend on any axioms
+'StatedChoiceShadow.level_is_a_function' does not depend on any axioms

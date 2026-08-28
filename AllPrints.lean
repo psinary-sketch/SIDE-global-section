@@ -72,6 +72,7 @@ import TwistedShadow
 import ValueShadow
 import WindowShadow
 import AggregationCircularityShadow
+import StatedChoiceShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -448,3 +449,10 @@ import AggregationCircularityShadow
 #print axioms AggregationCircularityShadow.boolGrp
 #print axioms AggregationCircularityShadow.boolGrp_has_two_elements
 #print axioms AggregationCircularityShadow.underdetermined_bool
+#print axioms StatedChoiceShadow.arrival_depth_is_dead
+#print axioms StatedChoiceShadow.level_one_fails_at_two
+#print axioms StatedChoiceShadow.chosen_level_positive
+#print axioms StatedChoiceShadow.chosen_level_is_lowest
+#print axioms StatedChoiceShadow.deviation_can_be_nonzero
+#print axioms StatedChoiceShadow.c0_deviation_is_zero
+#print axioms StatedChoiceShadow.level_is_a_function
