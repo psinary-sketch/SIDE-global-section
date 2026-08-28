@@ -16,8 +16,21 @@
     normalization forced (act 7, modulo the class-richness lemma at cite);
   · the restricted-tensor assembly — owner: INFRASTRUCTURE (the Hilbert ⊗′; the sharp
     missing lemma stated in GlobalSection.lean);
-  · Weil's ledger — the atlas's certified columns at the cell, in the CC sign
-    convention (the act-12 dictionary).
+  · Weil's ledger — the atlas's certified columns at the cell, in the SUPPORT-AND-
+    PROGRAM-VOICE convention (`W_∞ = +A`; the prime term enters with a MINUS), which
+    is the convention this file's own relation writes.
+    ### AMENDED 2026-08-28 (b235) BY AUTHOR RULING. THE ORIGINAL READ:
+    ###   "in the CC sign convention (the act-12 dictionary)."
+    ### WHY THE ORIGINAL WAS THE DEFECT: this file's relation writes
+    ### `wInf - wPrimes`, and under CC's convention that expression is `-A - PR`,
+    ### which names NO object the corpus computes. Under the convention now named
+    ### it is `A - PR` — the support-and-program layer's own `LEFT` column.
+    ### THE ATLAS THAT DECIDED IT: `SIGN_ARRANGEMENT_RECONCILIATION.md` §5, where
+    ### EIGHT corpus-voice cells agree and the deciding sentence is the corpus's own
+    ### statement of its open premise, at support-voice:
+    ###   "h2 — the sign of `W_∞ − W_2`."
+    ### CC's `𝒲_∞ = −A` is NOT a dissent but a correctly-translated IMPORT (IMP-2):
+    ### CC's eq. (1) puts the zero-sum on the LEFT, so every local term flips sign.
 
   SORRY COUNT OF THIS FILE: 0 — and, per the 2026-08-19 ruling, EVERY kernel file's.
   The constituents are DATA PARAMETERS (Props over supplied structures), NOT sorried
@@ -44,8 +57,13 @@ structure ArchimedeanE1Trace (cell : DiagonalCell) where
 structure QuotientTrace (cell : DiagonalCell) where
   value : ℝ
 
-/-- Weil's ledger at the cell: `W_∞` (CC convention, the act-12 dictionary) and the
-    prime sum, the atlas's certified columns. -/
+/-- Weil's ledger at the cell: `W_∞` (### SUPPORT-AND-PROGRAM-VOICE convention:
+    `wInf = +A`, the archimedean column as the atlas computes it) and the prime sum,
+    the atlas's certified columns. The relation below therefore reads `A − PR`.
+    ### AMENDED 2026-08-28 (b235). THE ORIGINAL READ:
+    ###   "`W_∞` (CC convention, the act-12 dictionary) and the prime sum".
+    ### NOTHING ELSE IN THIS FILE CHANGED: no declaration, no type, no relation, no
+    ### token of code. ### THE STATEMENT IS UNMOVED; ONLY ITS CONVENTION IS NAMED. -/
 structure WeilLedger (cell : DiagonalCell) where
   wInf : ℝ
   wPrimes : ℝ
