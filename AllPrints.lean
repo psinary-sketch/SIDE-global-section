@@ -71,6 +71,7 @@ import TwistedRootShadow
 import TwistedShadow
 import ValueShadow
 import WindowShadow
+import AggregationCircularityShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -438,3 +439,12 @@ import WindowShadow
 #print axioms LadderOrientationShadow.measured_alt2
 #print axioms LadderOrientationShadow.measured_is_ladder
 #print axioms LadderOrientationShadow.measured_not_stepsI
+#print axioms AggregationCircularityShadow.identity_iff_forced
+#print axioms AggregationCircularityShadow.unique
+#print axioms AggregationCircularityShadow.cweil_determines
+#print axioms AggregationCircularityShadow.cweil_inhabited
+#print axioms AggregationCircularityShadow.cweil_is_the_assumption
+#print axioms AggregationCircularityShadow.underdetermined_without_cweil
+#print axioms AggregationCircularityShadow.boolGrp
+#print axioms AggregationCircularityShadow.boolGrp_has_two_elements
+#print axioms AggregationCircularityShadow.underdetermined_bool
