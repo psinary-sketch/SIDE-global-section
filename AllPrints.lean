@@ -74,6 +74,7 @@ import WindowShadow
 import AggregationCircularityShadow
 import StatedChoiceShadow
 import TraceFactorizationShadow
+import FoldedMirrorShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -465,3 +466,17 @@ import TraceFactorizationShadow
 #print axioms TraceFactorizationShadow.zero_factor_kills_positivity
 #print axioms TraceFactorizationShadow.state_is_sign_blind
 #print axioms TraceFactorizationShadow.state_sees_non_unit_scalars
+#print axioms FoldedMirrorShadow.even_signal_is_palindromic
+#print axioms FoldedMirrorShadow.odd_signal_is_not_palindromic
+#print axioms FoldedMirrorShadow.conv_even_of_even
+#print axioms FoldedMirrorShadow.conv_not_even_witness
+#print axioms FoldedMirrorShadow.autocorr_even_of_even
+#print axioms FoldedMirrorShadow.autocorr_even_even_when_signal_is_not
+#print axioms FoldedMirrorShadow.conv_eq_corr_of_even
+#print axioms FoldedMirrorShadow.conv_ne_corr_witness
+#print axioms FoldedMirrorShadow.two_ended_eq_two_times_one_sided
+#print axioms FoldedMirrorShadow.fBad_is_not_even
+#print axioms FoldedMirrorShadow.fGood_is_even_at_one
+#print axioms FoldedMirrorShadow.fold_fails_for_fBad
+#print axioms FoldedMirrorShadow.fold_holds_for_fGood
+#print axioms FoldedMirrorShadow.fold_needs_evenness
