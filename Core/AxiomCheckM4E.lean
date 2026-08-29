@@ -1,0 +1,9 @@
+import M4EnvelopeShadow
+open M4EnvelopeShadow
+#print axioms factorial_dominates_geometric
+#print axioms factorial_does_not_dominate_before
+#print axioms envelope_holds_at_cuts
+#print axioms deep_cuts_need_the_evaluation_error
+#print axioms minimax_instances
+#print axioms range_condition_holds_at_six
+#print axioms range_condition_fails_at_four
