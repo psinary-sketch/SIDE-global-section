@@ -55,11 +55,45 @@ structure DiagonalCell where
     ###    Δ₋'s bookkeeping (M-4) named as the definition's open debt in the
     ###    correspondence row."
     ### THE DEFINITION (b237's candidate C2):
-    ###   ### **`value := Tr_full + E2 + Δ₋`**
+    ###   ### **`value := Tr_full + E2 − Δ₋`**
     ### the three archimedean channels of the bench instrument, at a DIAGONAL a² cell:
     ###   `Tr_full` — the prolate mode trace   (`b38_act10.trace_modes`)
     ###   `E2`      — the ε-regularization term (`b38_act10.e2_of_grid`)
     ###   `Δ₋`      — the odd-index `t(n)` series (§17, banked at the `ε′(1⁺)` pin)
+    ###
+    ### ### AMENDED 2026-08-29 (b244) BY AUTHOR RULING. THE ORIGINAL READ:
+    ### ###   "### **`value := Tr_full + E2 + Δ₋`**"
+    ### THE RULING, VERBATIM: "RULE Δ₋: D1 — RULE M-1's combination amended to
+    ### `T.value := Tr_full + E2 − Δ₋` per §19's own sentence, originals visible, the
+    ### M-1 card annotated."
+    ### ### THE WARRANT IS §19's OWN ROW FOR THE RAW CHANNEL, QUOTED:
+    ### ###   `Tr_∞(ϑ(g)S_Son)` — "AT CONTENT (CC Thm 4.7); **our object's trace = this
+    ### ###    − Δ₋(g)**"
+    ### ### and act 8's assembly, the only place in the corpus where the combination is
+    ### ### written as EXECUTABLE CODE (`b36_act8.py:175`):
+    ### ###   `RIGHT = (Tr_full + E2 - Dneg) - Thq`
+    ### ### — where the parenthesis is itself the statement of which terms belong to `T`.
+    ### ### WHAT DID **NOT** CHANGE, AND IT MATTERS: ### **Δ₋'s DEFINITION AND ITS BINDING
+    ### ### ARE UNTOUCHED.** §17's odd-index `t(n)` series, via `b37_act9.eps_masked(rr,
+    ### ### odd)`, is what §17/§19 define and is what b240 bound — b241 checked that and
+    ### ### recorded it. ### **ONLY THE SIGN IN THE COMBINATION MOVED.**
+    ### ### PROVENANCE: A RULING, NOT A DERIVATION. b241 FILED this sign and executed
+    ### ### nothing, because an executor does not amend a ruling. The author ruled.
+    ###
+    ### ### RULE MODES: K1, 2026-08-29 (b244), THE REALIZATION'S CEILING, RULED:
+    ### ### **THE DEFINITION STAYS LEMMA F.1's ELEVEN MODES.** ### The per-cell
+    ### ### realization reports the ### **SEVEN COMPUTABLE** modes plus ### **A TAIL TERM
+    ### ### IN ITS BAR.**
+    ### ### WHY, from b242's measurement: `qeps_layer.py:41` certifies eleven terms, but
+    ### ### `λ²ₙ` reaches `4.7e−16` at `n = 7`, so ### **float64 CARRIES SEVEN** — and
+    ### ### `n_last = 6` at EVERY `NQ` from 500 to 1300, so more quadrature buys no modes.
+    ### ### The NQ-spread of the truncated trace jumps ### **61×–249×** exactly when the
+    ### ### first sub-floor mode enters the sum. ### **THE CERTIFIED CEILING AND THE
+    ### ### ARITHMETIC CEILING ARE NOT THE SAME NUMBER**, and K1 keeps the definition at
+    ### ### the former while making the realization honest about the latter.
+    ### ### THE TAIL IS **NOT BOUNDED** BY b242 — branch (SLOW), envelope beyond reach,
+    ### ### obstruction priced at ~3.45 decimal digits per further mode.
+    ### ### `W-ORD-MODE-PRECISION` (K3) is the bounded instrument act that closes it.
     ### This is a DOCUMENTED BINDING, not a Lean definition, and the idiom is chosen
     ### deliberately: ### **the three summands have NO formal definitions in this
     ### repository**, so writing them as terms would mean inventing three realizations
@@ -80,7 +114,45 @@ structure ArchimedeanE1Trace (cell : DiagonalCell) where
   value : ℝ
 
 /-- the volume-normalized quotient trace at a cell.
-    OWNER: file D (the count) + the forced volume normalization (act 7). -/
+    OWNER: file D (the count) + the forced volume normalization (act 7).
+
+    ### `value` IS BOUND BY AUTHOR RULING, 2026-08-29 (b244). THE RULING, VERBATIM:
+    ###   "RULE Q: O1 — `Q.value := −Θ_q` as documented binding, the five owner texts
+    ###    cited, the aggregation still UNSTATED and said so."
+    ### THE BINDING:  ### **`value := −Θ_q`**, with `Θ_q` the per-cell quotient sum the
+    ### bench instrument returns (`b38_act10.theta_quotient`, on `V_inv`).
+    ### ### THE FIVE OWNER TEXTS, CITED AS THE RULING REQUIRES:
+    ###   (1) §19's comparison: `W_∞(g) − Σ_p W_p(g) ≟ [Tr_∞(ϑ(g)S_Son) + ∫g ε]
+    ###       − Θ_quotient(g)` — Θ_q enters with a MINUS, the prime side's own orientation.
+    ###   (2) `b36_act8.py:175`: `RIGHT = (Tr_full + E2 - Dneg) - Thq` — the only place in
+    ###       the corpus where the assembly is written as executable code, and `Thq` sits
+    ###       OUTSIDE the trace bracket with a MINUS.
+    ###   (3) §20(c)'s closed form: `τ_q(p,n,k)·p^{k/2} = (p^n−p^k)/(p^n−1)`, so the
+    ###       quotient channel **CONVERGES TO WEIL'S COEFFICIENTS** at the level limit —
+    ###       i.e. Θ_q is the model's `Σ_p W_p`, which enters with a minus.
+    ###   (4) the recurring pairing `(Θ_q − PR)`, written that way by four independent
+    ###       acts: `b36_act8.py`, `b37_act9.py:169-170`, `b38_act10.py:188`, and §20(a)'s
+    ###       stated anatomy `D = −resid47 − 2·E2 + Δ₋ + (Θ_q − PR)`.
+    ###   (5) this file's own operator below: `T.value + Q.value = W.wInf - W.wPrimes` —
+    ###       `Q` enters with a PLUS, so `Q.value = −Θ_q` places Θ_q with the prime side.
+    ###
+    ### ### AND THE THING THE RULING REQUIRES BE SAID, SAID HERE AND NOT IN A FOOTNOTE:
+    ### ### **THE AGGREGATION IS STILL UNSTATED.** ### Indexed at `quotient-trace`, found
+    ### ### by b197 and RE-CONFIRMED by b215: ### *"no statement assembles the per-place
+    ### ### values into the single real `Q.value` at a cell."*
+    ### ### THE FIVE TEXTS ABOVE **ORIENT** `Θ_q` INSIDE THEIR OWN COMPARISONS. ### **NONE
+    ### ### OF THEM ASSEMBLES IT INTO `Q.value`, AND THOSE ARE TWO DIFFERENT CLAIMS.**
+    ### ### b241 ROUTED THIS QUESTION FOR EXACTLY THAT REASON AND CHOSE NOTHING; the
+    ### ### author ruled O1. ### **THE BINDING IS THEREFORE A RULING RESTING ON FIVE
+    ### ### ORIENTING TEXTS AND ONE UNCLOSED STEP**, and M-2 (the restricted-product
+    ### ### assembly) is where that step lives. ### M-2 IS NOT CLOSED BY THIS BINDING.
+    ###
+    ### ### DISCLOSED, BECAUSE THE STANDING CLAUSE REQUIRES THE DIRECTION BE NAMED:
+    ### ### **O1 SHRINKS THE RESIDUAL** — it is b240's banked variant V2. ### AND IT DOES
+    ### ### NOT CLOSE IT: V2 stays **19×–24×** the combined bar and V3 **8.6×–19×**, with
+    ### ### the largest term `resid47` untouched by every orientation. ### **A RULING
+    ### ### CHOSEN TO MAKE THE COLUMNS MEET WOULD HAVE TO MAKE THEM MEET.**
+    ### ### THE FIELD STAYS A DATA PARAMETER; WHAT IS FIXED IS ITS MEANING. -/
 structure QuotientTrace (cell : DiagonalCell) where
   value : ℝ
 
