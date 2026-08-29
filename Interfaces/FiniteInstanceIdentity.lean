@@ -48,7 +48,34 @@ structure DiagonalCell where
   one_lt : 1 < a_sq
 
 /-- the ε-regularized archimedean E₁-trace on the constrained class at a cell.
-    OWNER: the ε-lemma's bookkeeping (geometry derived, act 15) + files B–C. -/
+    OWNER: the ε-lemma's bookkeeping (geometry derived, act 15) + files B–C.
+
+    ### `value` IS DEFINED BY AUTHOR RULING, 2026-08-28 (b239). THE RULING, VERBATIM:
+    ###   "RULE M-1: C2, per-cell instrument realization standing until M-4 closes;
+    ###    Δ₋'s bookkeeping (M-4) named as the definition's open debt in the
+    ###    correspondence row."
+    ### THE DEFINITION (b237's candidate C2):
+    ###   ### **`value := Tr_full + E2 + Δ₋`**
+    ### the three archimedean channels of the bench instrument, at a DIAGONAL a² cell:
+    ###   `Tr_full` — the prolate mode trace   (`b38_act10.trace_modes`)
+    ###   `E2`      — the ε-regularization term (`b38_act10.e2_of_grid`)
+    ###   `Δ₋`      — the odd-index `t(n)` series (§17, banked at the `ε′(1⁺)` pin)
+    ### This is a DOCUMENTED BINDING, not a Lean definition, and the idiom is chosen
+    ### deliberately: ### **the three summands have NO formal definitions in this
+    ### repository**, so writing them as terms would mean inventing three realizations
+    ### the record does not have. ### THE FIELD STAYS A DATA PARAMETER; WHAT IS FIXED
+    ### IS ITS MEANING.
+    ### ### THE RIDER, PART OF THE RULING AND NOT A GLOSS ON IT: the realization is
+    ### ### **PER-CELL AT BENCH, STANDING UNTIL M-4 CLOSES.** It is not structural.
+    ### ### THE OPEN DEBT, NAMED: ### **M-4 — Δ₋'s trace-class bookkeeping.** §17's own
+    ### ### grade is "COMPUTED IN STRUCTURE … open only in its trace-class bookkeeping",
+    ### ### so ### **`value` IS DEFINED ONLY AS FAR AS THAT BOOKKEEPING IS.** The debt
+    ### ### also stands in CORRESPONDENCE.md's grade cell, where the next reader meets it.
+    ### THE ORIGINAL DOCSTRING READ, IN FULL:
+    ###   "the ε-regularized archimedean E₁-trace on the constrained class at a cell.
+    ###    OWNER: the ε-lemma's bookkeeping (geometry derived, act 15) + files B–C."
+    ### NOTHING ELSE IN THIS FILE CHANGED: no declaration, no type, no relation, no token
+    ### of code. ### A DEFINITION WAS NAMED; NOTHING WAS PROVED AND NOTHING WAS CLOSED. -/
 structure ArchimedeanE1Trace (cell : DiagonalCell) where
   value : ℝ
 
