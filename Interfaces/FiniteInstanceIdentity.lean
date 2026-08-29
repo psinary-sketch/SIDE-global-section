@@ -105,6 +105,46 @@ structure DiagonalCell where
     ### ### grade is "COMPUTED IN STRUCTURE … open only in its trace-class bookkeeping",
     ### ### so ### **`value` IS DEFINED ONLY AS FAR AS THAT BOOKKEEPING IS.** The debt
     ### ### also stands in CORRESPONDENCE.md's grade cell, where the next reader meets it.
+    ### ### RULE M-2-inf: Q1, 2026-08-29 (b253), THE REALIZATION'S CONSTRUCTION, RULED.
+    ### ### THE RULING, VERBATIM: "RULE M-2∞: Q1 — the QUADRATURE construction
+    ### ### (left_side's one-axis integral, per its owner's line) is the archimedean object
+    ### ### the identity's left column denotes; the per-cell realization of the ruled C2+D1
+    ### ### binding is RE-BOUND to the quadrature construction … the mode sum
+    ### ### (trace_modes) is DEMOTED to a truncation diagnostic under the standing law
+    ### ### 'every quoted partial sum carries its N and its precision'."
+    ### ### ### **THE RE-BOUND REALIZATION:  `T.value := A + E2 − Δ₋`**, with
+    ### ### `A` the quadrature construction (`b38_act10.left_side`, a ONE-AXIS integral in
+    ### ### which NO mode index appears).
+    ### ### **THE BINDING ABOVE (`Tr_full + E2 − Δ₋`) STAYS AS WRITTEN AND WAS
+    ### ### CORRECT UNDER THE CONSTRUCTION IT NAMED.** ### Only which construction realizes the
+    ### ### archimedean trace has moved; ### **THE COMBINATION IS UNCHANGED.**
+    ### ### THE DERIVATION, FROM THE OWNERS' OWN DEFINING LINES AND NOT ASSERTED:
+    ### ###   `b36_act8.py:184`  `resid47 = Tr_full − (A + E2)`, i.e.
+    ### ###       (i)  `Tr_full = A + E2 + resid47`
+    ### ###   (ii) the ruled binding `T.value := Tr_full + E2 − Δ₋`
+    ### ###   ⇒ (iii) substituting construction for construction:
+    ### ###       **`T.value := A + E2 − Δ₋`**
+    ### ### **AND WHAT THE MOVE COSTS, DISCLOSED IN THE EXECUTOR'S OWN VOICE:** from (i) and (ii),
+    ### ### `T.value^OLD − T.value^NEW = E2 + resid47` — ### **the re-binding removes
+    ### ### `resid47` AND ONE `E2` TERM, because the old assembly carried `E2` TWICE**
+    ### ### (once in the combination, once inside `Tr_full`'s comparison against `A + E2`).
+    ### ### The ferry's disclosed consequence named `resid47` alone. ### **THE EXCESS IS RECORDED
+    ### ### HERE RATHER THAN LEFT TO BE FOUND.** ### Its SIZE is not computed: that is a face-off,
+    ### ### and b253 ran none.
+    ### ### **THE WARRANT IS b252's TABLE**, quoted: `n·w(n)` rises and flattens toward a
+    ### ### nonzero constant at every cell, so the mode sum does not settle and
+    ### ### `Δ_2real := Tr_∞ − A − E2` HAS NO LIMIT TO BE.
+    ### ### **THAT IS A BENCH READING, NOT A THEOREM** (b242: a measured rate is not a tail bound),
+    ### ### and ### **Q1 IS A DEFINITIONAL RULING, NOT AN ANALYTIC CLAIM.**
+    ### ### THE MATCH TO THE M-2∞ DOSSIER's R-LABELS WAS ### **HALTED AS AMBIGUOUS** ### (b253):
+    ### ### Q1's wording is R-I's headline, its content declines R-I's approximation consequent,
+    ### ### and its disclosed consequence is R-III's. ### **AN EXECUTOR DOES NOT SETTLE A
+    ### ### DEFINITION (b237); THE LABEL IS ROUTED TO THE AUTHOR.**
+    ### ### **THE QUOTED-N LAW, NOW STANDING:** any quoted `Tr_full`, `TrN`, `S_N`, `tr[n]`,
+    ### ### `Δ_2real` or `resid47` must carry its mode count `N` and its precision, or it is
+    ### ### **UNGRADED.** ### b251's `Δ_2real` is quotable only as `(N = 11, float64 modes,
+    ### ### suspect above n = 6)`. ### **b251's BRANCH IS NOT RE-VERDICTED (b246): the law governs
+    ### ### FUTURE QUOTATION, NOT PAST VERDICTS.**
     ### THE ORIGINAL DOCSTRING READ, IN FULL:
     ###   "the ε-regularized archimedean E₁-trace on the constrained class at a cell.
     ###    OWNER: the ε-lemma's bookkeeping (geometry derived, act 15) + files B–C."
