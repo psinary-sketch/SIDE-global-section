@@ -77,6 +77,7 @@ import TraceFactorizationShadow
 import FoldedMirrorShadow
 import BallAbsorptionShadow
 import AbsorptionFunctionalShadow
+import BoundaryValueShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -504,3 +505,15 @@ import AbsorptionFunctionalShadow
 #print axioms B271.wit_wild_ne
 #print axioms B271.gWit_not_vanishes
 #print axioms B271.absorbed_indices_in_ball
+#print axioms B298.ball_agrees_with_b270_2_2
+#print axioms B298.witness_not_in_object_2_2
+#print axioms B298.witness_has_mass_on_ball_2_2
+#print axioms B298.witness_leaves_member_at_b_eq_1_2_2
+#print axioms B298.refuse_value_five_2_2
+#print axioms B298.not_dead_2_2
+#print axioms B298.not_dead_matches_banked_2_2
+#print axioms B298.class_size_2_2
+#print axioms B298.classes_uniform_2_2
+#print axioms B298.boundary_value_at_cell_2_2_on_member_radii_neg1_0
+#print axioms B298.ctor_distinct_2_2
+#print axioms B298.ctor_degenerate_2_1

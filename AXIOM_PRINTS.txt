@@ -424,3 +424,15 @@
 'B271.wit_wild_ne' does not depend on any axioms
 'B271.gWit_not_vanishes' does not depend on any axioms
 'B271.absorbed_indices_in_ball' does not depend on any axioms
+'B298.ball_agrees_with_b270_2_2' does not depend on any axioms
+'B298.witness_not_in_object_2_2' does not depend on any axioms
+'B298.witness_has_mass_on_ball_2_2' does not depend on any axioms
+'B298.witness_leaves_member_at_b_eq_1_2_2' does not depend on any axioms
+'B298.refuse_value_five_2_2' does not depend on any axioms
+'B298.not_dead_2_2' does not depend on any axioms
+'B298.not_dead_matches_banked_2_2' does not depend on any axioms
+'B298.class_size_2_2' does not depend on any axioms
+'B298.classes_uniform_2_2' does not depend on any axioms
+'B298.boundary_value_at_cell_2_2_on_member_radii_neg1_0' does not depend on any axioms
+'B298.ctor_distinct_2_2' does not depend on any axioms
+'B298.ctor_degenerate_2_1' does not depend on any axioms
