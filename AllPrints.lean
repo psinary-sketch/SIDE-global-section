@@ -75,6 +75,8 @@ import AggregationCircularityShadow
 import StatedChoiceShadow
 import TraceFactorizationShadow
 import FoldedMirrorShadow
+import BallAbsorptionShadow
+import AbsorptionFunctionalShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -480,3 +482,25 @@ import FoldedMirrorShadow
 #print axioms FoldedMirrorShadow.fold_fails_for_fBad
 #print axioms FoldedMirrorShadow.fold_holds_for_fGood
 #print axioms FoldedMirrorShadow.fold_needs_evenness
+#print axioms B270.absorb_2_2
+#print axioms B270.absorb_3_1
+#print axioms B270.absorb_5_1
+#print axioms B270.absorb_7_1
+#print axioms B270.absorb_11_1
+#print axioms B270.absorb_13_1
+#print axioms B270.empty_3_1
+#print axioms B270.empty_5_1
+#print axioms B270.empty_7_1
+#print axioms B270.empty_11_1
+#print axioms B270.live_2_2_k1
+#print axioms B270.refuse_empty_2_2
+#print axioms B270.refuse_absorb_early_2_2
+#print axioms B270.refuse_live_2_2_k2
+#print axioms B270.refuse_live_3_1_k1
+#print axioms B271.van_ones
+#print axioms B271.van_wild
+#print axioms B271.gVan_vanishes
+#print axioms B271.wit_ones_ne
+#print axioms B271.wit_wild_ne
+#print axioms B271.gWit_not_vanishes
+#print axioms B271.absorbed_indices_in_ball
