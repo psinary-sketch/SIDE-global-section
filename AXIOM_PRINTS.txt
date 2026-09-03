@@ -471,3 +471,5 @@
 'B309.frame_arithmetic' does not depend on any axioms
 'B309.support_ranges_split_at_the_level' does not depend on any axioms
 'B309.no_offball_fixed_point_of_scaling' does not depend on any axioms
+'B310.signed_count_at_the_identity_is_the_dimension' does not depend on any axioms
+'B310.identity_term_survives_alone' does not depend on any axioms

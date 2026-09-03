@@ -82,6 +82,7 @@ import RationalEnclosureShadow
 import ValuationDivisibilityShadow
 import IndexRangeShadow
 import ScalingTraceShadow
+import SmearCollapseShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -556,3 +557,5 @@ import ScalingTraceShadow
 #print axioms B309.frame_arithmetic
 #print axioms B309.support_ranges_split_at_the_level
 #print axioms B309.no_offball_fixed_point_of_scaling
+#print axioms B310.signed_count_at_the_identity_is_the_dimension
+#print axioms B310.identity_term_survives_alone
