@@ -78,6 +78,7 @@ import FoldedMirrorShadow
 import BallAbsorptionShadow
 import AbsorptionFunctionalShadow
 import BoundaryValueShadow
+import RationalEnclosureShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -517,3 +518,14 @@ import BoundaryValueShadow
 #print axioms B298.boundary_value_at_cell_2_2_on_member_radii_neg1_0
 #print axioms B298.ctor_distinct_2_2
 #print axioms B298.ctor_degenerate_2_1
+#print axioms B302.criterion_refuses_a_lower_bound_that_is_too_large
+#print axioms B302.criterion_refuses_an_upper_bound_that_is_too_small
+#print axioms B302.criterion_accepts_a_correct_lower_bound
+#print axioms B302.criterion_accepts_a_correct_upper_bound
+#print axioms B302.at_denominator_one_the_enclosure_is_the_whole_unit_interval
+#print axioms B302.enclosure_is_one_unit_of_the_denominator_wide
+#print axioms B302.enclosure_ends_are_strictly_ordered
+#print axioms B302.complement_numerators_are_strictly_positive_and_below_the_denominator
+#print axioms B302.explicit_numerators_over_ten_to_the_twenty_satisfy_the_squaring_criterion
+#print axioms B302.complement_numerators_over_ten_to_the_twenty_are_these_two_integers
+#print axioms B302.complement_enclosure_is_one_unit_wide_and_strictly_ordered
