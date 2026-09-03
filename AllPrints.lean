@@ -81,6 +81,7 @@ import BoundaryValueShadow
 import RationalEnclosureShadow
 import ValuationDivisibilityShadow
 import IndexRangeShadow
+import ScalingTraceShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -552,3 +553,6 @@ import IndexRangeShadow
 #print axioms B304.below_top_range_at_bound_one_is_empty
 #print axioms B304.the_single_point_at_bound_one_is_the_top_and_the_top_is_the_bound
 #print axioms B304.the_top_of_the_index_range_is_its_bound_at_the_stated_bounds
+#print axioms B309.frame_arithmetic
+#print axioms B309.support_ranges_split_at_the_level
+#print axioms B309.no_offball_fixed_point_of_scaling
