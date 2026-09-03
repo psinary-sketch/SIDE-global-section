@@ -80,6 +80,7 @@ import AbsorptionFunctionalShadow
 import BoundaryValueShadow
 import RationalEnclosureShadow
 import ValuationDivisibilityShadow
+import IndexRangeShadow
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -542,3 +543,12 @@ import ValuationDivisibilityShadow
 #print axioms B303.valuation_and_divisibility_agree_over_the_range_at_p_three_n_one
 #print axioms B303.valuation_and_divisibility_agree_over_the_range_at_p_three_n_two
 #print axioms B303.valuation_and_divisibility_agree_over_the_range_at_p_five_n_one
+#print axioms B304.below_top_range_is_nonempty_from_two_up
+#print axioms B304.index_range_grows_with_its_bound
+#print axioms B304.the_two_ranges_have_the_lengths_their_bounds_name
+#print axioms B304.top_of_reports_the_largest_entry
+#print axioms B304.both_ranges_are_empty_at_zero
+#print axioms B304.index_range_at_bound_one_is_a_single_point
+#print axioms B304.below_top_range_at_bound_one_is_empty
+#print axioms B304.the_single_point_at_bound_one_is_the_top_and_the_top_is_the_bound
+#print axioms B304.the_top_of_the_index_range_is_its_bound_at_the_stated_bounds

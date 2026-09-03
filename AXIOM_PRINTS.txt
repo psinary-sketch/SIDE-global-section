@@ -459,3 +459,12 @@
 'B303.valuation_and_divisibility_agree_over_the_range_at_p_three_n_one' does not depend on any axioms
 'B303.valuation_and_divisibility_agree_over_the_range_at_p_three_n_two' does not depend on any axioms
 'B303.valuation_and_divisibility_agree_over_the_range_at_p_five_n_one' does not depend on any axioms
+'B304.below_top_range_is_nonempty_from_two_up' does not depend on any axioms
+'B304.index_range_grows_with_its_bound' does not depend on any axioms
+'B304.the_two_ranges_have_the_lengths_their_bounds_name' does not depend on any axioms
+'B304.top_of_reports_the_largest_entry' does not depend on any axioms
+'B304.both_ranges_are_empty_at_zero' does not depend on any axioms
+'B304.index_range_at_bound_one_is_a_single_point' does not depend on any axioms
+'B304.below_top_range_at_bound_one_is_empty' does not depend on any axioms
+'B304.the_single_point_at_bound_one_is_the_top_and_the_top_is_the_bound' does not depend on any axioms
+'B304.the_top_of_the_index_range_is_its_bound_at_the_stated_bounds' does not depend on any axioms
