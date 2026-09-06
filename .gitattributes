@@ -1,0 +1,12 @@
+# Disk bytes must equal blob bytes.
+#
+# core.autocrlf=true was checking every text file out with CRLF while every blob is LF,
+# so a working file differed from its blob on raw bytes on a CLEAN tree: the profile
+# AXIOM_PRINTS.txt failed a raw byte comparison at b309 (D6), the kernel tool had to
+# normalise at b310, and b329's post-push gate fired on the registration's raw hash and
+# on file times rewritten by the checkout. Every instrument that hashes or byte-compares
+# a working file was carrying a normalisation that is git's doing and not the act's.
+#
+# eol=lf makes checkout match storage, as the papers repository's .gitattributes does
+# (2026-08-14). Do not remove without re-verifying the profile against its blob raw.
+* text=auto eol=lf
