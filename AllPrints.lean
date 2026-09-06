@@ -109,6 +109,7 @@ import GeneratorSupportShadow
 import JunctionLimitShadow
 import JunctionSignShadow
 import TopLevelSilenceShadow
+import FiniteSideSeal
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -678,3 +679,27 @@ import TopLevelSilenceShadow
 #print axioms TopLevelSilenceShadow.the_foil_holds_at_depth
 #print axioms TopLevelSilenceShadow.survey_counts_reconcile
 #print axioms TopLevelSilenceShadow.only_the_candidate_count_is_zero
+#print axioms B329.mul_assoc'
+#print axioms B329.pow_add'
+#print axioms B329.add_right_cancel'
+#print axioms B329.add_left_cancel'
+#print axioms B329.multiple_of_add_multiple
+#print axioms B329.search
+#print axioms B329.valuation_exists
+#print axioms B329.valuation_unique
+#print axioms B329.exponent_below_level
+#print axioms B329.index_decomposes
+#print axioms B329.action_factors
+#print axioms B329.geom_identity
+#print axioms B329.scaling_shift_inverse
+#print axioms B329.scaling_congruence_forces_ball
+#print axioms B329.scaling_fixed_point_in_ball
+#print axioms B329.scaling_fixes_nothing_off_ball
+#print axioms B329.identity_fixes_every_index
+#print axioms B329.unit_fixes_offball_at_cells
+#print axioms B329.some_unit_fixes_offball_above_level_one
+#print axioms B329.no_unit_fixes_offball_at_level_one
+#print axioms B329.compact_smear_vanishes_at_cells
+#print axioms B329.identity_trace_is_the_dimension
+#print axioms B329.traces_not_all_zero_off_identity
+#print axioms B329.finite_side_silence
