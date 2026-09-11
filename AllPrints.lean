@@ -111,6 +111,7 @@ import JunctionSignShadow
 import TopLevelSilenceShadow
 import FiniteSideSeal
 import SinglePrimeFactor
+import SmearGeneral
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -719,3 +720,5 @@ import SinglePrimeFactor
 #print axioms SinglePrimeFactor.predicate_agrees_at_eight_and_nine
 #print axioms SinglePrimeFactor.predicate_agrees_at_ten
 #print axioms SinglePrimeFactor.predicate_agrees_at_level_two
+#print axioms SmearGeneral.smear_general
+#print axioms SmearGeneral.cells_are_instances

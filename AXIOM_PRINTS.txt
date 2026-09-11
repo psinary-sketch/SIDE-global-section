@@ -603,3 +603,5 @@
 'SinglePrimeFactor.predicate_agrees_at_eight_and_nine' does not depend on any axioms
 'SinglePrimeFactor.predicate_agrees_at_ten' does not depend on any axioms
 'SinglePrimeFactor.predicate_agrees_at_level_two' does not depend on any axioms
+'SmearGeneral.smear_general' does not depend on any axioms
+'SmearGeneral.cells_are_instances' does not depend on any axioms

@@ -86,7 +86,12 @@
   compiled -- `Nat.Coprime`'s lemmas carry `propext` -- so primality is used
   nowhere in this file and the general theorems hold for every `p ≥ 2` (a
   residue `p` does not divide is a unit of `Z/p^k` exactly when `p` is prime;
-  that identification is the library's and is NOT compiled here); (T1.6)
+  that identification is the library's and is NOT compiled here);
+  (T1.4-a, b414) AND THE CONDITION NAMED THERE IS TOO STRONG: the compact-smear
+  identity of `compact_smear_vanishes_at_cells` also holds at 4, 8, 9, 16, 25, 27, 32
+  and 49, every one composite; the separator is a SINGLE PRIME FACTOR, not primality.
+  See `Core/SinglePrimeFactor.lean` and relay `data/b414_components.txt`.
+  (T1.6)
   `action_factors` is the factorization before reduction modulo `M`; (T2.1) is
   the explicit inverse rather than `Nat.Coprime`. Nothing is sorried and
   nothing is weakened silently.
