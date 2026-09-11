@@ -605,3 +605,10 @@
 'SinglePrimeFactor.predicate_agrees_at_level_two' does not depend on any axioms
 'SmearGeneral.smear_general' does not depend on any axioms
 'SmearGeneral.cells_are_instances' does not depend on any axioms
+'GridTrace.key' does not depend on any axioms
+'GridTrace.mod_add_iff' does not depend on any axioms
+'GridTrace.diagA' does not depend on any axioms
+'GridTrace.diagB' does not depend on any axioms
+'GridTrace.trA_eq' does not depend on any axioms
+'GridTrace.trB_eq' does not depend on any axioms
+'GridTrace.grid_trace_is_signed_count' does not depend on any axioms
