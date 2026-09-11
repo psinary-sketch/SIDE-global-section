@@ -110,6 +110,7 @@ import JunctionLimitShadow
 import JunctionSignShadow
 import TopLevelSilenceShadow
 import FiniteSideSeal
+import SinglePrimeFactor
 
 #print axioms ReDerivationShadow.expanding_the_scaling_operator_reconciles_all_three_terms
 #print axioms ReDerivationShadow.the_unexpanded_form_does_not_match
@@ -703,3 +704,18 @@ import FiniteSideSeal
 #print axioms B329.identity_trace_is_the_dimension
 #print axioms B329.traces_not_all_zero_off_identity
 #print axioms B329.finite_side_silence
+#print axioms SinglePrimeFactor.isPrime_fixtures
+#print axioms SinglePrimeFactor.singlePrimeFactor_fixtures
+#print axioms SinglePrimeFactor.cells_all_single_prime_factor
+#print axioms SinglePrimeFactor.cells_all_hold
+#print axioms SinglePrimeFactor.base_six_breaks_the_identity
+#print axioms SinglePrimeFactor.base_six_values
+#print axioms SinglePrimeFactor.two_prime_bases_break_the_identity
+#print axioms SinglePrimeFactor.two_prime_bases_are_refused
+#print axioms SinglePrimeFactor.composite_bases_keep_the_identity
+#print axioms SinglePrimeFactor.those_bases_are_composite
+#print axioms SinglePrimeFactor.those_bases_are_admitted
+#print axioms SinglePrimeFactor.predicate_agrees_at_small_bases
+#print axioms SinglePrimeFactor.predicate_agrees_at_eight_and_nine
+#print axioms SinglePrimeFactor.predicate_agrees_at_ten
+#print axioms SinglePrimeFactor.predicate_agrees_at_level_two
