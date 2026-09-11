@@ -53,6 +53,14 @@
   `Prop`-valued definition standing in for a result. `Core/` contains zero
   occurrences of `sorry` and this module adds none.
 
+  ANNOTATION, b420 -- APPENDED; EVERY WORD ABOVE IS KEPT AS THE RECORD OF WHAT
+  b414 KNEW. THE STATEMENT ABOVE IS NOW PROVED: `SmearGeneral.smear_general`
+  (`Core/SmearGeneral.lean`, b419) states it for every base with
+  `singlePrimeFactor p = true` and every level, and its printed profile reads
+  "does not depend on any axioms". It is a theorem about this model's counting
+  form; the identification with the source's trace is b310's and is still NOT
+  compiled (see `FiniteSideSeal`'s WHAT IT DOES NOT CERTIFY).
+
   What IS compiled below is: the predicate; that all seven decided cells satisfy
   it; that the naive generalisation over `2 ≤ p` is FALSE, with witnesses; and
   that primality is not the separator, with witnesses on the other polarity. A
@@ -142,7 +150,9 @@ theorem singlePrimeFactor_fixtures :
 
 /-- Every cell `B329.cells` decides satisfies the predicate. So the open statement,
     IF ANYONE PROVES IT, subsumes `B329.compact_smear_vanishes_at_cells` rather
-    than competing with it — and this act does not prove it. -/
+    than competing with it — and this act does not prove it.
+    ANNOTATION, b420: `SmearGeneral.cells_are_instances` (b419) now derives these
+    seven cells from the proved statement. -/
 theorem cells_all_single_prime_factor :
     B329.cells.all (fun c => singlePrimeFactor c.1) = true := by decide
 
