@@ -10,12 +10,10 @@
 
   THE CONSTRAINT (derived in the b59 registration): W² = M forces W⁴ = M² = Π (the
   parity; S² = q²Π banked), so W⁴ = −1 forces Π = −1 on the whole chart — and the
-  chart's parity-even sector obstructs. ONE witness decides it: the u-line
-  (u = 1_{qℤ}, the b57 longhand) has S u = 4u (decided below in ℤ[ζ₁₆] coordinates,
-  all 16 rows), so M u = u; parity fixes u and u ≠ −u (decided). The abstract
-  obstruction lemma then closes BRANCH (b): NO such W exists on the chart — the
-  spectral constraint that fails is the parity constraint, witnessed on the
-  parity-even sector. The −1-fourth-power condition HOLDS exactly on the twisted
+  chart's parity-even sector obstructs. ONE witness decides it: the u-line has S u = 4u (decided below in ℤ[ζ₁₆] coordinates, all 16 rows), so M u = u;
+  parity fixes u and u ≠ −u (decided); and the abstract obstruction lemma (no w with w²u = u and w⁴u = −u ≠ u) is
+  compiled — instantiated at W, M on the chart in the b59 registration, it closes BRANCH (b): no such W exists on the
+  chart. The −1-fourth-power condition HOLDS exactly on the twisted
   ±i sectors (M² = −1 there; row 33's compiled tower witness M(ιu) = i·ιu): the C₈
   frame lives on the twisted sectors only — the frame boundary is the parity split.
 -/
