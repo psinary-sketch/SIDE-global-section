@@ -2,9 +2,8 @@
   THE SILENCE THEOREM · KLSilence.lean — THE PROOF ABOUT THE NUMBER
   ==================================================================
 
-  The assembly act, component 1 (ferry 2026-08-20). Vanilla Lean 4 (v4.29.1 pinned),
-  no imports, term mode and decide only; expected profile per terminal: "does not
-  depend on any axioms".
+  The assembly act, component 1 (ferry 2026-08-20). Vanilla Lean 4 (v4.29.1 pinned), no imports, elementary tactics (intro, induction, rw, cases) and decide; expected
+  profile per terminal: "does not depend on any axioms".
 
   WHAT THIS MODULE PROVES — the b48 depth-alignment law, stated at GENERAL q:
 
