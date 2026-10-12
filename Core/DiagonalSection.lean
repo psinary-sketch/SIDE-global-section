@@ -24,20 +24,9 @@
         · conj(4i) = (−1)·(4i) — the parity-twisted-Hermitian identity  G† = G·Π,
           exact at this cell (the float-era residual ~6e−15, here EXACT).
 
-  (2) THE CLASS FACTOR, over ℤ[ω] (integer pairs, ω² = −1 − ω). With the coupling
-      c₂c₃ = 2[0]+[1]+[2] (compiled in GroupRingGlue):
-        · the character spectrum χ₀, χ₁, χ₂ of the coupling = (4, 1, 1), computed in
-          ℤ[ω] with the imaginary parts landing EXACTLY zero, every value nonzero;
-        · the Gram's class factor is the circulant C = [[2,1,1],[1,2,1],[1,1,2]]:
-          symmetric, det C = 4 ≠ 0 (the class factor's radical is ZERO), and C IS the
-          multiplication-by-coupling matrix, so its spectrum IS the character spectrum;
-        · the trace identity: tr C = 6 = 4 + 1 + 1 = χ₀ + χ₁ + χ₂ — the coupling
-          spectrum as the CLASS-CHARACTER TRACE (the τ-route; question grade at bench);
-        · the label-norm enumeration: the four norm-6 ideal-label sums
-          {[1]+[2], [1]+[1], [2]+[2], [2]+[1]} have class counts (2, 1, 1) — the
-          coupling's coefficients: the gluing datum IS the class-resolved Euler data,
-          at the integer level;
-        · the antipode matrix A: A² = 1 and A·C·A = C (antipode-coherence of the Gram).
+  (2) THE CLASS FACTOR, over ℤ[ω] (integer pairs, ω² = −1 − ω). the Gram's class factor is the circulant C = [[2,1,1],[1,2,1],[1,1,2]]: symmetric and det C = 4 ≠ 0, decided; that C
+  is the multiplication-by-coupling matrix with spectrum the character spectrum is elementary and NOT compiled here —
+  what is decided is tr C = 6 = χ₀ + χ₁ + χ₂ and the label-norm class counts (2, 1, 1), the coupling's coefficients.
 
   ── WHAT NEEDS A MATHLIB COMPANION, NAMED NOT FAKED ─────────────────────────────
 
