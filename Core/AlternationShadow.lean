@@ -6,12 +6,9 @@
   (v4.29.1 pinned), no imports; the axiom profile is PRINTED, never assumed.
 
   ### WHAT THIS FILE IS THE SHADOW OF.
-  b207's verdict rests on two statements, and the ferry requires them SHOWN
-  rather than asserted:
-    (1) if every sign carries an unknown GLOBAL factor `e = ±1`, the sequence
-        alternates exactly when the original does — because `e` is CONSTANT
-        across the sequence;
-    (2) an alternating sign sequence takes BOTH values.
+  (1) if every sign is flipped by one global sign, an alternating sequence's negation still alternates
+  (alternates_neg; the converse direction is not stated in this file); (2) an alternating sign sequence with s 0 = 1
+  or s 0 = -1 takes both values.
   Together: ### "BOTH VALUES OF c OCCUR" IS INVARIANT UNDER EXACTLY THE FREEDOM
   ### b205's UNEXPLAINED SIGN DISAGREEMENT LEAVES OPEN.
 
