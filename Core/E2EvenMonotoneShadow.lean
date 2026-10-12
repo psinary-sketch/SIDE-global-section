@@ -12,10 +12,10 @@
   NONE of that is here and none of it was forced into `Nat`. The derivation and the
   refutation both live at content in relay `data/b261_e2even_monotone.txt`.
 
-  What is here is the FINITE-DECIDABLE RESIDUE ONLY, and it is exactly three things:
-
-    (1) THE KERNEL'S SHAPE — `εₑᵥₑₙ` scaled ×1e6, at the four points that decide the act:
-        it is ZERO at ρ = 1, RISES to a peak near ρ ≈ 1.2, and FALLS afterwards.
+  What is here is the FINITE-DECIDABLE RESIDUE ONLY, in four parts: (1) the kernel's shape, εₑᵥₑₙ ×1e6 at six points ρ
+  = 1, 1.0198, 1.2046, 2, 10, 100 — zero at ρ = 1, rising to the peak near 1.2, falling afterwards; (2) the
+  refutation; (3) the ladder; (4) the counts, 22 cells and 21 steps. Every numeral except εₑᵥₑₙ(1) = 0 and the counts
+  is an evaluation, truncated toward zero.
         THE TURN IS THE WHOLE FINDING, and it is arithmetic here rather than prose.
 
     (2) THE REFUTATION — `E2even` ×1e9 at six probe cells BELOW the ladder, each STRICTLY
@@ -25,10 +25,7 @@
     (3) THE LADDER — the sixteen banked cells, fifteen STRICT decreases, as integer
         comparisons. WITH ITS POLARITY CONTROL: the same predicate applied to the PROBE
         cells FAILS, which is what makes (3) a statement about the ladder's range rather
-        than about the function.
-
-  EVERY NUMERAL IS AN EVALUATION, TRUNCATED TOWARD ZERO, of a quantity the run computed
-  from the instrument. NO numeral here is a premise of any step of the derivation, and
+        than about the function. NO numeral here is a premise of any step of the derivation, and
   none of them is a bound — truncation makes each comparison the harder one.
 -/
 
@@ -38,7 +35,8 @@ namespace E2EvenMonotoneShadow
 
 `εₑᵥₑₙ(1) = 0` is NOT an evaluation: it is the owner's own support line, *"integrand
 supported ONLY on u in [ρ⁻¹, 1] → eps(1) = 0"*, and `per_mode_eps_grids` writes the zero
-through its own `if hi - lo <= 0: continue`. The other three are evaluations. -/
+through its own `if hi - lo <= 0: continue`. the section's theorems use five evaluated values besides εₑᵥₑₙ(1) = 0 (272056, 1470398, 395736, 45464, 1559 at ρ =
+1.0198, 1.2046, 2, 10, 100). -/
 
 /-- `εₑᵥₑₙ` RISES from zero: `0 < 272056 < 1470398` at `ρ = 1, 1.0198, 1.2046`. -/
 theorem kernel_rises_from_zero :
