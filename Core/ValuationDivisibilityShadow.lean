@@ -45,14 +45,13 @@
   THE FUEL, AND WHY IT IS DECIDED RATHER THAN ASSERTED. `vpAux` is fuel-bounded so that
   it is structurally recursive, and a fuel that ran out would SILENTLY UNDER-REPORT a
   valuation — which is exactly how this file could agree with itself and be wrong.
-  `fuel_is_not_binding_on_the_tested_range_*` decides that doubling the fuel changes no
-  answer on the range actually tested. THE GUARD IS DECIDED, NOT PROMISED IN A COMMENT.
+  `fuel_is_not_binding_on_the_tested_ranges` decides that doubling the fuel changes no agreement verdict on the ranges
+  actually tested; `the_two_predicates_disagree_when_one_side_is_shifted_at_every_tested_pair` decides that keeping
+  the valuation threshold at n while moving the divisibility exponent to n+1 BREAKS the agreement at every tested
+  pair. THE GUARD IS DECIDED, NOT PROMISED IN A COMMENT.
 
   THE POLARITY CONTROLS COME FIRST, BECAUSE A PREDICATE PAIR THAT AGREED EVERYWHERE FOR
-  TRIVIAL REASONS WOULD PASS EVERY TEST BELOW. `the_two_predicates_disagree_one_index_out_*`
-  decides that shifting the valuation threshold by one BREAKS the agreement — so the
-  agreement at the stated threshold is a fact about that threshold and not about two
-  predicates that would agree with anything.
+  TRIVIAL REASONS WOULD PASS EVERY TEST BELOW.
 
   NO FLOATING POINT ANYWHERE. NO DIVISION OF ANYTHING BUT NATURALS ANYWHERE.
 -/
