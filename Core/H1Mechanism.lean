@@ -27,9 +27,9 @@ theorem one_ideal_per_norm :
     ((((List.range 151).drop 1).filter fun m => (150 % m == 0) && (m % 150 == 0)).length == 1)
       = true := by decide
 
-/-- the collapsed form is a sum of squares: at the banked sample vectors (integer
-    coordinates on the {2:1,3:1}-cell shapes) B(v,v) = Σ vᵢ² > 0 for v ≠ 0 —
-    the sign at h = 1 is the positivity of a sum of squares, at no axioms. -/
+/-- at the banked sample vectors [1,0], [0,1], [1,1], [2,-1], [3,2], [-1,4] the sum of squares sum v_i^2 is positive,
+decided at no axioms; that the collapsed h = 1 form B(v,v) is this sum, and so the h = 1 sign is its positivity, is
+the b31 mechanism's reading and is not compiled here. -/
 theorem h1_form_sum_of_squares :
     ([[1, 0], [0, 1], [1, 1], [2, -1], [3, 2], [-1, 4]].all fun v =>
       (v.foldl (fun s x => s + x * x) 0 > 0)) = true := by decide
