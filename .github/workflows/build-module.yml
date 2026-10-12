@@ -1,0 +1,177 @@
+# build-module -- a hand-dispatched build of one ref, under (R263)(4), in this kernel's own build path (the author's word at b655).
+# This kernel ships no lakefile (README :37-:41). Inputs: the ref and the target -- core, interfaces or all. Core: the pinned toolchain
+# (lean-toolchain) compiles each Core module with plain lean, siblings through LEAN_PATH=build, in the order the kernel's own cold-clone
+# build records (b314, CORRESPONDENCE row 141: the AllPrints import closure in dependency order, then the Core modules outside it), and
+# AllPrints.lean re-runs every print, compared with AXIOM_PRINTS.txt at the ref. Interfaces: a mathlib4 checkout at the declared pin
+# cecd0c4d56 (README :28-:29) obtained inside the run with its cache, each Interfaces file elaborated by lake env lean from the checkout,
+# its prints compared with AXIOM_PRINTS_INTERFACES.txt at the ref. A free-memory logger beside the builds stops lean and lake beneath the
+# 2,560 MB hold. The logs, the prints and the comparisons uploaded as the run's artifact. No secret; the platform's own token alone.
+name: build-module
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "the commit SHA or branch to build"
+        required: true
+      target:
+        description: "core, interfaces or all"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      HOLD_MB: "2560"
+      TARGET: ${{ inputs.target }}
+      MATHLIB_PIN: "cecd0c4d56a6410638a13491d566104756f892bf"
+    steps:
+      - name: Checkout at the ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+
+      - name: Refuse a target outside core, interfaces and all
+        run: |
+          case "$TARGET" in
+            core|interfaces|all) ;;
+            *) echo "target refused: $TARGET"; exit 2 ;;
+          esac
+          mkdir -p out build
+          git rev-parse HEAD > out/ref.txt
+          cat lean-toolchain >> out/ref.txt
+          echo "target $TARGET ; mathlib pin $MATHLIB_PIN" >> out/ref.txt
+
+      - name: Install elan (official script; the toolchains from lean-toolchain files)
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o elan-init.sh
+          sh elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Start the memory logger
+        run: |
+          nohup sh -c '
+            while true; do
+              avail=$(awk "/MemAvailable/ {print int(\$2/1024)}" /proc/meminfo)
+              echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) avail_mb=$avail" >> out/mem.log
+              if [ "$avail" -lt "$HOLD_MB" ]; then
+                echo "STOP $(date -u +%Y-%m-%dT%H:%M:%SZ) avail_mb=$avail beneath the hold $HOLD_MB" >> out/mem.log
+                pkill -f lake || true
+                pkill -f lean || true
+              fi
+              sleep 5
+            done' > /dev/null 2>&1 &
+          echo $! > out/logger.pid
+
+      - name: Core, module by module in the recorded order, then AllPrints
+        if: env.TARGET == 'core' || env.TARGET == 'all'
+        run: |
+          cat > out/order.py <<'PY'
+          import os, re
+          core = 'Core'
+          mods = sorted(f[:-5] for f in os.listdir(core) if f.endswith('.lean'))
+          def imports_of(p):
+              return re.findall(r'^import\s+(\S+)', open(p, encoding='utf-8').read(), re.M)
+          deps = dict((m, [i for i in imports_of(os.path.join(core, m + '.lean')) if i in mods]) for m in mods)
+          def toposort(names):
+              order, state = [], {}
+              def visit(n):
+                  if state.get(n) == 2:
+                      return
+                  if state.get(n) == 1:
+                      raise SystemExit('cycle at ' + n)
+                  state[n] = 1
+                  for d in deps.get(n, []):
+                      visit(d)
+                  state[n] = 2
+                  order.append(n)
+              for n in names:
+                  visit(n)
+              return order
+          need = set()
+          def close(n):
+              if n in need:
+                  return
+              need.add(n)
+              for x in deps.get(n, []):
+                  close(x)
+          for m in imports_of('AllPrints.lean'):
+              if m in mods:
+                  close(m)
+          first = toposort(sorted(need))
+          rest = [m for m in toposort(sorted(set(mods) - need)) if m not in first]
+          print('\n'.join(first + rest))
+          PY
+          python3 out/order.py > out/order.txt
+          set +e
+          : > out/core_build.log
+          fails=0
+          while read -r m; do
+            LEAN_PATH=build lean "Core/$m.lean" -o "build/$m.olean" >> out/core_build.log 2>&1
+            rc=$?
+            echo "### $m exit $rc" >> out/core_build.log
+            if [ "$rc" != "0" ]; then fails=$((fails+1)); fi
+          done < out/order.txt
+          echo "$fails" > out/core_fails.txt
+          if [ "$fails" = "0" ] && ! grep -q '^STOP ' out/mem.log; then
+            LEAN_PATH=build lean AllPrints.lean > out/allprints.txt 2>&1
+            echo "$?" > out/allprints_exit.txt
+            if cmp -s out/allprints.txt AXIOM_PRINTS.txt; then echo "RAW EQUAL" > out/core_compare.txt; else echo "RAW DIFFERENT" > out/core_compare.txt; fi
+            diff AXIOM_PRINTS.txt out/allprints.txt > out/core_diff.txt; echo "diff exit $?" >> out/core_compare.txt
+          else
+            echo "NOT RUN: a Core module failed or the build stopped beneath the hold" > out/allprints.txt
+          fi
+          exit 0
+
+      - name: Interfaces, against mathlib4 at the declared pin
+        if: env.TARGET == 'interfaces' || env.TARGET == 'all'
+        run: |
+          set +e
+          mkdir -p mathlib4
+          cd mathlib4
+          git init -q
+          git remote add origin https://github.com/leanprover-community/mathlib4.git
+          git fetch -q --depth 1 origin "$MATHLIB_PIN"
+          git checkout -q FETCH_HEAD
+          git rev-parse HEAD > ../out/mathlib_ref.txt
+          cat lean-toolchain >> ../out/mathlib_ref.txt
+          lake exe cache get > ../out/mathlib_cache.log 2>&1
+          echo "cache exit $?" >> ../out/mathlib_cache.log
+          cat > ../out/join.py <<'PY'
+          import re, sys
+          t = open(sys.argv[1], encoding='utf-8', errors='replace').read()
+          for m in re.finditer(r"^'[^\n]*?' (?:does not depend on any axioms|depends on axioms: \[[^\]]*\])", t, re.M):
+              print(' '.join(m.group(0).split()).replace('[ ', '[').replace(' ]', ']'))
+          PY
+          : > ../out/interfaces.txt
+          : > ../out/interfaces_build.log
+          for f in FiniteInstanceIdentity GlobalSection LocalLimit PadicFourier PadicStandardAddChar RestrictedTensorLayer1; do
+            echo "=== $f" >> ../out/interfaces.txt
+            lake env lean "../Interfaces/$f.lean" > "../out/iface_$f.log" 2>&1
+            rc=$?
+            echo "### $f exit $rc" >> ../out/interfaces_build.log
+            cat "../out/iface_$f.log" >> ../out/interfaces_build.log
+            python3 ../out/join.py "../out/iface_$f.log" >> ../out/interfaces.txt
+          done
+          cd ..
+          diff <(grep -E "^'" AXIOM_PRINTS_INTERFACES.txt) <(grep -E "^'" out/interfaces.txt) > out/interfaces_diff.txt
+          echo "diff exit $?" > out/interfaces_compare.txt
+          exit 0
+
+      - name: Stop the logger and read the low
+        if: always()
+        run: |
+          kill "$(cat out/logger.pid)" 2>/dev/null || true
+          awk -F'avail_mb=' '/avail_mb=/ {split($2,a," "); if (min=="" || a[1]+0<min) min=a[1]+0} END {print "LOW " min}' out/mem.log >> out/mem.log
+
+      - name: Upload the run's artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-module-${{ github.run_id }}
+          path: out/
+          if-no-files-found: error
