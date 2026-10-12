@@ -5,16 +5,10 @@
   Ferry 2026-08-21 (b60, component 3). Vanilla Lean 4 (v4.29.1 pinned), no imports;
   expected profile per terminal: "does not depend on any axioms".
 
-  BRANCH (a) — the registered expectation, landed: at (2,2) on the twisted half
-  E_i ⊕ E_{−i} (where M² = −1 already, so the row-39 parity obstruction is absent by
-  construction), square roots of M EXIST: any W with W² = M preserves M's eigenspaces,
-  and the eigenvalue square-root pairing is available in the banked ring — the square
-  roots of i are ±ζ₁₆², of −i are ±ζ₁₆⁶, and every odd-index eighth root has fourth
-  power −1 (decided below). The scalar witness W = ζ²·Id on E_i ⊕ ζ⁶·Id on E_{−i}
-  satisfies W² = M and W⁴ = −1 (the abstract scalar-root lemma below, its instance's
-  eigenvector the compiled row-33 tower witness M(ιu) = i·ιu). THE TWISTED HALF OF
-  THE CHART SITS INSIDE THE C₈ FRAME at the cell — 5 of the 9 Sonin dimensions;
-  extension questions staged, not run. Bank: relay data/b59_twisted_root.txt.
+  Decided below: the eighth-root pairing table (ζ₁₆^{2j}, j = 1,3,5,7, square to i, −i, i, −i with fourth power −1)
+  and the abstract scalar-root lemma (c² = λ acting on a λ-eigenvector v of M gives c·(c·v) = M v); the existence of W
+  with W² = M on E_i ⊕ E_{−i}, its eigenspace preservation and the 5-of-9 C₈-frame count are the bank's (relay
+  data/b59_twisted_root.txt), not compiled here. Bank: relay data/b59_twisted_root.txt.
 -/
 
 namespace TwistedRootShadow
