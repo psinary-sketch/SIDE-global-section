@@ -51,9 +51,9 @@ theorem fiber_three :
       (((List.range 9).filter fun x => (3 * x) % 9 == y).length == 3)) = true := by
   decide
 
-/-- the two channels are distinct where it matters: the fiber weight (p, nonzero) at
-    k = 1 sits exactly where the twisted trace is zero — the literal adjointness's
-    refutation instance, both primes. -/
+/-- the primes 2 and 3 are nonzero, decided; that these are the fiber weights at k = 1 (fiber_two, fiber_three) and that
+the twisted trace is zero there (twisted_silence) is carried by those theorems, so this terminal is the nonzero half
+of the channels' comparison and not the comparison itself. -/
 theorem channels_distinct : ((2 != 0) && (3 != 0)) = true := by decide
 
 /- ── (B) the dictionary's shadow ──────────────────────────────────────────────── -/
