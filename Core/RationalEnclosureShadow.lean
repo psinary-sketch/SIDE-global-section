@@ -128,9 +128,9 @@ theorem explicit_numerators_over_ten_to_the_twenty_satisfy_the_squaring_criterio
 theorem complement_numerators_over_ten_to_the_twenty_are_these_two_integers :
     devLoNum = 29289321881345247559 ∧ devHiNum = 29289321881345247560 := by decide
 
-/-- THE COMPLEMENT ALSO SATISFIES THE CRITERION IN THE MIRRORED DIRECTION, decided
-    rather than inferred: `den - hiNum` is the lower end and `den - loNum` the upper,
-    and they are ordered and one unit apart, exactly as the originals are. -/
+/-- THE COMPLEMENT'S ENDS ARE ORDERED AND ONE UNIT APART, decided: `den - hiNum` is the lower end and `den - loNum` the
+upper, and `den - loNum` = `den - hiNum` + 1 with `den - hiNum` < `den - loNum`, exactly as the originals are; that
+the complement encloses 1 - 1/sqrt 2 follows from THE ENCLOSURE by the reader's arithmetic and is not decided here. -/
 theorem complement_enclosure_is_one_unit_wide_and_strictly_ordered :
     devHiNum = devLoNum + 1 ∧ devLoNum < devHiNum := by decide
 
