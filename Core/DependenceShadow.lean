@@ -15,10 +15,9 @@
   operation the lane applies afterwards is linear in the density, so the whole
   member-dependence is ONE AFFINE DIRECTION.
 
-  · `shift_law_is_additive` — ### THE INVARIANT SIDE: composing two member shifts
-    equals the single shift by their sum, exactly, at every cell. The family acts
-    on the deviations as a one-parameter group; the affine structure is decided,
-    not asserted.
+  `shift_law_is_additive` — one instance of the composition law, decided: the shift by dμ = 0.001234567 followed by
+  the shift by −0.007654321 equals the single shift by their sum, exactly, at all six cells; the general law is the
+  elementary linearity of the definition, not a decided terminal.
   · `signs_are_mixed_at_b38_member` — at `dμ = 0` some deviations are positive and
     some negative: ### a sign change exists in the recorded grid.
   · `signs_are_uniform_off_the_window` — at `dμ = +0.005` ALL SIX are positive and
@@ -60,9 +59,9 @@ def ratioE4 : List Int := [20339, 17675, 17060, 16525, 16488, 16461]
 def devAtE13 (dmuE9 : Int) : List Int :=
   (devE9.zip ratioE4).map (fun p => p.1 * 10000 + dmuE9 * p.2)
 
-/-- ### THE INVARIANT SIDE, DECIDED: the member shifts COMPOSE EXACTLY. Shifting
-    by `d₁` and then by `d₂` lands where shifting once by `d₁ + d₂` lands, at every
-    cell — the one-parameter structure, decided rather than asserted. -/
+/-- One instance, decided in `shift_law_is_additive`: shifting by d₁ = 0.001234567 and then by d₂ = −0.007654321 lands
+where shifting once by d₁ + d₂ lands, at every cell — an instance of the one-parameter structure, not the structure
+itself decided. -/
 def shiftOnce : List Int := devAtE13 (1234567 + (-7654321))
 
 def shiftTwice : List Int :=

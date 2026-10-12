@@ -12,8 +12,8 @@
       equations determine the dims. With the MEASURED inputs tr M = 0 (rational — the
       field-intersection argument ℚ(ζ_{3^{2n}}) ∩ ℚ(i) = ℚ forces Im tr M = 0; stated
       here, compiled at the instance level) and tr Π = 0 (Π fixed-point-free at odd q),
-      the unique solution is FLAT: d_λ = (3ⁿ − 1)²/4 each. The solver and its
-      uniqueness (the four equations hold and pin the solution) are compiled per level.
+      the unique solution is FLAT: d_λ = (3ⁿ − 1)²/4 each. The solver's output and the verification half of uniqueness (the four equations hold at that output) are
+      compiled per level; that the equations pin the solution is linear algebra not compiled here.
 
   (d) THE TWIST SIGNATURE: with the BANKED exact eigen-dims of the six certified factors
       ((2,1) = (0,0,1,0) · (3,1) = (1,1,1,1) · (2,2) = (2,2,3,2) · (2,3) = (12,12,13,12)

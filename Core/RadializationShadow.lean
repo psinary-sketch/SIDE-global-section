@@ -8,10 +8,10 @@
   The shell-summing map R (the radialization — the merged construction of the
   theta bridge's step A and N5's radial-compression dictionary) at its decidable
   spine: the valuation is the gcd law (Nat.gcd m N = p^{v(m)}), so every shell
-  statement is a gcd statement. P1: the shell partitions at the banked sizes
-  (3, 5, 7, 9 cells at n = 1..4, both parities), the seed addresses
-  gcd(2ⁿ⁻¹, 2ⁿ) = 2ⁿ⁻¹, and the boundary index re-derived from R's side (the
-  doubling image misses the primitive shell; the zero cell is terminal). P2: the
+  statement is a gcd statement. P1: the shell partitions decided at (2,2) (Z/16: shells of sizes 8, 4, 2, 1 plus the zero cell) and (3,1) (Z/9: 6, 2
+  plus the zero cell); the sizes 3, 7, 9 at n = 1, 3, 4 are the b76 bench's, not compiled here; the seed addresses
+  gcd(2^(n-1), 2^n) = 2^(n-1) at n = 1..4, and the boundary index from R's side (the doubling image misses the odd
+  shell at N = 4, 16, 64; the zero cell is terminal). P2: the
   transfer/shift intertwining as the gcd law over FULL ranges, and the
   ball-boundary transition filter identity — the one shell that doubles into the
   ball is exactly the seed's shell (the deficient weight's address, b61, derived
@@ -27,8 +27,9 @@ set_option maxRecDepth 8192
 
 namespace RadializationShadow
 
-/-- P1: the shell partitions (sizes 3, 5, 7, 9 at n = 1..4; both parities at the
-    smallest cells), the seed addresses, and the boundary index from R's side -/
+/-- P1: the shell partition at (2,2) (Z/16: 8, 4, 2, 1) and at (3,1) (Z/9: 6, 2), the seed addresses gcd(2^(n-1), 2^n) =
+2^(n-1) at n = 1..4, and the boundary index from R's side (no doubling lands on an odd residue at N = 4, 16, 64; 0
+doubles to 0). -/
 theorem shell_partition_instances :
     (((List.range 16).filter (fun m => decide (Nat.gcd m 16 = 1))).length = 8 ∧
      ((List.range 16).filter (fun m => decide (Nat.gcd m 16 = 2))).length = 4 ∧

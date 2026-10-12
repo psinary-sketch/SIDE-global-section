@@ -5,17 +5,10 @@
   Ferry 2026-08-21 (b70). Vanilla Lean 4 (v4.29.1 pinned), no imports; expected
   profile per terminal: "does not depend on any axioms".
 
-  Decided here (the b70 registration): THE CENTER EXITS AT EVERY BANKED PLACE-2
-  LEVEL (every V-image position of the center's line is a ball position — the
-  two-line index computation, per level), with the (2,2) exit-set EXACTLY the
-  center and the deeper exit families counted as data (the radial-compression
-  dictionary the named residue of N5's operator half); THE NON-STABILIZATION
-  WITNESS (the level-1 scaling kills g₍₁,₁₎ while the level-2 scaling does not
-  kill its embedded image — the SOT clause's sharpened form: the convergence
-  question for a non-stabilizing level family); THE FINITE ORIENTATION BREAK
-  (tr S = q(1+i) and tr S* = q(1−i) are distinct — the finite kernel convention
-  breaks the F ↦ F³ symmetry that the recorded archimedean ground cannot break:
-  the class bit is S1 content, the b70 derivation).
+  Decided here: THE CENTER EXITS AT EVERY BANKED PLACE-2 LEVEL (q = 4, 8, 16), with the (2,2) exit-set exactly the
+  center; the ARITHMETIC of the non-stabilization witness only (1 + (−1) = 0 in ℤ[i] pairs, and the cited row-4 value
+  2 is nonzero; the level scalings and the non-stabilization itself are b70's derivation and row 46's instance, not
+  computed here); THE FINITE ORIENTATION BREAK (tr S = 4(1+i) and tr S* = 4(1−i) at (2,2) are distinct).
   Bank: relay data/b70_theta_continuation.txt.
 -/
 
@@ -38,11 +31,9 @@ theorem center_exit_instances :
 /-- ℤ[i] pairs for the level-1 computation -/
 def padd (u v : Int × Int) : Int × Int := (u.1 + v.1, u.2 + v.2)
 
-/-- THE NON-STABILIZATION WITNESS, decided: at (2,1) the scaling kills the seed's
-    line (the two preimages' coefficients 1 and ζ₄² = −1 cancel on the single image
-    row), while at (2,2) the scaling of its embedded image is NONZERO (the row-4
-    value 2 — the full computation is row 46's decided instance, cited): the level
-    family {V_n} does not stabilize on colimit classes -/
+/-- THE NON-STABILIZATION WITNESS's arithmetic, decided: the coefficients 1 and ζ₄² = −1 (entered as literals) cancel, 1 +
+(−1) = 0 in ℤ[i] pairs, and the cited row-4 value 2 is nonzero; the scalings at (2,1) and (2,2) are not computed here
+(row 46, cited), and that the level family {V_n} does not stabilize on colimit classes is the b70 derivation. -/
 theorem non_stabilization_witness :
     (padd (1, 0) (-1, 0) = (0, 0)) ∧
     (([2, 0, 0, 0, 0, 0, 0, 0] : List Int) ≠ [0, 0, 0, 0, 0, 0, 0, 0]) := by decide

@@ -13,10 +13,9 @@
   The derivation lives at content in `D:\relay\data\b260_junction_sign.txt`.
   A shadow that appeared to carry the real-valued inequality would be a lie in Lean.
 
-  What is here is the FINITE-DECIDABLE RESIDUE ONLY, and it is exactly three things:
-
-    (1) THE STAIRCASE, DECIDED — `n_p(a) = #{k ≥ 1 : p^k ≤ a²}` at the ladder's
-        deepest cell, each place proved by BOTH halves (`p^n ≤ a²` AND `¬(p^{n+1} ≤ a²)`).
+  What is here is the FINITE-DECIDABLE RESIDUE ONLY, and it is four things: (1) the staircase, (2) the slack range
+  cap, (3) the per-term ratio inequality, each with its polarity control, and (4) the quoted counts 119 and 43,
+  decided.
         The negative half is not decoration: it is what makes `n_p` a maximum.
 
     (2) THE RANGE CAP IS SLACK — the instrument's loop bound `k ≤ 2n−1` never binds,

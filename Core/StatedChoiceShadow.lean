@@ -68,8 +68,8 @@ theorem chosen_level_positive : ∀ p ∈ stated, 0 < d1 p (level p) := by decid
 theorem chosen_level_is_lowest :
     (∀ p ∈ stated, p ≠ 2 → 0 < d1 p 1) ∧ d1 2 1 = 0 := by decide
 
-/-- the C₀ deviation contributed by one place, `| ‖u‖ − 1 |`, on a scale where a
-    norm-one unit contributes 0. -/
+/-- the C₀ deviation contributed by one place, as an indicator: 0 for a norm-one unit and 1 for any other norm (not the
+magnitude | ‖u‖ − 1 |). -/
 def dev (norm : Nat) : Nat := if norm = 1 then 0 else 1
 
 /-- the total deviation over a list of places. -/

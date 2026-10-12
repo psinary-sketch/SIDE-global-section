@@ -164,7 +164,8 @@ theorem ball_agrees_with_b270_2_2 :
 /-! ### (1) THE POLARITY CONTROLS, FIRST — before any value is read.
 
     A positive terminal with no refusal beside it is a terminal nobody has shown can
-    fail. Each of these is decided FALSE. -/
+    fail. Three of these are decided FALSE (the object rejects the witness, the witness leaves the member at b = 1, the
+    value is not 5); the fourth decides TRUE the reason for the rejection, that the witness has mass on the ball. -/
 
 /-- THE SCOPE CONTROL, AND THE REASON THIS FILE IS ALLOWED TO EXIST:
     THE OBJECT'S OWN SPACE REJECTS THE WITNESS. `Son(2,2)` is the member with radii

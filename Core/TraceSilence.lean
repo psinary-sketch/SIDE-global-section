@@ -43,7 +43,8 @@ theorem trace_silence_3_2 :
     ([1, 2].all fun k => ((List.range 9).drop 1).all
       fun a => a * (3 ^ k - 1) % 9 != 0) = true := by decide
 
-/-- the δ₀ coefficient: Tr(S) = dim Son = (p^n − 1)² at the banked cells -/
+/-- the δ₀ coefficient's values: (p^n − 1)² = 1, 9, 4, 64 at the banked cells (2,1), (2,2), (3,1), (3,2); that Tr(S) = dim
+Son is the bank's reading, not stated here. -/
 theorem trace_identity_dim :
     ((2 ^ 1 - 1) ^ 2, (2 ^ 2 - 1) ^ 2, (3 ^ 1 - 1) ^ 2, (3 ^ 2 - 1) ^ 2) =
       (1, 9, 4, 64) := by decide

@@ -1,10 +1,7 @@
 /-
-  THE PURITY CHECK AT THE BANKED CELLS · E1UnitPurityDraft.lean — WORKING-LAYER DRAFT
-  ====================================================================================
-
-  DRAFT ONLY — NOT KERNEL-PLACED. Kernel placement touches the currency question at
-  the author's desk (ferry 2026-08-19, foot); this file exists so the ruling has a
-  compiled object to rule on. Vanilla Lean 4 (v4.29.1 pinned), no imports, no Mathlib,
+  THE PURITY CHECK AT THE BANKED CELLS — placed in the kernel at federation residence (SIDE-global-section v0.1.0, the
+  author's architecture ruling 2026-08-20; CORRESPONDENCE row 19, COMPILED); vanilla Lean 4, no imports, decide only,
+  every terminal "does not depend on any axioms". Vanilla Lean 4 (v4.29.1 pinned), no imports, no Mathlib,
   decide only; expected axiom profile per terminal: "does not depend on any axioms".
 
   WHAT THIS MODULE COMPILES — the b44 verdicts' finite exact content (registration

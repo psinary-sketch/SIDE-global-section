@@ -6,13 +6,10 @@
   Ferry 2026-08-20 (b52). Vanilla Lean 4 (v4.29.1 pinned), no imports; expected profile
   per terminal: "does not depend on any axioms".
 
-  THE HONEST SPLIT (row 31/32, per the ferry's own clause):
-  · PROVED GENERAL (this module): the k = 2 character-sum identity WHENEVER ONE FACTOR
-    IS FLAT — the case every banked roster instantiates (every multi-place roster
-    contains an odd place, and odd places are flat, banked b26/SectorArithmetic). At a
-    flat factor the two twisted traces vanish (`flat_kills_twists`, general) and the
-    four-power average collapses to the single product (`flat_collapse_int`, general
-    Int dims; the Nat form is CrossPlaceShadow.flat_place_collapse).
+  COMPILED (this module, Nat, subtraction-free): at a flat factor c the four-term sum collapses, 4(c e1 + c em1 + c
+  emi + c ei) = 4 c(e1 + em1 + ei + emi) (flat_kills_twists, by CrossPlaceShadow.flat_place_collapse); the twisted
+  traces' vanishing is definitional and appears only as c = c and c + c = c + c; no Int-dims form (flat_collapse_int)
+  exists at this commit, and the k = 2 character-sum identity at a flat factor is not stated as a theorem here.
   · NAMED OPEN STATEMENT (correspondence; never a sorry): the NOWHERE-FLAT general-dims
     identity (the full ℤ[i] four-power average with both twisted products nonzero) and
     the general-k statement. The five banked roster instances are decided

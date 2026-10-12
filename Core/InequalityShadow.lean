@@ -5,18 +5,15 @@
   The two-leg ruling (Rule 5) governs: VANILLA leg — vanilla Lean 4 (v4.29.1 pinned),
   decide only, expected profile per terminal: "does not depend on any axioms".
 
-  WHAT THIS MODULE COMPILES — the finite shadow of the inequality's L3 link:
-  the quotient coefficient sits STRICTLY BELOW the Weil coefficient at every banked
-  cell — (p^n − p^k) < (p^n − 1) for 1 ≤ k < n (the act-9 THEOREM's ratio < 1) —
-  so, term-by-term against nonnegative test data (the bump is nonnegative exactly,
-  hence its autocorrelation is), Θ_q(g) ≤ Σ_p W_p(g) at finite level: the finite
-  side's inequality direction, at no axioms where finite.
+  WHAT THIS MODULE COMPILES -- the coefficient comparison only: (p^n - p^k) < (p^n - 1) for 1 <= k < n at the listed
+  cells (p = 2, n = 2..4; p = 3, n = 2, 3; p = 5, n = 2), decided at no axioms; the term-by-term step to Theta_q(g) <=
+  Sum_p W_p(g) against nonnegative test data is the act-12 argument and is not compiled here.
 -/
 
 namespace InequalityShadow
 
-/-- (p^n − p^k) < (p^n − 1) at the banked and capped cells: p = 2, n = 2,3,4;
-    p = 3, n = 2,3; p = 5, n = 2 — every k < n. -/
+/-- (p^n - p^k) < (p^n - 1) at the banked and capped cells p = 2, n = 2, 3, 4; p = 3, n = 2, 3; p = 5, n = 2 -- every k
+with 1 <= k < n. -/
 theorem quotient_below_weil :
     (2 ^ 2 - 2 ^ 1 < 2 ^ 2 - 1) ∧
     (2 ^ 3 - 2 ^ 1 < 2 ^ 3 - 1) ∧ (2 ^ 3 - 2 ^ 2 < 2 ^ 3 - 1) ∧

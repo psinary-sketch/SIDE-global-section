@@ -35,9 +35,9 @@
         THIS PART, PART (1) WOULD BE COMPATIBLE WITH A DEAD OPERATOR and would settle
         nothing — which is precisely the failure mode this file was tested against.
 
-    (3) THE EMPTY-ORBIT LAW AT LEVEL 1, decided at the odd places b226's choice uses:
-        no off-ball `m` has `p*m` off-ball, so the orbit relation of `V_inv` is empty
-        there and the projection is multiplication by the off-ball indicator.
+    (3) THE EMPTY-ORBIT LAW AT LEVEL 1, decided at p = 3, 5, 7, 11 (four of the five odd places b226's choice uses;
+    (13,1) is not decided here): no off-ball m has p*m off-ball, so the orbit relation of V_inv is empty there and the
+    projection is multiplication by the off-ball indicator.
 
   WHAT IS NOT DECIDED HERE, AND MUST NOT BE READ INTO IT:
     · that `u_v` vanishes on the ball — that is b268's derivation, shadowed separately

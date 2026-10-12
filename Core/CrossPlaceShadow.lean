@@ -20,10 +20,9 @@
       decided exactly (R1: 16·4 = 64; R2: 144·4 = 576; R3: 2304·4 = 9216;
       R4: 12544·4 = 50176; R5: 1·4 = 4).
 
-  WHAT IT DOES NOT COMPILE, DECLARED: the general character-sum identity over μ₄ (the
-  ℤ[i]-valued four-term average) — bench-verified exactly at every registered roster
-  (b51, with the trace products vanishing by flatness); its general statement is a
-  NAMED OPEN STATEMENT in the correspondence. The leaves distinction stands: this is
+  WHAT IT DOES NOT COMPILE, DECLARED: the general character-sum identity over μ₄ (the ℤ[i]-valued four-term average) —
+  not in this file; its general statement is compiled at the abstract level, under named ring-law hypotheses, as
+  CharacterSumShadow.character_sum_general. The leaves distinction stands: this is
   COMPATIBILITY structure (a character-average of products), not factorization.
 -/
 

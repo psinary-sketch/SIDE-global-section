@@ -11,11 +11,10 @@
   · the ε-regularized archimedean E₁-trace — owner: the ε-lemma's bookkeeping (its
     geometry now DERIVED, act 15: the pair structure whose block inverses are the
     ε-denominators) and files B–C's L²(ℚ_p) for the finite factors;
-  · the volume-normalized quotient trace — owner: FILE D (the fixed-orbit count,
-    proved longhand act 9, its formalization file D's labeled sorry) with the volume
-    normalization forced (act 7, modulo the class-richness lemma at cite);
-  · the restricted-tensor assembly — owner: INFRASTRUCTURE (the Hilbert ⊗′; the sharp
-    missing lemma stated in GlobalSection.lean);
+  · the volume-normalized quotient trace — owner: FILE D (the fixed-orbit count, proved longhand act 9; no file D and
+  no sorry are in this kernel) with the volume normalization forced (act 7, modulo the class-richness lemma at cite);
+  · the restricted-tensor assembly — owner: INFRASTRUCTURE (the Hilbert ⊗′; its missing lemma is recorded in the
+  working layer, relay/reports/2026-08-19-sorry-ledger-cleared.md, not stated in GlobalSection.lean).
   · Weil's ledger — the atlas's certified columns at the cell, in the SUPPORT-AND-
     PROGRAM-VOICE convention (`W_∞ = +A`; the prime term enters with a MINUS), which
     is the convention this file's own relation writes.

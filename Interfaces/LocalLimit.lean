@@ -1,9 +1,9 @@
 /-
   W-CONSTRUCTION-1 act 3 — LocalLimit.lean: sitting 20's limit theorems and the CNU
   theorem, STATED IN LEAN against real Mathlib (toolchain v4.30.0-rc1, checkout
-  cecd0c4d56). DESIGN: the abstract Hilbert-space content is PROVED here (no sorry);
-  the concrete realization over L²(ℚ_p) with the standard character is a SINGLE
-  labeled debt (`padicFourierData_exists`, OWED TO FILES B–C of the companion).
+  cecd0c4d56). the concrete realization over L²(ℚ_p) with the standard character is a SINGLE debt, OWED TO FILES B–C of the
+  companion: the data structure `PadicFourierData` is declared here, and its existence statement is in the working
+  layer (relay/reports/2026-08-19-sorry-ledger-cleared.md, item 1), not in this file.
   Nothing at complete roster. Sorries are counted, labeled, never hidden.
 -/
 import Mathlib.Analysis.InnerProductSpace.Projection.Basic
@@ -37,10 +37,9 @@ theorem radical_zero (F : H →ₗᵢ[ℂ] H) (S : Submodule ℂ H)
   rw [hFy, inner_self_eq_zero] at this
   exact this
 
-/-- THEOREM (R2-1, the CNU theorem's abstract engine): a compressed isometry with the
-    ESCAPE property (no nonzero vector of `S` has its whole forward orbit in `S`) has no
-    unimodular eigenvalue: if the compression of `U` to `S` has `P(Ux) = λ x` with
-    `|λ| = 1`, then `x = 0`. The escape hypothesis is exactly what the p-adic Fourier
+/-- THEOREM (R2-1, the CNU theorem's abstract engine): a compressed unitary (a linear isometry equivalence U of a complete
+H, compressed to S) with the ESCAPE property (no nonzero vector of S has its whole forward orbit in S) has no
+unimodular eigenvalue: if P(Ux) = λ x with |λ| = 1, then x = 0. The escape hypothesis is exactly what the p-adic Fourier
     computation discharges (banked exact witnesses); here it is a hypothesis. PROVED
     from it, no sorry. -/
 theorem no_unimodular_eigenvalue [CompleteSpace H]
@@ -149,9 +148,9 @@ theorem compression_tendsto {ι : Type*} [Preorder ι]
   have hsum := h1.add h2
   simpa using hsum
 
-/-- THE HULL (b101, the monotonicity act): the running span of an arbitrary
-    family — constructed unconditionally, so that a limit object exists for ANY
-    level family whatever, monotone or not. -/
+/-- THE HULL (b101, the monotonicity act): the running span of an arbitrary family — constructed unconditionally and
+monotone by construction (`hullMono`), so that a limit object exists for any level family, monotone or not, whose hull
+levels and supremum closure carry orthogonal projections. -/
 def hull {ι : Type*} [Preorder ι] (U : ι → Submodule ℂ H) (i : ι) : Submodule ℂ H :=
   ⨆ j, ⨆ (_ : j ≤ i), U j
 
@@ -255,19 +254,16 @@ theorem general_p_no_fixed_cell (p n k α : ℕ) (hp : p.Prime)
   hypothesis is free there). The chain is the one the b101 registration wrote
   longhand; what changes is the grade.
 
-  ### WHY THIS LIVES AT THE CLASSICAL PROFILE AND NOT AT THE CORE ZERO-AXIOM BAR
-  (the strikeable's honest landing, verified by print this act): the statements
-  are PROVED, but they cannot reach the zero-axiom bar, and the reason is a
-  property of Lean's own library rather than of the mathematics. Every route to
+  Every route to
   them runs through core `Nat` lemmas that are themselves propext-carrying —
   `Nat.mul_assoc`, `Nat.pow_add`, `Nat.dvd_of_mod_eq_zero`, `Nat.mul_mod_mul_left`,
   `Nat.add_mul_mod_self_left`, `Nat.mul_div_cancel_left`, `Nat.mul_mod_right`,
   `Nat.mul_left_comm` (each printed this act). `rw` itself is clean; the taint is
   inherited transitively, not introduced by the proofs. Reaching the bar would
   mean reproving a chunk of core `Nat` arithmetic, which is not this act's
-  business. So: the banked-pairs terminals stay in Core at the zero-axiom bar
-  (row 65, unchanged), and the universal statements live here, declared, at
-  {propext, Classical.choice, Quot.sound}. `simp`, `omega` and `ac_rfl` are not
+  business. So: the banked-pairs terminals stay in Core at the zero-axiom bar (row 65, unchanged), and the universal statements
+  live here at the printed profile [propext] (inner_sum_general, quotient_general, ball_pullback_general,
+  transform_shift_general), short of the zero-axiom bar by propext alone. `simp`, `omega` and `ac_rfl` are not
   used anywhere below.
 -/
 
@@ -360,9 +356,10 @@ theorem transform_shift_general (p n r m : Nat) (hp : 0 < p)
   rw [hdiv, hl, hr, Nat.mul_mod_mul_left, Nat.mul_mod_mul_left, hp2,
     Nat.mul_assoc, Nat.mul_assoc (p ^ n) k m]
 
-/-- THE CONCRETE DEBT, in one place: the p-adic Fourier data over `L²(ℚ_p)` — the
-    transform as a linear isometry equivalence with `F² = parity`, the Sonin closure as
-    a closed subspace, the escape property. OWED TO FILES B–C (the standard character;
+/-- THE CONCRETE DEBT, in one place: a Hilbert space with a linear isometry equivalence F and a parity, F² = parity,
+parity² = 1, indexed by a prime p; its realization as the p-adic Fourier data over L²(ℚ_p), the Sonin closure as a
+closed subspace and the escape property are not fields here and are OWED TO FILES B–C (the standard character; Haar;
+Plancherel-by-the-tower; Schwartz–Bruhat). OWED TO FILES B–C (the standard character;
     Haar; Plancherel-by-the-tower; Schwartz–Bruhat). -/
 structure PadicFourierData (p : ℕ) [Fact p.Prime] where
   H : Type

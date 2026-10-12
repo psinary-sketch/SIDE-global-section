@@ -66,7 +66,8 @@ row and stated in each conjunct's magnitude. -/
 /-- N = 6 (K1's cut): tail `1.11558894e−14` ≤ envelope `1.15757629e−14`, ×1e22.
     N = 8: `9.91242848e−23` ≤ `9.91250843e−23`, ×1e31.
     N = 10: `1.4601387e−31` ≤ `1.46013869e−31` + the evaluation's own error, ×1e40.
-    N = 11: `3.18448512e−36` ≤ `3.1837636e−36` + the evaluation's own error, ×1e45. -/
+    N = 11: `3.18448512e−36` ≤ `3.1837636e−36` + `7.2152e−41` (one tenth of the evaluation's own error `7.2152e−40`,
+    and exactly the gap), ×1e45. -/
 theorem envelope_holds_at_cuts :
     (111558894 ≤ 115757629) ∧
     (991242848 ≤ 991250843) ∧
@@ -85,11 +86,12 @@ theorem deep_cuts_need_the_evaluation_error :
 /-! ### (3) THE MINIMAX INEQUALITY'S FINITE INSTANCE — `μ_N ≤ bound(N)`.
 
 S2 gives `μ_N ≤ T(N)²` on ZERO specific imports. The instances are enormously slack,
-and the slack is shown rather than trimmed. Scaled ×1e9 after taking a common exponent
-per row; each conjunct compares `μ_N` against `T(N)` at the row's own scale. -/
+and the slack is shown rather than trimmed. The instances are enormously slack, and the slack is shown rather than trimmed; each conjunct compares `μ_N` against
+`T(N)` at the row's own scale (×1e18 at N = 14, ×1e30 at N = 20). -/
 
-/-- N = 14: `μ = 3.85119078e−16` ≤ `T = 3.6271779e−2`, so ×1e18 the bound is ~1e16 times
-    larger; compared here at ×1e18 with the bound truncated DOWNWARD to 36271779000000.
+/-- N = 14: `μ = 3.85119078e−16` ≤ `T = 3.6271779e−2`, the bound ~1e14 times larger; compared at ×1e18 with μ truncated to
+385 and the bound truncated DOWNWARD to 36271779000000. N = 20: `μ = 1.134386458e−28` ≤ `T = 6.5705942e−8`, at ×1e30,
+likewise truncated.
     N = 20: `μ = 1.134386458e−28` ≤ `T = 6.5705942e−8`, at ×1e30 with the bound truncated
     DOWNWARD. Truncating the BOUND downward makes each claim strictly harder. -/
 theorem minimax_instances :

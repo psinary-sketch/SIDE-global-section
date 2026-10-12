@@ -24,8 +24,9 @@
   · `quotient_in_ball`: a level-(n+1) ball row's index divided by p lands in the
     level-n ball — where the level-n transform vanishes.
 
-  Together: ι(Son(p,n)) ⊆ Son(p,n+1) at the banked pairs — THE FAMILY IS
-  MONOTONE. (b70's decided witness V_{n+1}∘ι ≠ ι∘V_n is a statement about the
+  Together these four index facts, decided at the banked pairs (2,1)→(2,2), (2,2)→(2,3), (3,1)→(3,2), are the
+  ingredients of the argument that ι(Son(p,n)) ⊆ Son(p,n+1) at those pairs; the inclusion is not a declaration of this
+  file, and monotonicity of the whole family is not compiled here. (b70's decided witness V_{n+1}∘ι ≠ ι∘V_n is a statement about the
   OPERATORS and is untouched by this: operator incompatibility and subspace
   monotonicity are different statements, and only the second is what the
   compression lemma's hypothesis asks for.)

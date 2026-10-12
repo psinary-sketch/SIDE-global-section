@@ -9,10 +9,9 @@
   ζ₈ phase THROUGH R, the only recorded dictionary. This module carries the two
   decided facts that answer it, and they answer it in opposite directions:
 
-  · `twisted_row_silence` — R annihilates the twisted rows. The block sum of the
-    g-family's root-of-unity column over a full block is the full count exactly
-    when the row is untwisted, and zero for every twisted row, at the banked
-    place-2 cells. Since the C₈ frame lives on the twisted sectors ONLY (rows
+  · `twisted_row_silence` — R annihilates the twisted rows. `twisted_row_silence` — R annihilates the twisted rows at the cell (2,2): the block sum of the g-family's
+  root-of-unity column over a full block is the full count exactly when the row is untwisted, and zero for every
+  twisted row. Since the C₈ frame lives on the twisted sectors ONLY (rows
     39/48, decided), the frame's datum is exactly what R sends to zero: THE
     TRANSPORT IS BLOCKED, and blocked by a decided fact rather than by an
     absence.

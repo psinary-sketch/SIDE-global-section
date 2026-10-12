@@ -16,9 +16,8 @@
   What is here is the FINITE-DECIDABLE RESIDUE ONLY, in four parts:
 
     (1) THE `a² → ρ` CORRESPONDENCE, AS EXACT INTEGER ARITHMETIC. `e2_of_grid` evaluates
-        the eps grid at `exp(u)` for `u ∈ [0, 2 log a]`, so the top argument is `a²`. The
-        finite residue is that the cell label AND the top argument are THE SAME NUMBER —
-        checked here on the actual sixteen cell labels of b255's ladder as `a * a = a²`.
+        the eps grid at `exp(u)` for `u ∈ [0, 2 log a]`, so the top argument is `a²`. checked here, as a * a = a², on the eight of b255's sixteen cell labels that are squares of integers (4, 9,
+        16, 25, 36, 64, 81, 100).
         NO logarithm and NO exponential appears below: the identity `exp(2 log a) = a²`
         is the thing this part STANDS ON and is exactly the thing it may not carry.
 
@@ -101,9 +100,7 @@ theorem the_bracket_at_seven_hundred :
 theorem the_bracket_at_fourteen_hundred :
     3 * 433 ≤ 1400 ∧ ¬ (4 * 433 ≤ 1400) := by decide
 
-/-- POLARITY CONTROL on (4). The bracket excludes: the density is not two per period and
-    not five, at either point. Without this the brackets above would be consistent with
-    a ratio that moved between the two measurements. -/
+/-- POLARITY CONTROL on (4). POLARITY CONTROL on (4): at both points the density is at least two nodes per period and below five. -/
 theorem the_bracket_excludes_on_both_sides :
     ¬ (5 * 215 ≤ 700) ∧ ¬ (5 * 433 ≤ 1400) ∧ (2 * 215 ≤ 700) ∧ (2 * 433 ≤ 1400) := by decide
 

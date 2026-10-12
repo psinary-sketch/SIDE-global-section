@@ -16,12 +16,9 @@
       (the p^{2n}·b·b′ term dies mod p^{2n}). Compiled at (2,1), (3,1), (2,2), (5,1):
       every index tuple, exact.
 
-  (2) THE SECTOR-PATTERN COUNT — the combinatorial core of the PROVED obstruction:
-      over k places each carrying both ±1 sectors, the global E₁ (the ∏λ_v = +1
-      sector sum, act 1's banked finding) admits 2^{k−1} sign patterns, of which the
-      tensor-square diagonal (⊗′E₁,v) sees exactly ONE (all-plus): the strict gap
-      2^{k−1} > 1 for every k ≥ 2 — the mixed patterns ((−1)(−1) = +1, …) are the
-      part of the constrained sector that NO placewise tensor structure carries.
+  (2) THE SECTOR-PATTERN COUNT, compiled at k = 2, 3, 4 only: the ∏λ_v = +1 patterns number 2, 4, 8 (= 2^{k−1}) and
+  each count exceeds 1; that the tensor-square diagonal sees exactly the all-plus pattern, and the gap for every k ≥
+  2, are the leaves-question answer's argument and are not compiled here.
       (The nonemptiness of the −1 sectors at the banked cells is instrument-banked:
       b33 at ∞; the finite four-sector data — cited, not recompiled.)
 -/
