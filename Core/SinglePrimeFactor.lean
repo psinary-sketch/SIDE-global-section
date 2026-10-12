@@ -203,9 +203,9 @@ theorem those_bases_are_admitted :
 /-! ### (5) THE PREDICATE AGREES WITH THE IDENTITY ON EVERY BASE DECIDED HERE. -/
 
 /-- The decided range at level one, both polarities in one statement: the identity
-    holds at a base exactly when the predicate admits it. THIS IS THE EVIDENCE FOR
-    THE OPEN STATEMENT AND IT IS NOT A PROOF OF IT — a finite check over a list
-    decides nothing about the bases not in the list.
+    holds at a base exactly when the predicate admits it. THIS IS FINITE EVIDENCE FOR THE GENERAL CLAUSE AND IS NOT ITSELF A PROOF OF IT (a finite check over a list decides
+    nothing about the bases not in the list); THE GENERAL CLAUSE IS PROVED SEPARATELY, SmearGeneral.smear_general
+    (b419).
 
     SPLIT INTO THREE BECAUSE OF A MEASURED CLIFF, NOT FOR TIDINESS. Kernel
     reduction here costs about `(p^2 - p) * p^2` at a base, and the frontier on
@@ -216,7 +216,7 @@ theorem predicate_agrees_at_small_bases :
     ([2, 3, 4, 5, 6, 7].all
       (fun p => compactSmearHolds p 1 == singlePrimeFactor p)) = true := by decide
 
-/-- The same agreement at the two next bases, one a prime power and one prime. -/
+/-- The same agreement at the two next bases, both prime powers (8 = 2^3, 9 = 3^2) and neither of them prime. -/
 theorem predicate_agrees_at_eight_and_nine :
     ([8, 9].all (fun p => compactSmearHolds p 1 == singlePrimeFactor p)) = true := by decide
 
